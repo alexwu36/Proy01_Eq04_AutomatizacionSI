@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Proy01_Eq04_AutomatizacionSI.Login</StartupObject>
+    <RootNamespace>Proy01_Eq04_AutomatizacionSI</RootNamespace>
+    <AssemblyName>Proy01_Eq04_AutomatizacionSI</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile>Proy01_Eq04_AutomatizacionSI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineDebug>false</DefineDebug>
+    <DocumentationFile>Proy01_Eq04_AutomatizacionSI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Calendario, Version=2.0.7327.40555, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Calendario.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Form_EstadoSolicitud.Designer.vb">
+      <DependentUpon>Form_EstadoSolicitud.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Form_Inventario.Designer.vb">
+      <DependentUpon>Form_Inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Form_Lista_de_Solicitudes.Designer.vb">
+      <DependentUpon>Form_Lista_de_Solicitudes.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Form_SEquipo2.Designer.vb">
+      <DependentUpon>Form_SEquipo2.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Form_SEquipo3.Designer.vb">
+      <DependentUpon>Form_SEquipo3.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Form_SEvento2.Designer.vb">
+      <DependentUpon>Form_SEvento2.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Form_SEvento3.Designer.vb">
+      <DependentUpon>Form_SEvento3.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Form_SEquipo.Designer.vb">
+      <DependentUpon>Form_SEquipo.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Form_SEvento.Designer.vb">
+      <DependentUpon>Form_SEvento.vb</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Update="PantallaPrincipal_UAdmin.Designer.vb">
+      <DependentUpon>PantallaPrincipal_UAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Update="PantallaPrincipal_UGeneral.Designer.vb">
+      <DependentUpon>PantallaPrincipal_UGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Update="RecuperarContraseña.Designer.vb">
+      <DependentUpon>RecuperarContraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Registrarse.Designer.vb">
+      <DependentUpon>Registrarse.vb</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.256001">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_Datos\Capa_Datos.vbproj" />
+  </ItemGroup>
+</Project>
