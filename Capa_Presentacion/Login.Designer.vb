@@ -39,7 +39,6 @@ Partial Class Login
         Me.btn_Olvidar_Contraseña = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.btn_Registrarse = New System.Windows.Forms.Button()
-        Me.btn_Iniciar_Sesion_Admin = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
@@ -196,7 +195,7 @@ Partial Class Login
         Me.btn_Iniciar_Sesion.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_Iniciar_Sesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Iniciar_Sesion.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Iniciar_Sesion.Location = New System.Drawing.Point(604, 518)
+        Me.btn_Iniciar_Sesion.Location = New System.Drawing.Point(741, 518)
         Me.btn_Iniciar_Sesion.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Iniciar_Sesion.Name = "btn_Iniciar_Sesion"
         Me.btn_Iniciar_Sesion.Size = New System.Drawing.Size(196, 54)
@@ -239,7 +238,7 @@ Partial Class Login
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(575, 644)
+        Me.Label8.Location = New System.Drawing.Point(759, 631)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(178, 20)
@@ -253,28 +252,13 @@ Partial Class Login
         Me.btn_Registrarse.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_Registrarse.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Registrarse.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Registrarse.Location = New System.Drawing.Point(790, 629)
+        Me.btn_Registrarse.Location = New System.Drawing.Point(741, 654)
         Me.btn_Registrarse.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Registrarse.Name = "btn_Registrarse"
         Me.btn_Registrarse.Size = New System.Drawing.Size(196, 54)
         Me.btn_Registrarse.TabIndex = 11
         Me.btn_Registrarse.Text = "Registrate Aquí"
         Me.btn_Registrarse.UseVisualStyleBackColor = False
-        '
-        'btn_Iniciar_Sesion_Admin
-        '
-        Me.btn_Iniciar_Sesion_Admin.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btn_Iniciar_Sesion_Admin.BackColor = System.Drawing.Color.DarkMagenta
-        Me.btn_Iniciar_Sesion_Admin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_Iniciar_Sesion_Admin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_Iniciar_Sesion_Admin.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Iniciar_Sesion_Admin.Location = New System.Drawing.Point(835, 518)
-        Me.btn_Iniciar_Sesion_Admin.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btn_Iniciar_Sesion_Admin.Name = "btn_Iniciar_Sesion_Admin"
-        Me.btn_Iniciar_Sesion_Admin.Size = New System.Drawing.Size(262, 54)
-        Me.btn_Iniciar_Sesion_Admin.TabIndex = 12
-        Me.btn_Iniciar_Sesion_Admin.Text = "Iniciar Sesión Admin"
-        Me.btn_Iniciar_Sesion_Admin.UseVisualStyleBackColor = False
         '
         'PictureBox4
         '
@@ -309,7 +293,6 @@ Partial Class Login
         Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.btn_Iniciar_Sesion_Admin)
         Me.Controls.Add(Me.btn_Registrarse)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.btn_Olvidar_Contraseña)
@@ -353,7 +336,6 @@ Partial Class Login
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents btn_Registrarse As Button
-    Friend WithEvents btn_Iniciar_Sesion_Admin As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
 End Class

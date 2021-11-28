@@ -20,10 +20,25 @@
     End Sub
 
     Private Sub btn_Iniciar_Sesion_Click(sender As Object, e As EventArgs) Handles btn_Iniciar_Sesion.Click
+        Dim tipo As Integer
+
         If (Capa_Datos.ExisteUsuario.ExisteUsuario(txtCorreo.Text, txtPassword.Text, nop)) Then
-            Me.Hide()
-            PantallaPrincipal_UGeneral.Show()
-            nop = 0
+            tipo = Capa_Datos.ExisteUsuario.TipoUsuario(txtCorreo.Text)
+
+            If (tipo = 2) Then
+                MessageBox.Show("Bienvenido al Sistema, su tipo de usuario es= " & tipo, "Sistema")
+                Me.Hide()
+                PantallaPrincipal_UAdmin.Show()
+                nop = 0
+            ElseIf (tipo = 1) Then
+                MessageBox.Show("Bienvenido al Sistema, su tipo de usuario es= " & tipo, "Sistema")
+                Me.Hide()
+                PantallaPrincipal_UGeneral.Show()
+                nop = 0
+            Else
+                Me.Close()
+            End If
+
         ElseIf (nop >= 0 And nop <= 1) Then
             nop = nop + 1
             txtCorreo.Text = ""
@@ -33,10 +48,9 @@
             Me.Close()
         End If
 
-
     End Sub
 
-    Private Sub btn_Iniciar_Sesion_Admin_Click(sender As Object, e As EventArgs) Handles btn_Iniciar_Sesion_Admin.Click
+    Private Sub btn_Iniciar_Sesion_Admin_Click(sender As Object, e As EventArgs)
         Me.Hide()
         PantallaPrincipal_UAdmin.Show()
     End Sub

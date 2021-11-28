@@ -61,7 +61,7 @@
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtoAAALQCAYAAACudddVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAA/7JJREFUeF7svQVYXNuz5v3NM/eb7z8z947dO/eec0Lc3V2IB4i7uwsQIyHESAgx
+        wAAADsABataJCQAA/7JJREFUeF7svQVYXNuz5v3NM/eb7z8z947dO/eec0Lc3V2IB4i7uwsQIyHESAgx
         4u7u7u6eEE+IECHu7l7feovVOYTshnYaqF+eegib7t27t6z1rlq1qv4fQRAEwX6I6B/K0vz48aOA+lla
         WQv1/y7qZ7D6OVXZ3Fi28vv373vv3Llz+PChwydnzZp9qW+fvlF1atX7ULpkmc+linuylStT/lP1qjW+
         dfXrRvPnzaczZ87Q8+fPSb33rdpHlIHtNbCVymJ//lR9bDjGFjhm9X8cexpl/9BfSxAEQRAEQRAcixKd
@@ -2276,7 +2276,7 @@ Políticas de Privacidad</value>
   <data name="PictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        twAADbcBLyH/hQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADOASURBVHhe7d0H
+        tgAADbYB/WYdYQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADOASURBVHhe7d0H
         tG1VefZxehE7CCIoUmIXLGBvRAS7AzUWVFQsUUPQRI0O0RCNEonlU6NGA/nQSBK7wSTgQCGIJoiICoot
         iDSlqiCiSPu+51HQO68vl3vnmnOuudb6/8b4j+EQOHvvteea5z3n7L32WgAmbTP1APVY9XT1QvUK9Xr1
         dnWI+og6Qn1RnaxOVxepX12b/7f/P/8z/zv+d/3f+L/11/DX8tf01/Zt+LZ8m75tAABQybpqB+VvvP5G
