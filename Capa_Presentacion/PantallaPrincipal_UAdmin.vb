@@ -1,6 +1,4 @@
-﻿Imports Calendario
-
-Public Class PantallaPrincipal_UAdmin
+﻿Public Class PantallaPrincipal_UAdmin
     Private Sub btn_Inventario_Click(sender As Object, e As EventArgs) Handles btn_Inventario.Click
         Me.Hide()
         Form_Inventario.Show()

@@ -1,6 +1,4 @@
-﻿Imports Calendario
-
-Public Class Form_SEquipo
+﻿Public Class Form_SEquipo
     Private Sub btn_Regresar_Click(sender As Object, e As EventArgs) Handles btn_Regresar.Click
         Me.Hide()
         PantallaPrincipal_UGeneral.Show()

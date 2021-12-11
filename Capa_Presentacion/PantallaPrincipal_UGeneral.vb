@@ -1,6 +1,4 @@
-﻿Imports Calendario
-
-Public Class PantallaPrincipal_UGeneral
+﻿Public Class PantallaPrincipal_UGeneral
     Private Sub btn_btn_Form_SEvento(sender As Object, e As EventArgs) Handles btn_Form_SEvento.Click
         Me.Hide()
         Form_SEvento.Show()

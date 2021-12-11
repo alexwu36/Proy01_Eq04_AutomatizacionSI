@@ -1,6 +1,4 @@
-﻿Imports Calendario
-
-Public Class Form_SEvento
+﻿Public Class Form_SEvento
     Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
 
     End Sub

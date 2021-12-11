@@ -6,7 +6,7 @@
 
     Private Sub btn_Registrarse_Click(sender As Object, e As EventArgs) Handles btn_Registrarse.Click
         Me.Hide()
-        Registrarse.Show()
+        txtNombres.Show()
     End Sub
 
     Private Sub btn_Olvidar_Contraseña_Click(sender As Object, e As EventArgs) Handles btn_Olvidar_Contraseña.Click
@@ -16,7 +16,7 @@
 
     Private Sub txtRegistrate_Click(sender As Object, e As EventArgs)
         Me.Hide()
-        Registrarse.Show()
+        txtNombres.Show()
     End Sub
 
     Private Sub btn_Iniciar_Sesion_Click(sender As Object, e As EventArgs) Handles btn_Iniciar_Sesion.Click
