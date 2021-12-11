@@ -160,7 +160,7 @@ Partial Class Login
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(707, 181)
+        Me.Label4.Location = New System.Drawing.Point(623, 183)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(215, 25)
@@ -173,7 +173,7 @@ Partial Class Login
         Me.txtCorreo.BackColor = System.Drawing.SystemColors.Window
         Me.txtCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtCorreo.ForeColor = System.Drawing.SystemColors.InactiveCaption
-        Me.txtCorreo.Location = New System.Drawing.Point(702, 270)
+        Me.txtCorreo.Location = New System.Drawing.Point(584, 264)
         Me.txtCorreo.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtCorreo.Name = "txtCorreo"
         Me.txtCorreo.Size = New System.Drawing.Size(307, 22)
@@ -186,7 +186,7 @@ Partial Class Login
         Me.txtPassword.BackColor = System.Drawing.SystemColors.Window
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtPassword.ForeColor = System.Drawing.SystemColors.InactiveCaption
-        Me.txtPassword.Location = New System.Drawing.Point(702, 353)
+        Me.txtPassword.Location = New System.Drawing.Point(584, 347)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(307, 22)
@@ -200,7 +200,7 @@ Partial Class Login
         Me.btn_Iniciar_Sesion.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_Iniciar_Sesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Iniciar_Sesion.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Iniciar_Sesion.Location = New System.Drawing.Point(741, 518)
+        Me.btn_Iniciar_Sesion.Location = New System.Drawing.Point(623, 512)
         Me.btn_Iniciar_Sesion.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Iniciar_Sesion.Name = "btn_Iniciar_Sesion"
         Me.btn_Iniciar_Sesion.Size = New System.Drawing.Size(196, 54)
@@ -214,7 +214,7 @@ Partial Class Login
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CheckBox1.Location = New System.Drawing.Point(766, 445)
+        Me.CheckBox1.Location = New System.Drawing.Point(648, 439)
         Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(153, 24)
@@ -229,7 +229,7 @@ Partial Class Login
         Me.btn_Olvidar_Contraseña.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_Olvidar_Contraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Olvidar_Contraseña.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Olvidar_Contraseña.Location = New System.Drawing.Point(693, 729)
+        Me.btn_Olvidar_Contraseña.Location = New System.Drawing.Point(575, 723)
         Me.btn_Olvidar_Contraseña.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Olvidar_Contraseña.Name = "btn_Olvidar_Contraseña"
         Me.btn_Olvidar_Contraseña.Size = New System.Drawing.Size(265, 54)
@@ -243,7 +243,7 @@ Partial Class Login
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(759, 631)
+        Me.Label8.Location = New System.Drawing.Point(641, 625)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(178, 20)
@@ -257,7 +257,7 @@ Partial Class Login
         Me.btn_Registrarse.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_Registrarse.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Registrarse.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Registrarse.Location = New System.Drawing.Point(741, 654)
+        Me.btn_Registrarse.Location = New System.Drawing.Point(623, 648)
         Me.btn_Registrarse.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Registrarse.Name = "btn_Registrarse"
         Me.btn_Registrarse.Size = New System.Drawing.Size(196, 54)
@@ -270,7 +270,7 @@ Partial Class Login
         Me.PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(638, 345)
+        Me.PictureBox4.Location = New System.Drawing.Point(520, 339)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(57, 45)
@@ -283,7 +283,7 @@ Partial Class Login
         Me.PictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(638, 262)
+        Me.PictureBox3.Location = New System.Drawing.Point(520, 256)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(57, 45)
@@ -321,7 +321,7 @@ Partial Class Login
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(493, 8)
+        Me.Label14.Location = New System.Drawing.Point(324, 8)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
