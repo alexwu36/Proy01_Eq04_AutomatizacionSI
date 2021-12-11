@@ -61,7 +61,7 @@
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtoAAALQCAYAAACudddVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAA/7JJREFUeF7svQVYXNuz5v3NM/eb7z8z947dO/eec0Lc3V2IB4i7uwsQIyHESAgx
+        vwAADr8BOAVTJAAA/7JJREFUeF7svQVYXNuz5v3NM/eb7z8z947dO/eec0Lc3V2IB4i7uwsQIyHESAgx
         4u7u7u6eEE+IECHu7l7feovVOYTshnYaqF+eegib7t27t6z1rlq1qv4fQRAEwX6I6B/K0vz48aOA+lla
         WQv1/y7qZ7D6OVXZ3Fi28vv373vv3Llz+PChwydnzZp9qW+fvlF1atX7ULpkmc+linuylStT/lP1qjW+
         dfXrRvPnzaczZ87Q8+fPSb33rdpHlIHtNbCVymJ//lR9bDjGFjhm9X8cexpl/9BfSxAEQRAEQRAcixKd
@@ -2702,5 +2702,89 @@ Políticas de Privacidad</value>
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANmDPn/wMVqe13k40nFwAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="PictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        A+xhIiFVdEdoAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Label14.Text" xml:space="preserve">
+    <value>Universidad Tecnológica de Panamá - 2021
+Dirección: Avenida Universidad Tecnológica de Panamá, Vía Puente Centenario,Campus Metropolitano Víctor Levi Sasso.
+Teléfono. (507) 560-3000
+Correo electrónico: buzondesugerencias@utp.ac.pa
+311 Centro de Atención Ciudadana
+Políticas de Privacidad</value>
   </data>
 </root>
