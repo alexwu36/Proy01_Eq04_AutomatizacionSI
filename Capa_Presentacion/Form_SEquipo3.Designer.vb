@@ -74,8 +74,9 @@ Partial Class Form_SEquipo3
         Me.Panel3.Controls.Add(Me.Panel1)
         Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Location = New System.Drawing.Point(1, 1)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1247, 1078)
+        Me.Panel3.Size = New System.Drawing.Size(1438, 1244)
         Me.Panel3.TabIndex = 76
         '
         'Panel2
@@ -89,38 +90,43 @@ Partial Class Form_SEquipo3
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.Label12)
         Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Location = New System.Drawing.Point(206, 498)
+        Me.Panel2.Location = New System.Drawing.Point(232, 575)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(873, 266)
+        Me.Panel2.Size = New System.Drawing.Size(1018, 307)
         Me.Panel2.TabIndex = 76
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(293, 66)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(342, 76)
+        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(320, 20)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(373, 23)
         Me.DateTimePicker2.TabIndex = 57
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(293, 199)
+        Me.TextBox5.Location = New System.Drawing.Point(342, 230)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(320, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(373, 23)
         Me.TextBox5.TabIndex = 56
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(293, 134)
+        Me.TextBox4.Location = New System.Drawing.Point(342, 155)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(320, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(373, 23)
         Me.TextBox4.TabIndex = 55
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label9.Location = New System.Drawing.Point(21, 21)
+        Me.Label9.Location = New System.Drawing.Point(24, 24)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(360, 20)
         Me.Label9.TabIndex = 50
@@ -129,9 +135,10 @@ Partial Class Form_SEquipo3
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label10.Location = New System.Drawing.Point(42, 75)
+        Me.Label10.Location = New System.Drawing.Point(49, 87)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(164, 20)
         Me.Label10.TabIndex = 51
@@ -140,9 +147,10 @@ Partial Class Form_SEquipo3
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label12.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label12.Location = New System.Drawing.Point(42, 200)
+        Me.Label12.Location = New System.Drawing.Point(49, 231)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(214, 20)
         Me.Label12.TabIndex = 53
@@ -151,9 +159,10 @@ Partial Class Form_SEquipo3
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label11.Location = New System.Drawing.Point(42, 135)
+        Me.Label11.Location = New System.Drawing.Point(49, 156)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(134, 20)
         Me.Label11.TabIndex = 52
@@ -170,38 +179,43 @@ Partial Class Form_SEquipo3
         Me.Panel5.Controls.Add(Me.Label8)
         Me.Panel5.Controls.Add(Me.Label7)
         Me.Panel5.Controls.Add(Me.Label6)
-        Me.Panel5.Location = New System.Drawing.Point(206, 181)
+        Me.Panel5.Location = New System.Drawing.Point(232, 209)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(873, 279)
+        Me.Panel5.Size = New System.Drawing.Size(1018, 322)
         Me.Panel5.TabIndex = 75
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(293, 216)
+        Me.TextBox2.Location = New System.Drawing.Point(342, 249)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(320, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(373, 23)
         Me.TextBox2.TabIndex = 56
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(293, 142)
+        Me.TextBox1.Location = New System.Drawing.Point(342, 164)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(320, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(373, 23)
         Me.TextBox1.TabIndex = 55
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(293, 74)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(342, 85)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(320, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(373, 23)
         Me.DateTimePicker1.TabIndex = 54
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label5.Location = New System.Drawing.Point(21, 17)
+        Me.Label5.Location = New System.Drawing.Point(24, 20)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(354, 24)
         Me.Label5.TabIndex = 2
@@ -210,9 +224,10 @@ Partial Class Form_SEquipo3
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label8.Location = New System.Drawing.Point(37, 216)
+        Me.Label8.Location = New System.Drawing.Point(43, 249)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(222, 20)
         Me.Label8.TabIndex = 49
@@ -221,9 +236,10 @@ Partial Class Form_SEquipo3
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label7.Location = New System.Drawing.Point(37, 148)
+        Me.Label7.Location = New System.Drawing.Point(43, 171)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(110, 20)
         Me.Label7.TabIndex = 48
@@ -235,9 +251,10 @@ Partial Class Form_SEquipo3
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label6.Location = New System.Drawing.Point(37, 74)
+        Me.Label6.Location = New System.Drawing.Point(43, 85)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(206, 20)
         Me.Label6.TabIndex = 46
@@ -247,11 +264,12 @@ Partial Class Form_SEquipo3
         '
         Me.btn_Borrar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btn_Borrar.BackColor = System.Drawing.Color.DarkMagenta
-        Me.btn_Borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Borrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Borrar.Location = New System.Drawing.Point(587, 864)
+        Me.btn_Borrar.Location = New System.Drawing.Point(677, 997)
+        Me.btn_Borrar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Borrar.Name = "btn_Borrar"
-        Me.btn_Borrar.Size = New System.Drawing.Size(166, 52)
+        Me.btn_Borrar.Size = New System.Drawing.Size(194, 60)
         Me.btn_Borrar.TabIndex = 70
         Me.btn_Borrar.Text = "Borrar"
         Me.btn_Borrar.UseVisualStyleBackColor = False
@@ -260,11 +278,12 @@ Partial Class Form_SEquipo3
         '
         Me.btn_Regresar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
-        Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(155, 864)
+        Me.btn_Regresar.Location = New System.Drawing.Point(173, 997)
+        Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Regresar.Name = "btn_Regresar"
-        Me.btn_Regresar.Size = New System.Drawing.Size(166, 52)
+        Me.btn_Regresar.Size = New System.Drawing.Size(194, 60)
         Me.btn_Regresar.TabIndex = 4
         Me.btn_Regresar.Text = "Regresar"
         Me.btn_Regresar.UseVisualStyleBackColor = False
@@ -276,17 +295,19 @@ Partial Class Form_SEquipo3
         Me.Panel6.BackColor = System.Drawing.Color.Purple
         Me.Panel6.Controls.Add(Me.PictureBox3)
         Me.Panel6.Controls.Add(Me.Label14)
-        Me.Panel6.Location = New System.Drawing.Point(0, 971)
+        Me.Panel6.Location = New System.Drawing.Point(0, 1120)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1247, 105)
+        Me.Panel6.Size = New System.Drawing.Size(1438, 121)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
         '
-        Me.PictureBox3.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.logo_footer
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(137, 100)
+        Me.PictureBox3.Size = New System.Drawing.Size(160, 115)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 10
         Me.PictureBox3.TabStop = False
@@ -295,12 +316,13 @@ Partial Class Form_SEquipo3
         '
         Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(289, 4)
+        Me.Label14.Location = New System.Drawing.Point(329, 5)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label14.Size = New System.Drawing.Size(736, 96)
+        Me.Label14.Size = New System.Drawing.Size(735, 96)
         Me.Label14.TabIndex = 0
         Me.Label14.Text = resources.GetString("Label14.Text")
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -309,11 +331,12 @@ Partial Class Form_SEquipo3
         '
         Me.btn_Enviar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btn_Enviar.BackColor = System.Drawing.Color.DarkMagenta
-        Me.btn_Enviar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Enviar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Enviar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Enviar.Location = New System.Drawing.Point(977, 864)
+        Me.btn_Enviar.Location = New System.Drawing.Point(1132, 997)
+        Me.btn_Enviar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Enviar.Name = "btn_Enviar"
-        Me.btn_Enviar.Size = New System.Drawing.Size(166, 52)
+        Me.btn_Enviar.Size = New System.Drawing.Size(194, 60)
         Me.btn_Enviar.TabIndex = 68
         Me.btn_Enviar.Text = "Enviar"
         Me.btn_Enviar.UseVisualStyleBackColor = False
@@ -327,17 +350,19 @@ Partial Class Form_SEquipo3
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(3, 0)
+        Me.Panel1.Location = New System.Drawing.Point(4, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1244, 105)
+        Me.Panel1.Size = New System.Drawing.Size(1434, 121)
         Me.Panel1.TabIndex = 59
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(144, 62)
+        Me.Label3.Location = New System.Drawing.Point(168, 72)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(577, 24)
         Me.Label3.TabIndex = 2
@@ -346,9 +371,10 @@ Partial Class Form_SEquipo3
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(144, 33)
+        Me.Label2.Location = New System.Drawing.Point(168, 38)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(481, 24)
         Me.Label2.TabIndex = 3
@@ -357,9 +383,10 @@ Partial Class Form_SEquipo3
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(144, 9)
+        Me.Label1.Location = New System.Drawing.Point(168, 10)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(353, 24)
         Me.Label1.TabIndex = 45
@@ -367,10 +394,11 @@ Partial Class Form_SEquipo3
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.logo
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(137, 102)
+        Me.PictureBox1.Size = New System.Drawing.Size(160, 118)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
@@ -379,8 +407,9 @@ Partial Class Form_SEquipo3
         '
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(318, 120)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(363, 138)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(677, 25)
         Me.Label4.TabIndex = 47
@@ -388,11 +417,12 @@ Partial Class Form_SEquipo3
         '
         'Form_SEquipo3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1332, 1061)
+        Me.ClientSize = New System.Drawing.Size(1554, 1061)
         Me.Controls.Add(Me.Panel3)
+        Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "Form_SEquipo3"
         Me.Text = "Form_SEquipo3"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

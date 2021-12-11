@@ -57,7 +57,7 @@ Partial Class Form_SEquipo2
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(235, 2938)
+        Me.Label4.Location = New System.Drawing.Point(226, 3080)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(677, 25)
@@ -70,7 +70,7 @@ Partial Class Form_SEquipo2
         Me.btn_Borrar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Borrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Borrar.Location = New System.Drawing.Point(533, 4227)
+        Me.btn_Borrar.Location = New System.Drawing.Point(524, 4369)
         Me.btn_Borrar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Borrar.Name = "btn_Borrar"
         Me.btn_Borrar.Size = New System.Drawing.Size(194, 60)
@@ -84,7 +84,7 @@ Partial Class Form_SEquipo2
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(38, 4229)
+        Me.btn_Regresar.Location = New System.Drawing.Point(29, 4371)
         Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Regresar.Name = "btn_Regresar"
         Me.btn_Regresar.Size = New System.Drawing.Size(194, 60)
@@ -98,7 +98,7 @@ Partial Class Form_SEquipo2
         Me.btn_Continuar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Continuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Continuar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Continuar.Location = New System.Drawing.Point(997, 4229)
+        Me.btn_Continuar.Location = New System.Drawing.Point(988, 4371)
         Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Continuar.Name = "btn_Continuar"
         Me.btn_Continuar.Size = New System.Drawing.Size(194, 60)
@@ -120,7 +120,7 @@ Partial Class Form_SEquipo2
         Me.Panel3.Location = New System.Drawing.Point(10, -2)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1399, 1244)
+        Me.Panel3.Size = New System.Drawing.Size(1382, 1244)
         Me.Panel3.TabIndex = 75
         '
         'Panel5
@@ -129,7 +129,7 @@ Partial Class Form_SEquipo2
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
         Me.Panel5.Controls.Add(Me.Label6)
         Me.Panel5.Controls.Add(Me.dgvInfoEquipo)
-        Me.Panel5.Location = New System.Drawing.Point(82, 186)
+        Me.Panel5.Location = New System.Drawing.Point(74, 186)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1287, 757)
@@ -166,7 +166,7 @@ Partial Class Form_SEquipo2
         Me.bnt_ContinuarSE2.BackColor = System.Drawing.Color.DarkMagenta
         Me.bnt_ContinuarSE2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.bnt_ContinuarSE2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.bnt_ContinuarSE2.Location = New System.Drawing.Point(1112, 997)
+        Me.bnt_ContinuarSE2.Location = New System.Drawing.Point(1104, 997)
         Me.bnt_ContinuarSE2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.bnt_ContinuarSE2.Name = "bnt_ContinuarSE2"
         Me.bnt_ContinuarSE2.Size = New System.Drawing.Size(194, 60)
@@ -180,7 +180,7 @@ Partial Class Form_SEquipo2
         Me.btn_BorrarSE2.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_BorrarSE2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_BorrarSE2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_BorrarSE2.Location = New System.Drawing.Point(635, 997)
+        Me.btn_BorrarSE2.Location = New System.Drawing.Point(627, 997)
         Me.btn_BorrarSE2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_BorrarSE2.Name = "btn_BorrarSE2"
         Me.btn_BorrarSE2.Size = New System.Drawing.Size(194, 60)
@@ -194,7 +194,7 @@ Partial Class Form_SEquipo2
         Me.btn_Regresar_SE2.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Regresar_SE2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar_SE2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar_SE2.Location = New System.Drawing.Point(153, 997)
+        Me.btn_Regresar_SE2.Location = New System.Drawing.Point(145, 997)
         Me.btn_Regresar_SE2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Regresar_SE2.Name = "btn_Regresar_SE2"
         Me.btn_Regresar_SE2.Size = New System.Drawing.Size(194, 60)
@@ -207,7 +207,7 @@ Partial Class Form_SEquipo2
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(362, 135)
+        Me.Label1.Location = New System.Drawing.Point(354, 135)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(677, 25)
@@ -224,7 +224,7 @@ Partial Class Form_SEquipo2
         Me.Panel6.Location = New System.Drawing.Point(0, 1120)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1399, 121)
+        Me.Panel6.Size = New System.Drawing.Size(1382, 121)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
@@ -244,7 +244,7 @@ Partial Class Form_SEquipo2
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(310, 5)
+        Me.Label14.Location = New System.Drawing.Point(302, 5)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -265,7 +265,7 @@ Partial Class Form_SEquipo2
         Me.Panel1.Location = New System.Drawing.Point(4, 2)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1392, 121)
+        Me.Panel1.Size = New System.Drawing.Size(1375, 121)
         Me.Panel1.TabIndex = 59
         '
         'Label3

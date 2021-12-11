@@ -9,4 +9,8 @@
         Form_SEquipo2.Show()
     End Sub
 
+    Private Sub cbLugar_SelectedIndexChanged_Load(sender As Object, e As EventArgs) Handles cbLugar.SelectedIndexChanged
+        cbLugar.DataSource = Capa_Datos.CargarLugar.CargarLugar()
+    End Sub
+
 End Class

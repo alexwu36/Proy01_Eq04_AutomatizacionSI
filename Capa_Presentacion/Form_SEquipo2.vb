@@ -13,4 +13,5 @@
     Private Sub Form_SEquipo2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dgvInfoEquipo.DataSource = Capa_Datos.CargarEquipo.CargarEquipo()
     End Sub
+
 End Class
