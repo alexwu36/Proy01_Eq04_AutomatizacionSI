@@ -24,10 +24,14 @@ Partial Class Form_SEquipo
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_SEquipo))
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.MaskedTextBox2 = New System.Windows.Forms.MaskedTextBox()
+        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -35,12 +39,10 @@ Partial Class Form_SEquipo
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.cbMinutos = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.txtNomActividad = New System.Windows.Forms.TextBox()
         Me.cbHora = New System.Windows.Forms.ComboBox()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
@@ -62,6 +64,8 @@ Partial Class Form_SEquipo
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -74,6 +78,7 @@ Partial Class Form_SEquipo
         '
         Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel3.Controls.Add(Me.Panel7)
         Me.Panel3.Controls.Add(Me.Panel2)
         Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Controls.Add(Me.btn_Borrar)
@@ -85,16 +90,65 @@ Partial Class Form_SEquipo
         Me.Panel3.Location = New System.Drawing.Point(0, -2)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1163, 1244)
+        Me.Panel3.Size = New System.Drawing.Size(1232, 1244)
         Me.Panel3.TabIndex = 46
+        '
+        'Panel7
+        '
+        Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel7.BackColor = System.Drawing.Color.DimGray
+        Me.Panel7.Controls.Add(Me.Label11)
+        Me.Panel7.Location = New System.Drawing.Point(179, 572)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(1023, 48)
+        Me.Panel7.TabIndex = 125
+        '
+        'Label11
+        '
+        Me.Label11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label11.Location = New System.Drawing.Point(16, 11)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(586, 24)
+        Me.Label11.TabIndex = 113
+        Me.Label11.Text = "INFORMACIÓN DE LA PERSONA QUE SOLICITA EL EQUIPO"
+        '
+        'Panel5
+        '
+        Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel5.BackColor = System.Drawing.Color.DimGray
+        Me.Panel5.Controls.Add(Me.Label5)
+        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(1023, 45)
+        Me.Panel5.TabIndex = 102
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(15, 10)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(714, 24)
+        Me.Label5.TabIndex = 90
+        Me.Label5.Text = "INFORMACIÓN DE LA ACTIVIDAD EN LA CUAL SE UTILIZARÁ EL EQUIPO"
         '
         'Panel2
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.MaskedTextBox2)
+        Me.Panel2.Controls.Add(Me.MaskedTextBox1)
         Me.Panel2.Controls.Add(Me.ComboBox1)
-        Me.Panel2.Controls.Add(Me.TextBox6)
-        Me.Panel2.Controls.Add(Me.TextBox5)
         Me.Panel2.Controls.Add(Me.TextBox4)
         Me.Panel2.Controls.Add(Me.TextBox2)
         Me.Panel2.Controls.Add(Me.Label16)
@@ -102,52 +156,57 @@ Partial Class Form_SEquipo
         Me.Panel2.Controls.Add(Me.Label17)
         Me.Panel2.Controls.Add(Me.Label13)
         Me.Panel2.Controls.Add(Me.Label12)
-        Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Location = New System.Drawing.Point(144, 572)
+        Me.Panel2.Location = New System.Drawing.Point(179, 572)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1023, 351)
         Me.Panel2.TabIndex = 71
         '
+        'MaskedTextBox2
+        '
+        Me.MaskedTextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.MaskedTextBox2.Location = New System.Drawing.Point(325, 272)
+        Me.MaskedTextBox2.Mask = "0000-0000"
+        Me.MaskedTextBox2.Name = "MaskedTextBox2"
+        Me.MaskedTextBox2.Size = New System.Drawing.Size(434, 29)
+        Me.MaskedTextBox2.TabIndex = 124
+        '
+        'MaskedTextBox1
+        '
+        Me.MaskedTextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(325, 171)
+        Me.MaskedTextBox1.Mask = "000-0000"
+        Me.MaskedTextBox1.Name = "MaskedTextBox1"
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(434, 29)
+        Me.MaskedTextBox1.TabIndex = 123
+        '
         'ComboBox1
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civíl (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería  Mecánica (FIM)", "Facultad de Ingeniería Sistemas Computacionales (FISC)"})
         Me.ComboBox1.Location = New System.Drawing.Point(325, 119)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(434, 23)
+        Me.ComboBox1.Size = New System.Drawing.Size(434, 28)
         Me.ComboBox1.TabIndex = 102
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(325, 264)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(434, 23)
-        Me.TextBox6.TabIndex = 123
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(325, 218)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(434, 23)
-        Me.TextBox5.TabIndex = 122
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(325, 167)
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.TextBox4.Location = New System.Drawing.Point(325, 218)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(434, 23)
+        Me.TextBox4.Size = New System.Drawing.Size(434, 26)
         Me.TextBox4.TabIndex = 121
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TextBox2.Location = New System.Drawing.Point(325, 73)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(434, 23)
+        Me.TextBox2.Size = New System.Drawing.Size(434, 26)
         Me.TextBox2.TabIndex = 119
         '
         'Label16
@@ -210,28 +269,14 @@ Partial Class Form_SEquipo
         Me.Label12.TabIndex = 114
         Me.Label12.Text = "Nombre del Solicitante:"
         '
-        'Label11
-        '
-        Me.Label11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label11.Location = New System.Drawing.Point(52, 24)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(586, 24)
-        Me.Label11.TabIndex = 113
-        Me.Label11.Text = "INFORMACIÓN DE LA PERSONA QUE SOLICITA EL EQUIPO"
-        '
         'Panel4
         '
         Me.Panel4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
         Me.Panel4.Controls.Add(Me.Label10)
+        Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Controls.Add(Me.cbMinutos)
         Me.Panel4.Controls.Add(Me.Label6)
-        Me.Panel4.Controls.Add(Me.Label5)
         Me.Panel4.Controls.Add(Me.txtNomActividad)
         Me.Panel4.Controls.Add(Me.cbHora)
         Me.Panel4.Controls.Add(Me.dtpFecha)
@@ -241,7 +286,7 @@ Partial Class Form_SEquipo
         Me.Panel4.Controls.Add(Me.Label8)
         Me.Panel4.Controls.Add(Me.cbLugar)
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Panel4.Location = New System.Drawing.Point(145, 184)
+        Me.Panel4.Location = New System.Drawing.Point(180, 184)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1022, 347)
@@ -287,21 +332,6 @@ Partial Class Form_SEquipo
         Me.Label6.Size = New System.Drawing.Size(198, 20)
         Me.Label6.TabIndex = 92
         Me.Label6.Text = "Nombre de la Actividad:"
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(52, 32)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(714, 24)
-        Me.Label5.TabIndex = 90
-        Me.Label5.Text = "INFORMACIÓN DE LA ACTIVIDAD EN LA CUAL SE UTILIZARÁ EL EQUIPO"
         '
         'txtNomActividad
         '
@@ -358,6 +388,7 @@ Partial Class Form_SEquipo
         '
         Me.cbFacultad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbFacultad.FormattingEnabled = True
+        Me.cbFacultad.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civíl (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería  Mecánica (FIM)", "Facultad de Ingeniería Sistemas Computacionales (FISC)"})
         Me.cbFacultad.Location = New System.Drawing.Point(435, 224)
         Me.cbFacultad.Margin = New System.Windows.Forms.Padding(4)
         Me.cbFacultad.Name = "cbFacultad"
@@ -380,6 +411,7 @@ Partial Class Form_SEquipo
         '
         Me.cbLugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbLugar.FormattingEnabled = True
+        Me.cbLugar.Items.AddRange(New Object() {"Auditorio", "Lobby Edifico 3", "Lobby Edificio 1", "Piso FCT", "Piso FIC", "Piso FIE", "Piso FII", "Piso FIM", "Piso Fisc"})
         Me.cbLugar.Location = New System.Drawing.Point(435, 124)
         Me.cbLugar.Margin = New System.Windows.Forms.Padding(4)
         Me.cbLugar.Name = "cbLugar"
@@ -392,7 +424,7 @@ Partial Class Form_SEquipo
         Me.btn_Borrar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Borrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Borrar.Location = New System.Drawing.Point(589, 997)
+        Me.btn_Borrar.Location = New System.Drawing.Point(624, 997)
         Me.btn_Borrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Borrar.Name = "btn_Borrar"
         Me.btn_Borrar.Size = New System.Drawing.Size(193, 60)
@@ -406,7 +438,7 @@ Partial Class Form_SEquipo
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(145, 995)
+        Me.btn_Regresar.Location = New System.Drawing.Point(180, 995)
         Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Regresar.Name = "btn_Regresar"
         Me.btn_Regresar.Size = New System.Drawing.Size(193, 60)
@@ -419,7 +451,7 @@ Partial Class Form_SEquipo
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(304, 139)
+        Me.Label4.Location = New System.Drawing.Point(339, 139)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(677, 25)
@@ -436,7 +468,7 @@ Partial Class Form_SEquipo
         Me.Panel6.Location = New System.Drawing.Point(0, 1120)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1384, 122)
+        Me.Panel6.Size = New System.Drawing.Size(1453, 122)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
@@ -456,7 +488,7 @@ Partial Class Form_SEquipo
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(392, 4)
+        Me.Label14.Location = New System.Drawing.Point(426, 4)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -471,7 +503,7 @@ Partial Class Form_SEquipo
         Me.btn_Continuar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Continuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Continuar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Continuar.Location = New System.Drawing.Point(974, 1003)
+        Me.btn_Continuar.Location = New System.Drawing.Point(1009, 1003)
         Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Continuar.Name = "btn_Continuar"
         Me.btn_Continuar.Size = New System.Drawing.Size(193, 60)
@@ -491,7 +523,7 @@ Partial Class Form_SEquipo
         Me.Panel1.Location = New System.Drawing.Point(4, 2)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1377, 122)
+        Me.Panel1.Size = New System.Drawing.Size(1446, 122)
         Me.Panel1.TabIndex = 59
         '
         'Label3
@@ -554,6 +586,10 @@ Partial Class Form_SEquipo
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel4.ResumeLayout(False)
@@ -583,9 +619,6 @@ Partial Class Form_SEquipo
     Friend WithEvents Panel4 As Panel
     Friend WithEvents btn_Borrar As Button
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
@@ -606,4 +639,9 @@ Partial Class Form_SEquipo
     Friend WithEvents Label8 As Label
     Friend WithEvents cbLugar As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents MaskedTextBox2 As MaskedTextBox
+    Friend WithEvents MaskedTextBox1 As MaskedTextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Panel5 As Panel
 End Class

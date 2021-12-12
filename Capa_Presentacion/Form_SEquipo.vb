@@ -1,4 +1,6 @@
-﻿Public Class Form_SEquipo
+﻿Imports System.Data.SqlClient
+
+Public Class Form_SEquipo
     Private Sub btn_Regresar_Click(sender As Object, e As EventArgs) Handles btn_Regresar.Click
         Me.Hide()
         PantallaPrincipal_UGeneral.Show()
@@ -9,8 +11,7 @@
         Form_SEquipo2.Show()
     End Sub
 
-    Private Sub cbLugar_SelectedIndexChanged_Load(sender As Object, e As EventArgs) Handles cbLugar.SelectedIndexChanged
-        cbLugar.DataSource = Capa_Datos.CargarLugar.CargarLugar()
-    End Sub
+    Private Sub Form_SEquipo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class

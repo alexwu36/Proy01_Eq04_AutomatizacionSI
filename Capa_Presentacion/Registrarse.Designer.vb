@@ -63,7 +63,7 @@ Partial Class frmRegistro
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(3, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1736, 122)
         Me.Panel1.TabIndex = 1
@@ -96,7 +96,7 @@ Partial Class frmRegistro
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 2)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(160, 118)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -123,7 +123,7 @@ Partial Class frmRegistro
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Location = New System.Drawing.Point(3, 879)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1736, 116)
         Me.Panel2.TabIndex = 2
@@ -132,7 +132,7 @@ Partial Class frmRegistro
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(160, 116)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -239,7 +239,7 @@ Partial Class frmRegistro
         Me.btn_Crear_Cuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Crear_Cuenta.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btn_Crear_Cuenta.Location = New System.Drawing.Point(856, 703)
-        Me.btn_Crear_Cuenta.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_Crear_Cuenta.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Crear_Cuenta.Name = "btn_Crear_Cuenta"
         Me.btn_Crear_Cuenta.Size = New System.Drawing.Size(196, 54)
         Me.btn_Crear_Cuenta.TabIndex = 9
@@ -250,7 +250,7 @@ Partial Class frmRegistro
         '
         Me.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.txtNombre.Location = New System.Drawing.Point(834, 240)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(232, 23)
         Me.txtNombre.TabIndex = 12
@@ -259,7 +259,7 @@ Partial Class frmRegistro
         '
         Me.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.txtApellido.Location = New System.Drawing.Point(834, 302)
-        Me.txtApellido.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtApellido.Margin = New System.Windows.Forms.Padding(4)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(232, 23)
         Me.txtApellido.TabIndex = 13
@@ -268,7 +268,7 @@ Partial Class frmRegistro
         '
         Me.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.txtCorreo.Location = New System.Drawing.Point(834, 362)
-        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCorreo.Name = "txtCorreo"
         Me.txtCorreo.Size = New System.Drawing.Size(232, 23)
         Me.txtCorreo.TabIndex = 14
@@ -277,7 +277,7 @@ Partial Class frmRegistro
         '
         Me.txtContrasena.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.txtContrasena.Location = New System.Drawing.Point(834, 427)
-        Me.txtContrasena.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtContrasena.Margin = New System.Windows.Forms.Padding(4)
         Me.txtContrasena.Name = "txtContrasena"
         Me.txtContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtContrasena.Size = New System.Drawing.Size(232, 23)
@@ -362,7 +362,7 @@ Partial Class frmRegistro
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmRegistro"
         Me.Text = "Registrarse"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

@@ -52,6 +52,8 @@ Partial Class Form_SEquipo3
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -59,6 +61,8 @@ Partial Class Form_SEquipo3
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel4.SuspendLayout()
+        Me.Panel7.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel3
@@ -76,21 +80,21 @@ Partial Class Form_SEquipo3
         Me.Panel3.Location = New System.Drawing.Point(1, 1)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1438, 1244)
+        Me.Panel3.Size = New System.Drawing.Size(1421, 1244)
         Me.Panel3.TabIndex = 76
         '
         'Panel2
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.Panel7)
         Me.Panel2.Controls.Add(Me.DateTimePicker2)
         Me.Panel2.Controls.Add(Me.TextBox5)
         Me.Panel2.Controls.Add(Me.TextBox4)
-        Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.Label12)
         Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Location = New System.Drawing.Point(232, 575)
+        Me.Panel2.Location = New System.Drawing.Point(223, 575)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1018, 307)
@@ -123,12 +127,12 @@ Partial Class Form_SEquipo3
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label9.Location = New System.Drawing.Point(24, 24)
+        Me.Label9.Location = New System.Drawing.Point(4, 11)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(360, 20)
+        Me.Label9.Size = New System.Drawing.Size(411, 24)
         Me.Label9.TabIndex = 50
         Me.Label9.Text = "INFORMACIÓN DEL DÍA DE DEVOLUCIÓN"
         '
@@ -175,11 +179,11 @@ Partial Class Form_SEquipo3
         Me.Panel5.Controls.Add(Me.TextBox2)
         Me.Panel5.Controls.Add(Me.TextBox1)
         Me.Panel5.Controls.Add(Me.DateTimePicker1)
-        Me.Panel5.Controls.Add(Me.Label5)
         Me.Panel5.Controls.Add(Me.Label8)
         Me.Panel5.Controls.Add(Me.Label7)
         Me.Panel5.Controls.Add(Me.Label6)
-        Me.Panel5.Location = New System.Drawing.Point(232, 209)
+        Me.Panel5.Controls.Add(Me.Panel4)
+        Me.Panel5.Location = New System.Drawing.Point(223, 209)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1018, 322)
@@ -214,7 +218,7 @@ Partial Class Form_SEquipo3
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label5.Location = New System.Drawing.Point(24, 20)
+        Me.Label5.Location = New System.Drawing.Point(4, 11)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(354, 24)
@@ -266,7 +270,7 @@ Partial Class Form_SEquipo3
         Me.btn_Borrar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Borrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Borrar.Location = New System.Drawing.Point(677, 997)
+        Me.btn_Borrar.Location = New System.Drawing.Point(668, 997)
         Me.btn_Borrar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Borrar.Name = "btn_Borrar"
         Me.btn_Borrar.Size = New System.Drawing.Size(194, 60)
@@ -280,7 +284,7 @@ Partial Class Form_SEquipo3
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(173, 997)
+        Me.btn_Regresar.Location = New System.Drawing.Point(164, 997)
         Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Regresar.Name = "btn_Regresar"
         Me.btn_Regresar.Size = New System.Drawing.Size(194, 60)
@@ -298,7 +302,7 @@ Partial Class Form_SEquipo3
         Me.Panel6.Location = New System.Drawing.Point(0, 1120)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1438, 121)
+        Me.Panel6.Size = New System.Drawing.Size(1421, 121)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
@@ -318,7 +322,7 @@ Partial Class Form_SEquipo3
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(329, 5)
+        Me.Label14.Location = New System.Drawing.Point(320, 5)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -333,7 +337,7 @@ Partial Class Form_SEquipo3
         Me.btn_Enviar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Enviar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Enviar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Enviar.Location = New System.Drawing.Point(1132, 997)
+        Me.btn_Enviar.Location = New System.Drawing.Point(1123, 997)
         Me.btn_Enviar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Enviar.Name = "btn_Enviar"
         Me.btn_Enviar.Size = New System.Drawing.Size(194, 60)
@@ -353,7 +357,7 @@ Partial Class Form_SEquipo3
         Me.Panel1.Location = New System.Drawing.Point(4, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1434, 121)
+        Me.Panel1.Size = New System.Drawing.Size(1417, 121)
         Me.Panel1.TabIndex = 59
         '
         'Label3
@@ -408,12 +412,30 @@ Partial Class Form_SEquipo3
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(363, 138)
+        Me.Label4.Location = New System.Drawing.Point(396, 145)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(677, 25)
         Me.Label4.TabIndex = 47
         Me.Label4.Text = "FORMULARIO PARA LA SOLICITUD Y PRÉSTAMO DE EQUIPO"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.DimGray
+        Me.Panel4.Controls.Add(Me.Label5)
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(1018, 44)
+        Me.Panel4.TabIndex = 57
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.DimGray
+        Me.Panel7.Controls.Add(Me.Label9)
+        Me.Panel7.Location = New System.Drawing.Point(0, 0)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(1018, 44)
+        Me.Panel7.TabIndex = 58
         '
         'Form_SEquipo3
         '
@@ -438,6 +460,10 @@ Partial Class Form_SEquipo3
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -471,4 +497,6 @@ Partial Class Form_SEquipo3
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Panel4 As Panel
 End Class
