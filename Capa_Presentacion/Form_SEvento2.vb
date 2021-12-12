@@ -5,13 +5,6 @@
         Filas = -1
         Cols = Filas
         ReDim aux(Filas, Cols)
-        dgvServicios_Diseño_Grafico.RowCount = Filas + 2
-        'dgvServicios_Diseño_Grafico.ColumnCount = Cols + 1
-        dgvServicios_Diseño_Grafico.Rows(Cols + 1).Cells(0).Value = "1."
-        dgvServicios_Diseño_Grafico.Rows(Filas + 1).Cells(1).Value = "Afiche Full Color"
-        dgvServicios_Diseño_Grafico.Rows(Filas + 1).Cells(2).Value = CheckBox10
-        If CheckBox10.CheckState = CheckState.Checked Then CheckBox10.CheckState = CheckState.Unchecked
-        dgvServicios_Diseño_Grafico.Rows(Filas + 1).Cells(1).Value = "2."
     End Sub
 
     Private Sub btn_Regresar_Click(sender As Object, e As EventArgs) Handles btn_Regresar.Click
@@ -20,6 +13,41 @@
     End Sub
 
     Private Sub btn_Continuar_Click(sender As Object, e As EventArgs) Handles btn_Continuar.Click
+        Dim prensa() As Integer
+        Dim i As Integer
+
+        i = 0
+        If ckbCobertura.Checked Then
+            prensa(i) = 1
+            i = i + 1
+        ElseIf ckbFoto.Checked Then
+            prensa(i) = 2
+            i = i + 1
+        ElseIf cbkFilmacion.Checked Then
+            prensa(i) = 3
+            i = i + 1
+        ElseIf ckbDivulgacion.Checked Then
+            prensa(i) = 4
+            i = i + 1
+        ElseIf ckbSonido.Checked Then
+            prensa(i) = 5
+            i = i + 1
+        ElseIf ckbEntrevista.Checked Then
+            prensa(i) = 6
+            i = i + 1
+        ElseIf ckbPublicar.Checked Then
+            prensa(i) = 7
+            i = i + 1
+        ElseIf ckbVideoc.Checked Then
+            prensa(i) = 8
+            i = i + 1
+        ElseIf cbkStreaming.Checked Then
+            prensa(i) = 9
+            i = i + 1
+        End If
+
+        Capa_Datos.observacion = txtObservacion.Text
+
         Me.Hide()
         Form_SEvento3.Show()
     End Sub

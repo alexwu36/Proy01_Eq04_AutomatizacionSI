@@ -26,7 +26,7 @@ Partial Class Form_SEvento
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.btn_Regresar = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -39,40 +39,37 @@ Partial Class Form_SEvento
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.UI_Calendario1 = New Calendario.UI_Calendario()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.dtpHoraFinal = New System.Windows.Forms.DateTimePicker()
+        Me.dtpHoraInicio = New System.Windows.Forms.DateTimePicker()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.rbOtros = New System.Windows.Forms.RadioButton()
+        Me.rbCongresos = New System.Windows.Forms.RadioButton()
+        Me.rbInauguraciones = New System.Windows.Forms.RadioButton()
+        Me.rbActos = New System.Windows.Forms.RadioButton()
+        Me.rbSeminarios = New System.Windows.Forms.RadioButton()
+        Me.rbFerias = New System.Windows.Forms.RadioButton()
+        Me.rbConferencias = New System.Windows.Forms.RadioButton()
+        Me.cbLugar = New System.Windows.Forms.ComboBox()
+        Me.cbFacultad = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtNomActividad = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
+        Me.Panel7.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -82,17 +79,19 @@ Partial Class Form_SEvento
         Me.Panel2.BackColor = System.Drawing.Color.Purple
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Location = New System.Drawing.Point(-3, 16255)
+        Me.Panel2.Location = New System.Drawing.Point(-4, 27333)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(687, 100)
+        Me.Panel2.Size = New System.Drawing.Size(874, 154)
         Me.Panel2.TabIndex = 8
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.logo_footer
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(137, 100)
+        Me.PictureBox2.Size = New System.Drawing.Size(183, 154)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
@@ -101,40 +100,43 @@ Partial Class Form_SEvento
         '
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(-351, 0)
+        Me.Label7.Location = New System.Drawing.Point(-510, 0)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label7.Size = New System.Drawing.Size(736, 96)
+        Me.Label7.Size = New System.Drawing.Size(916, 120)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = resources.GetString("Label7.Text")
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Panel3
+        'Panel7
         '
-        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.Panel7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel3.Controls.Add(Me.btn_Regresar)
-        Me.Panel3.Controls.Add(Me.Panel6)
-        Me.Panel3.Controls.Add(Me.btn_Continuar)
-        Me.Panel3.Controls.Add(Me.Label4)
-        Me.Panel3.Controls.Add(Me.Panel1)
-        Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Location = New System.Drawing.Point(-3, -2)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1194, 1272)
-        Me.Panel3.TabIndex = 45
+        Me.Panel7.Controls.Add(Me.btn_Regresar)
+        Me.Panel7.Controls.Add(Me.Panel6)
+        Me.Panel7.Controls.Add(Me.btn_Continuar)
+        Me.Panel7.Controls.Add(Me.Label4)
+        Me.Panel7.Controls.Add(Me.Panel1)
+        Me.Panel7.Controls.Add(Me.Panel4)
+        Me.Panel7.Location = New System.Drawing.Point(-4, -3)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(1550, 2090)
+        Me.Panel7.TabIndex = 45
         '
         'btn_Regresar
         '
         Me.btn_Regresar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
-        Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(129, 1089)
+        Me.btn_Regresar.Location = New System.Drawing.Point(151, 1265)
+        Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btn_Regresar.Name = "btn_Regresar"
-        Me.btn_Regresar.Size = New System.Drawing.Size(166, 52)
+        Me.btn_Regresar.Size = New System.Drawing.Size(221, 80)
         Me.btn_Regresar.TabIndex = 4
         Me.btn_Regresar.Text = "Regresar"
         Me.btn_Regresar.UseVisualStyleBackColor = False
@@ -146,17 +148,19 @@ Partial Class Form_SEvento
         Me.Panel6.BackColor = System.Drawing.Color.Purple
         Me.Panel6.Controls.Add(Me.PictureBox3)
         Me.Panel6.Controls.Add(Me.Label14)
-        Me.Panel6.Location = New System.Drawing.Point(0, 1165)
+        Me.Panel6.Location = New System.Drawing.Point(0, 1469)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1211, 105)
+        Me.Panel6.Size = New System.Drawing.Size(1573, 162)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
         '
-        Me.PictureBox3.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.logo_footer
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(137, 100)
+        Me.PictureBox3.Size = New System.Drawing.Size(183, 154)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 10
         Me.PictureBox3.TabStop = False
@@ -165,12 +169,13 @@ Partial Class Form_SEvento
         '
         Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(271, 4)
+        Me.Label14.Location = New System.Drawing.Point(340, 6)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label14.Size = New System.Drawing.Size(736, 96)
+        Me.Label14.Size = New System.Drawing.Size(916, 120)
         Me.Label14.TabIndex = 0
         Me.Label14.Text = resources.GetString("Label14.Text")
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -179,11 +184,12 @@ Partial Class Form_SEvento
         '
         Me.btn_Continuar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btn_Continuar.BackColor = System.Drawing.Color.DarkMagenta
-        Me.btn_Continuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Continuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Continuar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Continuar.Location = New System.Drawing.Point(951, 1088)
+        Me.btn_Continuar.Location = New System.Drawing.Point(1247, 1264)
+        Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btn_Continuar.Name = "btn_Continuar"
-        Me.btn_Continuar.Size = New System.Drawing.Size(166, 52)
+        Me.btn_Continuar.Size = New System.Drawing.Size(221, 80)
         Me.btn_Continuar.TabIndex = 68
         Me.btn_Continuar.Text = "Continuar"
         Me.btn_Continuar.UseVisualStyleBackColor = False
@@ -192,10 +198,11 @@ Partial Class Form_SEvento
         '
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(406, 116)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(520, 245)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(477, 25)
+        Me.Label4.Size = New System.Drawing.Size(611, 31)
         Me.Label4.TabIndex = 45
         Me.Label4.Text = "FORMULARIO DE SOLICITUD DE EVENTOS"
         '
@@ -208,39 +215,43 @@ Partial Class Form_SEvento
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(3, 2)
+        Me.Panel1.Location = New System.Drawing.Point(4, 3)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1205, 105)
+        Me.Panel1.Size = New System.Drawing.Size(1565, 162)
         Me.Panel1.TabIndex = 59
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(144, 62)
+        Me.Label3.Location = New System.Drawing.Point(192, 95)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(577, 24)
+        Me.Label3.Size = New System.Drawing.Size(716, 29)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = """Camino a la excelencia a través del mejoramiento continuo"""
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(144, 33)
+        Me.Label2.Location = New System.Drawing.Point(192, 51)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(481, 24)
+        Me.Label2.Size = New System.Drawing.Size(602, 29)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Departamento de Protocolo, Ceremonial y Eventos"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 2)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 3)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(137, 102)
+        Me.PictureBox1.Size = New System.Drawing.Size(183, 157)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
@@ -248,11 +259,12 @@ Partial Class Form_SEvento
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(143, 8)
+        Me.Label1.Location = New System.Drawing.Point(191, 12)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(397, 25)
+        Me.Label1.Size = New System.Drawing.Size(489, 31)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Universidad Tecnológica de Panamá"
         '
@@ -260,142 +272,179 @@ Partial Class Form_SEvento
         '
         Me.Panel4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.UI_Calendario1)
-        Me.Panel4.Controls.Add(Me.ComboBox4)
-        Me.Panel4.Controls.Add(Me.ComboBox5)
-        Me.Panel4.Controls.Add(Me.ComboBox1)
-        Me.Panel4.Controls.Add(Me.ComboBox3)
-        Me.Panel4.Controls.Add(Me.ComboBox6)
-        Me.Panel4.Controls.Add(Me.ComboBox2)
+        Me.Panel4.Controls.Add(Me.GroupBox2)
+        Me.Panel4.Controls.Add(Me.GroupBox1)
+        Me.Panel4.Controls.Add(Me.cbLugar)
+        Me.Panel4.Controls.Add(Me.cbFacultad)
         Me.Panel4.Controls.Add(Me.Label5)
-        Me.Panel4.Controls.Add(Me.TextBox1)
-        Me.Panel4.Controls.Add(Me.TextBox2)
+        Me.Panel4.Controls.Add(Me.txtNomActividad)
         Me.Panel4.Controls.Add(Me.Label6)
-        Me.Panel4.Controls.Add(Me.Label13)
-        Me.Panel4.Controls.Add(Me.Label8)
-        Me.Panel4.Controls.Add(Me.Label9)
-        Me.Panel4.Controls.Add(Me.CheckBox6)
-        Me.Panel4.Controls.Add(Me.Label12)
-        Me.Panel4.Controls.Add(Me.CheckBox3)
-        Me.Panel4.Controls.Add(Me.CheckBox5)
-        Me.Panel4.Controls.Add(Me.Label10)
-        Me.Panel4.Controls.Add(Me.CheckBox4)
-        Me.Panel4.Controls.Add(Me.CheckBox2)
         Me.Panel4.Controls.Add(Me.Label11)
-        Me.Panel4.Controls.Add(Me.CheckBox1)
         Me.Panel4.Controls.Add(Me.Label18)
         Me.Panel4.Controls.Add(Me.Label17)
         Me.Panel4.Controls.Add(Me.Label16)
-        Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel4.Location = New System.Drawing.Point(129, 153)
+        Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Panel4.Location = New System.Drawing.Point(151, 302)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(988, 917)
+        Me.Panel4.Size = New System.Drawing.Size(1317, 898)
         Me.Panel4.TabIndex = 67
         '
-        'UI_Calendario1
+        'GroupBox2
         '
-        Me.UI_Calendario1.BackColor = System.Drawing.Color.DarkGray
-        Me.UI_Calendario1.ButtonCollapse = True
-        Me.UI_Calendario1.ButtonDay = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.UI_Calendario1.ButtonDayFont = New System.Drawing.Font("Arial", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.ButtonDownColor = System.Drawing.Color.WhiteSmoke
-        Me.UI_Calendario1.ButtonOverColor = System.Drawing.Color.WhiteSmoke
-        Me.UI_Calendario1.ButtonTextFormat = True
-        Me.UI_Calendario1.DayFont = New System.Drawing.Font("Arial Rounded MT Bold", 65.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.DayForeColor = System.Drawing.Color.BlueViolet
-        Me.UI_Calendario1.DayFormat = Calendario.UI_Calendario.DiaLetra.Abbreviation
-        Me.UI_Calendario1.DayMonthFollowForeColor = System.Drawing.Color.Gray
-        Me.UI_Calendario1.DayMonthForeColor = System.Drawing.Color.DarkMagenta
-        Me.UI_Calendario1.DayMonthPassedForeColor = System.Drawing.Color.Gray
-        Me.UI_Calendario1.DaySemanaFont = New System.Drawing.Font("Arial", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.DaysForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.UI_Calendario1.DayWeekForeColor = System.Drawing.Color.Transparent
-        Me.UI_Calendario1.ElipceSize = 5
-        Me.UI_Calendario1.HourFont = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.Location = New System.Drawing.Point(383, 196)
-        Me.UI_Calendario1.MonthFont = New System.Drawing.Font("Arial Rounded MT Bold", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.MonthForeColor = System.Drawing.Color.BlueViolet
-        Me.UI_Calendario1.MoveCalendar = True
-        Me.UI_Calendario1.Name = "UI_Calendario1"
-        Me.UI_Calendario1.PanelBottonBackColor = System.Drawing.Color.White
-        Me.UI_Calendario1.PanelDateBackColor = System.Drawing.Color.White
-        Me.UI_Calendario1.PanelDateHeight = 100
-        Me.UI_Calendario1.PanelDayBackColor = System.Drawing.Color.White
-        Me.UI_Calendario1.PanelLowerBackColor = System.Drawing.Color.White
-        Me.UI_Calendario1.SemanaFont = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.Size = New System.Drawing.Size(470, 385)
-        Me.UI_Calendario1.TabIndex = 81
-        Me.UI_Calendario1.Text = "UI_Calendario1"
-        Me.UI_Calendario1.TimeForeColor = System.Drawing.Color.Transparent
-        Me.UI_Calendario1.TitleBackColor = System.Drawing.Color.Purple
-        Me.UI_Calendario1.TitleFont = New System.Drawing.Font("Arial Rounded MT Bold", 17.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.TitleForeColor = System.Drawing.Color.White
-        Me.UI_Calendario1.TitleFormat = Calendario.UI_Calendario.TextHora.Text
-        Me.UI_Calendario1.TitleHeight = 35
-        Me.UI_Calendario1.TitleText = "Fechas de Eventos"
-        Me.UI_Calendario1.TitleVisible = True
-        Me.UI_Calendario1.YearFont = New System.Drawing.Font("Arial Rounded MT Bold", 35.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.YearForeColor = System.Drawing.Color.BlueViolet
+        Me.GroupBox2.Controls.Add(Me.dtpHoraFinal)
+        Me.GroupBox2.Controls.Add(Me.dtpHoraInicio)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.GroupBox2.Location = New System.Drawing.Point(111, 373)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(621, 129)
+        Me.GroupBox2.TabIndex = 103
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Periodo Cubierto"
         '
-        'ComboBox4
+        'dtpHoraFinal
         '
-        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
-        Me.ComboBox4.Location = New System.Drawing.Point(540, 601)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(102, 28)
-        Me.ComboBox4.TabIndex = 95
+        Me.dtpHoraFinal.Location = New System.Drawing.Point(340, 45)
+        Me.dtpHoraFinal.Name = "dtpHoraFinal"
+        Me.dtpHoraFinal.Size = New System.Drawing.Size(250, 30)
+        Me.dtpHoraFinal.TabIndex = 102
         '
-        'ComboBox5
+        'dtpHoraInicio
         '
-        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"})
-        Me.ComboBox5.Location = New System.Drawing.Point(657, 601)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(102, 28)
-        Me.ComboBox5.TabIndex = 97
+        Me.dtpHoraInicio.Location = New System.Drawing.Point(53, 45)
+        Me.dtpHoraInicio.Name = "dtpHoraInicio"
+        Me.dtpHoraInicio.Size = New System.Drawing.Size(250, 30)
+        Me.dtpHoraInicio.TabIndex = 101
         '
-        'ComboBox1
+        'Label10
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
-        Me.ComboBox1.Location = New System.Drawing.Point(251, 601)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(102, 28)
-        Me.ComboBox1.TabIndex = 84
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label10.Location = New System.Drawing.Point(310, 50)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(23, 25)
+        Me.Label10.TabIndex = 86
+        Me.Label10.Text = "a"
         '
-        'ComboBox3
+        'GroupBox1
         '
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"})
-        Me.ComboBox3.Location = New System.Drawing.Point(371, 603)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(102, 28)
-        Me.ComboBox3.TabIndex = 85
+        Me.GroupBox1.Controls.Add(Me.rbOtros)
+        Me.GroupBox1.Controls.Add(Me.rbCongresos)
+        Me.GroupBox1.Controls.Add(Me.rbInauguraciones)
+        Me.GroupBox1.Controls.Add(Me.rbActos)
+        Me.GroupBox1.Controls.Add(Me.rbSeminarios)
+        Me.GroupBox1.Controls.Add(Me.rbFerias)
+        Me.GroupBox1.Controls.Add(Me.rbConferencias)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.GroupBox1.Location = New System.Drawing.Point(105, 552)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(882, 260)
+        Me.GroupBox1.TabIndex = 100
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Tipo de Actividad"
         '
-        'ComboBox6
+        'rbOtros
         '
-        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Items.AddRange(New Object() {"Auditorio", "Lobby Edificio 3", "Lobby Edificio 1", "Piso FCT", "Piso FIC", "Piso FIEE", "Piso FII", "Piso FIM", "Piso FIM"})
-        Me.ComboBox6.Location = New System.Drawing.Point(312, 676)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(386, 28)
-        Me.ComboBox6.TabIndex = 96
+        Me.rbOtros.AutoSize = True
+        Me.rbOtros.Location = New System.Drawing.Point(59, 201)
+        Me.rbOtros.Name = "rbOtros"
+        Me.rbOtros.Size = New System.Drawing.Size(81, 29)
+        Me.rbOtros.TabIndex = 106
+        Me.rbOtros.TabStop = True
+        Me.rbOtros.Text = "Otros"
+        Me.rbOtros.UseVisualStyleBackColor = True
         '
-        'ComboBox2
+        'rbCongresos
         '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civil (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería Mecánica (FIM)", "Facultad de Ingeniería en Sistemas Computacionales (FISC)"})
-        Me.ComboBox2.Location = New System.Drawing.Point(383, 151)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(470, 28)
-        Me.ComboBox2.TabIndex = 82
+        Me.rbCongresos.AutoSize = True
+        Me.rbCongresos.Location = New System.Drawing.Point(518, 138)
+        Me.rbCongresos.Name = "rbCongresos"
+        Me.rbCongresos.Size = New System.Drawing.Size(129, 29)
+        Me.rbCongresos.TabIndex = 105
+        Me.rbCongresos.TabStop = True
+        Me.rbCongresos.Text = "Congresos"
+        Me.rbCongresos.UseVisualStyleBackColor = True
+        '
+        'rbInauguraciones
+        '
+        Me.rbInauguraciones.AutoSize = True
+        Me.rbInauguraciones.Location = New System.Drawing.Point(316, 138)
+        Me.rbInauguraciones.Name = "rbInauguraciones"
+        Me.rbInauguraciones.Size = New System.Drawing.Size(167, 29)
+        Me.rbInauguraciones.TabIndex = 104
+        Me.rbInauguraciones.TabStop = True
+        Me.rbInauguraciones.Text = "Inauguraciones"
+        Me.rbInauguraciones.UseVisualStyleBackColor = True
+        '
+        'rbActos
+        '
+        Me.rbActos.AutoSize = True
+        Me.rbActos.Location = New System.Drawing.Point(59, 138)
+        Me.rbActos.Name = "rbActos"
+        Me.rbActos.Size = New System.Drawing.Size(176, 29)
+        Me.rbActos.TabIndex = 3
+        Me.rbActos.TabStop = True
+        Me.rbActos.Text = "Actos Culturales"
+        Me.rbActos.UseVisualStyleBackColor = True
+        '
+        'rbSeminarios
+        '
+        Me.rbSeminarios.AutoSize = True
+        Me.rbSeminarios.Location = New System.Drawing.Point(518, 75)
+        Me.rbSeminarios.Name = "rbSeminarios"
+        Me.rbSeminarios.Size = New System.Drawing.Size(131, 29)
+        Me.rbSeminarios.TabIndex = 2
+        Me.rbSeminarios.TabStop = True
+        Me.rbSeminarios.Text = "Seminarios"
+        Me.rbSeminarios.UseVisualStyleBackColor = True
+        '
+        'rbFerias
+        '
+        Me.rbFerias.AutoSize = True
+        Me.rbFerias.Location = New System.Drawing.Point(316, 75)
+        Me.rbFerias.Name = "rbFerias"
+        Me.rbFerias.Size = New System.Drawing.Size(87, 29)
+        Me.rbFerias.TabIndex = 1
+        Me.rbFerias.TabStop = True
+        Me.rbFerias.Text = "Ferias"
+        Me.rbFerias.UseVisualStyleBackColor = True
+        '
+        'rbConferencias
+        '
+        Me.rbConferencias.AutoSize = True
+        Me.rbConferencias.Location = New System.Drawing.Point(59, 75)
+        Me.rbConferencias.Name = "rbConferencias"
+        Me.rbConferencias.Size = New System.Drawing.Size(149, 29)
+        Me.rbConferencias.TabIndex = 0
+        Me.rbConferencias.TabStop = True
+        Me.rbConferencias.Text = "Conferencias"
+        Me.rbConferencias.UseVisualStyleBackColor = True
+        '
+        'cbLugar
+        '
+        Me.cbLugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbLugar.FormattingEnabled = True
+        Me.cbLugar.Items.AddRange(New Object() {"Auditorio", "Lobby Edificio 3", "Lobby Edificio 1", "Piso FCT", "Piso FIC", "Piso FIEE", "Piso FII", "Piso FIM", "Piso FIM"})
+        Me.cbLugar.Location = New System.Drawing.Point(511, 312)
+        Me.cbLugar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.cbLugar.Name = "cbLugar"
+        Me.cbLugar.Size = New System.Drawing.Size(513, 33)
+        Me.cbLugar.TabIndex = 96
+        '
+        'cbFacultad
+        '
+        Me.cbFacultad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbFacultad.FormattingEnabled = True
+        Me.cbFacultad.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civil (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería Mecánica (FIM)", "Facultad de Ingeniería en Sistemas Computacionales (FISC)"})
+        Me.cbFacultad.Location = New System.Drawing.Point(511, 232)
+        Me.cbFacultad.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.cbFacultad.Name = "cbFacultad"
+        Me.cbFacultad.Size = New System.Drawing.Size(625, 33)
+        Me.cbFacultad.TabIndex = 82
         '
         'Label5
         '
@@ -403,29 +452,22 @@ Partial Class Form_SEvento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(79, 119)
+        Me.Label5.Location = New System.Drawing.Point(105, 183)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(274, 20)
+        Me.Label5.Size = New System.Drawing.Size(332, 25)
         Me.Label5.TabIndex = 77
         Me.Label5.Text = "Nombre completo de la actividad:"
         '
-        'TextBox1
+        'txtNomActividad
         '
-        Me.TextBox1.Location = New System.Drawing.Point(383, 113)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(457, 26)
-        Me.TextBox1.TabIndex = 78
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.Location = New System.Drawing.Point(427, 830)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(290, 26)
-        Me.TextBox2.TabIndex = 99
+        Me.txtNomActividad.Location = New System.Drawing.Point(511, 174)
+        Me.txtNomActividad.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtNomActividad.Name = "txtNomActividad"
+        Me.txtNomActividad.Size = New System.Drawing.Size(608, 30)
+        Me.txtNomActividad.TabIndex = 78
         '
         'Label6
         '
@@ -433,185 +475,40 @@ Partial Class Form_SEvento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(83, 159)
+        Me.Label6.Location = New System.Drawing.Point(111, 245)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(286, 20)
+        Me.Label6.Size = New System.Drawing.Size(345, 25)
         Me.Label6.TabIndex = 79
         Me.Label6.Text = "Facultad o unidad que lo organiza:"
-        '
-        'Label13
-        '
-        Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label13.Location = New System.Drawing.Point(261, 834)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(157, 20)
-        Me.Label13.TabIndex = 98
-        Me.Label13.Text = "Otros. Especifíque"
-        '
-        'Label8
-        '
-        Me.Label8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label8.Location = New System.Drawing.Point(83, 196)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(154, 20)
-        Me.Label8.TabIndex = 80
-        Me.Label8.Text = "Fecha del Evento:"
-        '
-        'Label9
-        '
-        Me.Label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label9.Location = New System.Drawing.Point(85, 606)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(145, 20)
-        Me.Label9.TabIndex = 83
-        Me.Label9.Text = "Periodo cubierto:"
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CheckBox6.Location = New System.Drawing.Point(612, 790)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(114, 24)
-        Me.CheckBox6.TabIndex = 94
-        Me.CheckBox6.Text = "Congresos"
-        Me.CheckBox6.UseVisualStyleBackColor = True
-        '
-        'Label12
-        '
-        Me.Label12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label12.Location = New System.Drawing.Point(88, 745)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(149, 20)
-        Me.Label12.TabIndex = 88
-        Me.Label12.Text = "Tipo de actividad:"
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CheckBox3.Location = New System.Drawing.Point(612, 744)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(117, 24)
-        Me.CheckBox3.TabIndex = 91
-        Me.CheckBox3.Text = "Seminarios"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CheckBox5.Location = New System.Drawing.Point(440, 790)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(162, 24)
-        Me.CheckBox5.TabIndex = 93
-        Me.CheckBox5.Text = "Innauguraciones"
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label10.Location = New System.Drawing.Point(494, 609)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(18, 20)
-        Me.Label10.TabIndex = 86
-        Me.Label10.Text = "a"
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CheckBox4.Location = New System.Drawing.Point(265, 790)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(160, 24)
-        Me.CheckBox4.TabIndex = 92
-        Me.CheckBox4.Text = "Actos Culturales"
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CheckBox2.Location = New System.Drawing.Point(440, 745)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(78, 24)
-        Me.CheckBox2.TabIndex = 90
-        Me.CheckBox2.Text = "Ferias"
-        Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'Label11
         '
         Me.Label11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label11.Location = New System.Drawing.Point(83, 679)
+        Me.Label11.Location = New System.Drawing.Point(111, 315)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(213, 20)
+        Me.Label11.Size = New System.Drawing.Size(258, 25)
         Me.Label11.TabIndex = 87
         Me.Label11.Text = "Lugar donde se realizará:"
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CheckBox1.Location = New System.Drawing.Point(265, 745)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(134, 24)
-        Me.CheckBox1.TabIndex = 89
-        Me.CheckBox1.Text = "Conferencias"
-        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Label18
         '
         Me.Label18.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label18.Location = New System.Drawing.Point(40, 70)
+        Me.Label18.Location = New System.Drawing.Point(53, 108)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(917, 20)
+        Me.Label18.Size = New System.Drawing.Size(1103, 25)
         Me.Label18.TabIndex = 76
         Me.Label18.Text = "Por este medio se presenta solicitud formal de los servicios detallados para el d" &
     "esarrollo de la siguiente actividad:"
@@ -621,11 +518,12 @@ Partial Class Form_SEvento
         Me.Label17.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label17.Location = New System.Drawing.Point(44, 36)
+        Me.Label17.Location = New System.Drawing.Point(59, 55)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(295, 18)
+        Me.Label17.Size = New System.Drawing.Size(362, 24)
         Me.Label17.TabIndex = 75
         Me.Label17.Text = "Director de Comunicación Estratégica"
         '
@@ -634,30 +532,32 @@ Partial Class Form_SEvento
         Me.Label16.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
         Me.Label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label16.Location = New System.Drawing.Point(40, 14)
+        Me.Label16.Location = New System.Drawing.Point(53, 22)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(182, 24)
+        Me.Label16.Size = New System.Drawing.Size(229, 29)
         Me.Label16.TabIndex = 74
         Me.Label16.Text = "Licdo. Danilo Toro"
         '
         'Form_SEvento
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1428, 831)
-        Me.Controls.Add(Me.Panel3)
+        Me.ClientSize = New System.Drawing.Size(1904, 794)
+        Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel2)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Form_SEvento"
         Me.Text = "Form_SEvento"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -666,13 +566,17 @@ Partial Class Form_SEvento
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel7 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label3 As Label
@@ -688,27 +592,22 @@ Partial Class Form_SEvento
     Friend WithEvents Panel6 As Panel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents UI_Calendario1 As Calendario.UI_Calendario
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cbLugar As ComboBox
+    Friend WithEvents cbFacultad As ComboBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtNomActividad As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents Label12 As Label
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents dtpHoraFinal As DateTimePicker
+    Friend WithEvents dtpHoraInicio As DateTimePicker
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents rbOtros As RadioButton
+    Friend WithEvents rbCongresos As RadioButton
+    Friend WithEvents rbInauguraciones As RadioButton
+    Friend WithEvents rbActos As RadioButton
+    Friend WithEvents rbSeminarios As RadioButton
+    Friend WithEvents rbFerias As RadioButton
+    Friend WithEvents rbConferencias As RadioButton
 End Class

@@ -11,7 +11,7 @@
 
     Sub Rellenar_Departamento(Departamento As String)
 
-        Dim I As String = Form_SEvento.ComboBox2.SelectedIndex
+        Dim I As String = Form_SEvento.cbFacultad.SelectedIndex
 
         If I = "Facultad de Ingeniería en Sistemas Computacionales" Then
             cmbSeccion_departamento.Items.Add("Departamento de Programación")
