@@ -3,21 +3,19 @@
 2. Seguir pasos del Word de Importar BD 
 3. Seguir pasos del Word "2. Errores detectados justo después de copiar del repositorio"
 
-Notas de Cambios en la BD
+#Notas de Cambios en la BD
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 12-13-21
-Alex 
+-Alex 
 
 1) AÑADI COLUMNA ESTADO Y COMENTARIOS PARA TABLA SOLICITUD
-
 ALTER TABLE automatizacion.solicitud
 ADD Estado varchar(255);
 ALTER TABLE automatizacion.solicitud
 ADD comentarios varchar(255);
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-2)Para llenar a la tabla de solicitud hay q tener:
+2) Para llenar a la tabla de solicitud hay q tener:
 Una actividad ya creada, porque se le usa el idActividad.
-
 Use la consulta SQL:
 INSERT INTO automatizacion.actividad(nombreActividad) VALUES('Evento de temporada');
 
