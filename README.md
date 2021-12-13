@@ -41,3 +41,6 @@ AS
 UPDATE automatizacion.solicitud 
 SET Estado='Rechazado', comentarios=@COMENTARIO
 WHERE idSolicitud = @CODIGO
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+5) Para que el formulario de aprobar solicitud haga los cambios, Abran su SQL server y la primera fila del QUERY SQL [select * from automatizacion.solicitud] debe ser un id=4. No pude resetearle el contador denuevo a 1 asi q forze el codigo en Visual basic para q identifique el id 4 como el primer
