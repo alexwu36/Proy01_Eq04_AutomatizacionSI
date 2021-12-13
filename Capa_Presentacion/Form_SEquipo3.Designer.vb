@@ -25,21 +25,23 @@ Partial Class Form_SEquipo3
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_SEquipo3))
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.dtpFechaDevolucion = New System.Windows.Forms.DateTimePicker()
+        Me.txtNomRecibe = New System.Windows.Forms.TextBox()
+        Me.txtNomDvuelve = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtNomEntrega = New System.Windows.Forms.TextBox()
+        Me.txtNomRetiro = New System.Windows.Forms.TextBox()
+        Me.dtpFechaRetiro = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.btn_Borrar = New System.Windows.Forms.Button()
         Me.btn_Regresar = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -52,17 +54,15 @@ Partial Class Form_SEquipo3
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel7.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel4.SuspendLayout()
-        Me.Panel7.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel3
@@ -80,7 +80,7 @@ Partial Class Form_SEquipo3
         Me.Panel3.Location = New System.Drawing.Point(1, 1)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1421, 1244)
+        Me.Panel3.Size = New System.Drawing.Size(1370, 1244)
         Me.Panel3.TabIndex = 76
         '
         'Panel2
@@ -88,41 +88,26 @@ Partial Class Form_SEquipo3
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
         Me.Panel2.Controls.Add(Me.Panel7)
-        Me.Panel2.Controls.Add(Me.DateTimePicker2)
-        Me.Panel2.Controls.Add(Me.TextBox5)
-        Me.Panel2.Controls.Add(Me.TextBox4)
+        Me.Panel2.Controls.Add(Me.dtpFechaDevolucion)
+        Me.Panel2.Controls.Add(Me.txtNomRecibe)
+        Me.Panel2.Controls.Add(Me.txtNomDvuelve)
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.Label12)
         Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Location = New System.Drawing.Point(223, 575)
+        Me.Panel2.Location = New System.Drawing.Point(198, 575)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1018, 307)
         Me.Panel2.TabIndex = 76
         '
-        'DateTimePicker2
+        'Panel7
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(342, 76)
-        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(373, 23)
-        Me.DateTimePicker2.TabIndex = 57
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(342, 230)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(373, 23)
-        Me.TextBox5.TabIndex = 56
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(342, 155)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(373, 23)
-        Me.TextBox4.TabIndex = 55
+        Me.Panel7.BackColor = System.Drawing.Color.DimGray
+        Me.Panel7.Controls.Add(Me.Label9)
+        Me.Panel7.Location = New System.Drawing.Point(0, 0)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(1018, 44)
+        Me.Panel7.TabIndex = 58
         '
         'Label9
         '
@@ -135,6 +120,34 @@ Partial Class Form_SEquipo3
         Me.Label9.Size = New System.Drawing.Size(411, 24)
         Me.Label9.TabIndex = 50
         Me.Label9.Text = "INFORMACIÓN DEL DÍA DE DEVOLUCIÓN"
+        '
+        'dtpFechaDevolucion
+        '
+        Me.dtpFechaDevolucion.CalendarFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.dtpFechaDevolucion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.dtpFechaDevolucion.Location = New System.Drawing.Point(342, 76)
+        Me.dtpFechaDevolucion.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.dtpFechaDevolucion.Name = "dtpFechaDevolucion"
+        Me.dtpFechaDevolucion.Size = New System.Drawing.Size(373, 29)
+        Me.dtpFechaDevolucion.TabIndex = 57
+        '
+        'txtNomRecibe
+        '
+        Me.txtNomRecibe.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNomRecibe.Location = New System.Drawing.Point(342, 230)
+        Me.txtNomRecibe.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtNomRecibe.Name = "txtNomRecibe"
+        Me.txtNomRecibe.Size = New System.Drawing.Size(373, 29)
+        Me.txtNomRecibe.TabIndex = 56
+        '
+        'txtNomDvuelve
+        '
+        Me.txtNomDvuelve.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNomDvuelve.Location = New System.Drawing.Point(342, 152)
+        Me.txtNomDvuelve.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtNomDvuelve.Name = "txtNomDvuelve"
+        Me.txtNomDvuelve.Size = New System.Drawing.Size(373, 29)
+        Me.txtNomDvuelve.TabIndex = 55
         '
         'Label10
         '
@@ -176,54 +189,46 @@ Partial Class Form_SEquipo3
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.TextBox2)
-        Me.Panel5.Controls.Add(Me.TextBox1)
-        Me.Panel5.Controls.Add(Me.DateTimePicker1)
+        Me.Panel5.Controls.Add(Me.txtNomEntrega)
+        Me.Panel5.Controls.Add(Me.txtNomRetiro)
+        Me.Panel5.Controls.Add(Me.dtpFechaRetiro)
         Me.Panel5.Controls.Add(Me.Label8)
         Me.Panel5.Controls.Add(Me.Label7)
         Me.Panel5.Controls.Add(Me.Label6)
         Me.Panel5.Controls.Add(Me.Panel4)
-        Me.Panel5.Location = New System.Drawing.Point(223, 209)
+        Me.Panel5.Location = New System.Drawing.Point(198, 209)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1018, 322)
         Me.Panel5.TabIndex = 75
         '
-        'TextBox2
+        'txtNomEntrega
         '
-        Me.TextBox2.Location = New System.Drawing.Point(342, 249)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(373, 23)
-        Me.TextBox2.TabIndex = 56
+        Me.txtNomEntrega.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNomEntrega.Location = New System.Drawing.Point(342, 249)
+        Me.txtNomEntrega.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtNomEntrega.Name = "txtNomEntrega"
+        Me.txtNomEntrega.Size = New System.Drawing.Size(373, 29)
+        Me.txtNomEntrega.TabIndex = 56
         '
-        'TextBox1
+        'txtNomRetiro
         '
-        Me.TextBox1.Location = New System.Drawing.Point(342, 164)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(373, 23)
-        Me.TextBox1.TabIndex = 55
+        Me.txtNomRetiro.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNomRetiro.Location = New System.Drawing.Point(342, 164)
+        Me.txtNomRetiro.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtNomRetiro.Name = "txtNomRetiro"
+        Me.txtNomRetiro.Size = New System.Drawing.Size(373, 29)
+        Me.txtNomRetiro.TabIndex = 55
         '
-        'DateTimePicker1
+        'dtpFechaRetiro
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(342, 85)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(373, 23)
-        Me.DateTimePicker1.TabIndex = 54
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label5.Location = New System.Drawing.Point(4, 11)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(354, 24)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "INFORMACIÓN DEL DÍA DE RETIRO"
+        Me.dtpFechaRetiro.CalendarFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.dtpFechaRetiro.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.dtpFechaRetiro.Location = New System.Drawing.Point(342, 85)
+        Me.dtpFechaRetiro.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.dtpFechaRetiro.Name = "dtpFechaRetiro"
+        Me.dtpFechaRetiro.Size = New System.Drawing.Size(373, 29)
+        Me.dtpFechaRetiro.TabIndex = 54
         '
         'Label8
         '
@@ -264,13 +269,34 @@ Partial Class Form_SEquipo3
         Me.Label6.TabIndex = 46
         Me.Label6.Text = "Retiro de Equipo (fecha)"
         '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.DimGray
+        Me.Panel4.Controls.Add(Me.Label5)
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(1018, 44)
+        Me.Panel4.TabIndex = 57
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label5.Location = New System.Drawing.Point(4, 11)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(354, 24)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "INFORMACIÓN DEL DÍA DE RETIRO"
+        '
         'btn_Borrar
         '
         Me.btn_Borrar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btn_Borrar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Borrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Borrar.Location = New System.Drawing.Point(668, 997)
+        Me.btn_Borrar.Location = New System.Drawing.Point(643, 997)
         Me.btn_Borrar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Borrar.Name = "btn_Borrar"
         Me.btn_Borrar.Size = New System.Drawing.Size(194, 60)
@@ -284,7 +310,7 @@ Partial Class Form_SEquipo3
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(164, 997)
+        Me.btn_Regresar.Location = New System.Drawing.Point(139, 997)
         Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Regresar.Name = "btn_Regresar"
         Me.btn_Regresar.Size = New System.Drawing.Size(194, 60)
@@ -302,7 +328,7 @@ Partial Class Form_SEquipo3
         Me.Panel6.Location = New System.Drawing.Point(0, 1120)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1421, 121)
+        Me.Panel6.Size = New System.Drawing.Size(1370, 121)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
@@ -322,7 +348,7 @@ Partial Class Form_SEquipo3
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(320, 5)
+        Me.Label14.Location = New System.Drawing.Point(295, 5)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -337,7 +363,7 @@ Partial Class Form_SEquipo3
         Me.btn_Enviar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Enviar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Enviar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Enviar.Location = New System.Drawing.Point(1123, 997)
+        Me.btn_Enviar.Location = New System.Drawing.Point(1098, 997)
         Me.btn_Enviar.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Enviar.Name = "btn_Enviar"
         Me.btn_Enviar.Size = New System.Drawing.Size(194, 60)
@@ -357,7 +383,7 @@ Partial Class Form_SEquipo3
         Me.Panel1.Location = New System.Drawing.Point(4, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1417, 121)
+        Me.Panel1.Size = New System.Drawing.Size(1366, 121)
         Me.Panel1.TabIndex = 59
         '
         'Label3
@@ -412,30 +438,12 @@ Partial Class Form_SEquipo3
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(396, 145)
+        Me.Label4.Location = New System.Drawing.Point(371, 145)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(677, 25)
         Me.Label4.TabIndex = 47
         Me.Label4.Text = "FORMULARIO PARA LA SOLICITUD Y PRÉSTAMO DE EQUIPO"
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.DimGray
-        Me.Panel4.Controls.Add(Me.Label5)
-        Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1018, 44)
-        Me.Panel4.TabIndex = 57
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.DimGray
-        Me.Panel7.Controls.Add(Me.Label9)
-        Me.Panel7.Location = New System.Drawing.Point(0, 0)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1018, 44)
-        Me.Panel7.TabIndex = 58
         '
         'Form_SEquipo3
         '
@@ -452,18 +460,18 @@ Partial Class Form_SEquipo3
         Me.Panel3.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -482,17 +490,17 @@ Partial Class Form_SEquipo3
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents DateTimePicker2 As DateTimePicker
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents dtpFechaDevolucion As DateTimePicker
+    Friend WithEvents txtNomRecibe As TextBox
+    Friend WithEvents txtNomDvuelve As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents txtNomEntrega As TextBox
+    Friend WithEvents txtNomRetiro As TextBox
+    Friend WithEvents dtpFechaRetiro As DateTimePicker
     Friend WithEvents Label5 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label

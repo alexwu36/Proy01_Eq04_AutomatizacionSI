@@ -46,7 +46,7 @@
             i = i + 1
         End If
 
-        Capa_Datos.observacion = txtObservacion.Text
+        Capa_Datos.observacion2 = txtObservacion.Text
 
         Me.Hide()
         Form_SEvento3.Show()

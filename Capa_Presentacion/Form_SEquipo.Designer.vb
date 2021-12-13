@@ -26,31 +26,32 @@ Partial Class Form_SEquipo
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.MaskedTextBox2 = New System.Windows.Forms.MaskedTextBox()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.mstxtCelular = New System.Windows.Forms.MaskedTextBox()
+        Me.mstxtTelefono = New System.Windows.Forms.MaskedTextBox()
+        Me.cbUnidad = New System.Windows.Forms.ComboBox()
+        Me.txtCorreo = New System.Windows.Forms.TextBox()
+        Me.txtNombreSolicitante = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.cbMinutos = New System.Windows.Forms.ComboBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtNomActividad = New System.Windows.Forms.TextBox()
         Me.cbHora = New System.Windows.Forms.ComboBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtNomActividad2 = New System.Windows.Forms.TextBox()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.cbFacultad = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.cbLugar = New System.Windows.Forms.ComboBox()
+        Me.cbLugar2 = New System.Windows.Forms.ComboBox()
         Me.btn_Borrar = New System.Windows.Forms.Button()
         Me.btn_Regresar = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -63,11 +64,16 @@ Partial Class Form_SEquipo
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.cbMinutos2 = New System.Windows.Forms.ComboBox()
+        Me.cbHora2 = New System.Windows.Forms.ComboBox()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.Panel3.SuspendLayout()
         Me.Panel7.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -90,7 +96,7 @@ Partial Class Form_SEquipo
         Me.Panel3.Location = New System.Drawing.Point(0, -2)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1232, 1244)
+        Me.Panel3.Size = New System.Drawing.Size(1198, 1244)
         Me.Panel3.TabIndex = 46
         '
         'Panel7
@@ -98,7 +104,7 @@ Partial Class Form_SEquipo
         Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel7.BackColor = System.Drawing.Color.DimGray
         Me.Panel7.Controls.Add(Me.Label11)
-        Me.Panel7.Location = New System.Drawing.Point(179, 572)
+        Me.Panel7.Location = New System.Drawing.Point(162, 572)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(1023, 48)
         Me.Panel7.TabIndex = 125
@@ -117,97 +123,72 @@ Partial Class Form_SEquipo
         Me.Label11.TabIndex = 113
         Me.Label11.Text = "INFORMACIÓN DE LA PERSONA QUE SOLICITA EL EQUIPO"
         '
-        'Panel5
-        '
-        Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel5.BackColor = System.Drawing.Color.DimGray
-        Me.Panel5.Controls.Add(Me.Label5)
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1023, 45)
-        Me.Panel5.TabIndex = 102
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(15, 10)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(714, 24)
-        Me.Label5.TabIndex = 90
-        Me.Label5.Text = "INFORMACIÓN DE LA ACTIVIDAD EN LA CUAL SE UTILIZARÁ EL EQUIPO"
-        '
         'Panel2
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.MaskedTextBox2)
-        Me.Panel2.Controls.Add(Me.MaskedTextBox1)
-        Me.Panel2.Controls.Add(Me.ComboBox1)
-        Me.Panel2.Controls.Add(Me.TextBox4)
-        Me.Panel2.Controls.Add(Me.TextBox2)
+        Me.Panel2.Controls.Add(Me.mstxtCelular)
+        Me.Panel2.Controls.Add(Me.mstxtTelefono)
+        Me.Panel2.Controls.Add(Me.cbUnidad)
+        Me.Panel2.Controls.Add(Me.txtCorreo)
+        Me.Panel2.Controls.Add(Me.txtNombreSolicitante)
         Me.Panel2.Controls.Add(Me.Label16)
         Me.Panel2.Controls.Add(Me.Label15)
         Me.Panel2.Controls.Add(Me.Label17)
         Me.Panel2.Controls.Add(Me.Label13)
         Me.Panel2.Controls.Add(Me.Label12)
-        Me.Panel2.Location = New System.Drawing.Point(179, 572)
+        Me.Panel2.Location = New System.Drawing.Point(162, 572)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1023, 351)
         Me.Panel2.TabIndex = 71
         '
-        'MaskedTextBox2
+        'mstxtCelular
         '
-        Me.MaskedTextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.MaskedTextBox2.Location = New System.Drawing.Point(325, 272)
-        Me.MaskedTextBox2.Mask = "0000-0000"
-        Me.MaskedTextBox2.Name = "MaskedTextBox2"
-        Me.MaskedTextBox2.Size = New System.Drawing.Size(434, 29)
-        Me.MaskedTextBox2.TabIndex = 124
+        Me.mstxtCelular.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.mstxtCelular.Location = New System.Drawing.Point(325, 272)
+        Me.mstxtCelular.Mask = "0000-0000"
+        Me.mstxtCelular.Name = "mstxtCelular"
+        Me.mstxtCelular.Size = New System.Drawing.Size(434, 29)
+        Me.mstxtCelular.TabIndex = 124
         '
-        'MaskedTextBox1
+        'mstxtTelefono
         '
-        Me.MaskedTextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(325, 171)
-        Me.MaskedTextBox1.Mask = "000-0000"
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(434, 29)
-        Me.MaskedTextBox1.TabIndex = 123
+        Me.mstxtTelefono.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.mstxtTelefono.Location = New System.Drawing.Point(325, 171)
+        Me.mstxtTelefono.Mask = "000-0000"
+        Me.mstxtTelefono.Name = "mstxtTelefono"
+        Me.mstxtTelefono.Size = New System.Drawing.Size(434, 29)
+        Me.mstxtTelefono.TabIndex = 123
         '
-        'ComboBox1
+        'cbUnidad
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civíl (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería  Mecánica (FIM)", "Facultad de Ingeniería Sistemas Computacionales (FISC)"})
-        Me.ComboBox1.Location = New System.Drawing.Point(325, 119)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(434, 28)
-        Me.ComboBox1.TabIndex = 102
+        Me.cbUnidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbUnidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbUnidad.FormattingEnabled = True
+        Me.cbUnidad.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civíl (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería  Mecánica (FIM)", "Facultad de Ingeniería Sistemas Computacionales (FISC)"})
+        Me.cbUnidad.Location = New System.Drawing.Point(325, 119)
+        Me.cbUnidad.Name = "cbUnidad"
+        Me.cbUnidad.Size = New System.Drawing.Size(434, 28)
+        Me.cbUnidad.TabIndex = 102
         '
-        'TextBox4
+        'txtCorreo
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox4.Location = New System.Drawing.Point(325, 218)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(434, 26)
-        Me.TextBox4.TabIndex = 121
+        Me.txtCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtCorreo.Location = New System.Drawing.Point(325, 218)
+        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCorreo.Name = "txtCorreo"
+        Me.txtCorreo.Size = New System.Drawing.Size(434, 26)
+        Me.txtCorreo.TabIndex = 121
         '
-        'TextBox2
+        'txtNombreSolicitante
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox2.Location = New System.Drawing.Point(325, 73)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(434, 26)
-        Me.TextBox2.TabIndex = 119
+        Me.txtNombreSolicitante.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNombreSolicitante.Location = New System.Drawing.Point(325, 73)
+        Me.txtNombreSolicitante.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNombreSolicitante.Name = "txtNombreSolicitante"
+        Me.txtNombreSolicitante.Size = New System.Drawing.Size(434, 26)
+        Me.txtNombreSolicitante.TabIndex = 119
         '
         'Label16
         '
@@ -273,50 +254,99 @@ Partial Class Form_SEquipo
         '
         Me.Panel4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.Label10)
+        Me.Panel4.Controls.Add(Me.GroupBox1)
         Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Controls.Add(Me.cbMinutos)
         Me.Panel4.Controls.Add(Me.Label6)
-        Me.Panel4.Controls.Add(Me.txtNomActividad)
-        Me.Panel4.Controls.Add(Me.cbHora)
+        Me.Panel4.Controls.Add(Me.txtNomActividad2)
         Me.Panel4.Controls.Add(Me.dtpFecha)
         Me.Panel4.Controls.Add(Me.Label9)
         Me.Panel4.Controls.Add(Me.Label7)
         Me.Panel4.Controls.Add(Me.cbFacultad)
         Me.Panel4.Controls.Add(Me.Label8)
-        Me.Panel4.Controls.Add(Me.cbLugar)
+        Me.Panel4.Controls.Add(Me.cbLugar2)
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Panel4.Location = New System.Drawing.Point(180, 184)
+        Me.Panel4.Location = New System.Drawing.Point(163, 184)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1022, 347)
         Me.Panel4.TabIndex = 67
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label19)
+        Me.GroupBox1.Controls.Add(Me.cbMinutos2)
+        Me.GroupBox1.Controls.Add(Me.cbHora2)
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.cbMinutos)
+        Me.GroupBox1.Controls.Add(Me.cbHora)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.GroupBox1.Location = New System.Drawing.Point(85, 269)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(846, 62)
+        Me.GroupBox1.TabIndex = 103
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Periódo de la Actividad"
+        '
         'Label10
         '
-        Me.Label10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label10.Location = New System.Drawing.Point(85, 285)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(214, 26)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(175, 20)
-        Me.Label10.TabIndex = 99
-        Me.Label10.Text = "Hora de la Actividad:"
+        Me.Label10.Size = New System.Drawing.Size(16, 24)
+        Me.Label10.TabIndex = 102
+        Me.Label10.Text = ":"
         '
         'cbMinutos
         '
         Me.cbMinutos.AutoCompleteCustomSource.AddRange(New String() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"})
         Me.cbMinutos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbMinutos.FormattingEnabled = True
-        Me.cbMinutos.Items.AddRange(New Object() {"11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"})
-        Me.cbMinutos.Location = New System.Drawing.Point(602, 276)
+        Me.cbMinutos.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"})
+        Me.cbMinutos.Location = New System.Drawing.Point(239, 26)
         Me.cbMinutos.Margin = New System.Windows.Forms.Padding(4)
         Me.cbMinutos.Name = "cbMinutos"
         Me.cbMinutos.Size = New System.Drawing.Size(140, 28)
         Me.cbMinutos.TabIndex = 101
+        '
+        'cbHora
+        '
+        Me.cbHora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbHora.FormattingEnabled = True
+        Me.cbHora.Items.AddRange(New Object() {"7", "8", "9", "10", "11", "12", "1", "2", "3", "4", "5", "6", "7", "8"})
+        Me.cbHora.Location = New System.Drawing.Point(58, 26)
+        Me.cbHora.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbHora.Name = "cbHora"
+        Me.cbHora.Size = New System.Drawing.Size(140, 28)
+        Me.cbHora.TabIndex = 100
+        '
+        'Panel5
+        '
+        Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel5.BackColor = System.Drawing.Color.DimGray
+        Me.Panel5.Controls.Add(Me.Label5)
+        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(1023, 45)
+        Me.Panel5.TabIndex = 102
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(15, 10)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(714, 24)
+        Me.Label5.TabIndex = 90
+        Me.Label5.Text = "INFORMACIÓN DE LA ACTIVIDAD EN LA CUAL SE UTILIZARÁ EL EQUIPO"
         '
         'Label6
         '
@@ -333,28 +363,17 @@ Partial Class Form_SEquipo
         Me.Label6.TabIndex = 92
         Me.Label6.Text = "Nombre de la Actividad:"
         '
-        'txtNomActividad
+        'txtNomActividad2
         '
-        Me.txtNomActividad.Location = New System.Drawing.Point(435, 75)
-        Me.txtNomActividad.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtNomActividad.Name = "txtNomActividad"
-        Me.txtNomActividad.Size = New System.Drawing.Size(532, 26)
-        Me.txtNomActividad.TabIndex = 91
-        '
-        'cbHora
-        '
-        Me.cbHora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbHora.FormattingEnabled = True
-        Me.cbHora.Items.AddRange(New Object() {"7", "8", "9", "10", "11", "12", "1", "2", "3", "4", "5", "6", "7", "8"})
-        Me.cbHora.Location = New System.Drawing.Point(435, 276)
-        Me.cbHora.Margin = New System.Windows.Forms.Padding(4)
-        Me.cbHora.Name = "cbHora"
-        Me.cbHora.Size = New System.Drawing.Size(140, 28)
-        Me.cbHora.TabIndex = 100
+        Me.txtNomActividad2.Location = New System.Drawing.Point(399, 76)
+        Me.txtNomActividad2.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNomActividad2.Name = "txtNomActividad2"
+        Me.txtNomActividad2.Size = New System.Drawing.Size(532, 26)
+        Me.txtNomActividad2.TabIndex = 91
         '
         'dtpFecha
         '
-        Me.dtpFecha.Location = New System.Drawing.Point(435, 176)
+        Me.dtpFecha.Location = New System.Drawing.Point(399, 177)
         Me.dtpFecha.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(532, 26)
@@ -389,7 +408,7 @@ Partial Class Form_SEquipo
         Me.cbFacultad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbFacultad.FormattingEnabled = True
         Me.cbFacultad.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civíl (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería  Mecánica (FIM)", "Facultad de Ingeniería Sistemas Computacionales (FISC)"})
-        Me.cbFacultad.Location = New System.Drawing.Point(435, 224)
+        Me.cbFacultad.Location = New System.Drawing.Point(399, 225)
         Me.cbFacultad.Margin = New System.Windows.Forms.Padding(4)
         Me.cbFacultad.Name = "cbFacultad"
         Me.cbFacultad.Size = New System.Drawing.Size(532, 28)
@@ -407,16 +426,16 @@ Partial Class Form_SEquipo
         Me.Label8.TabIndex = 95
         Me.Label8.Text = "Fecha de la Actividad:"
         '
-        'cbLugar
+        'cbLugar2
         '
-        Me.cbLugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbLugar.FormattingEnabled = True
-        Me.cbLugar.Items.AddRange(New Object() {"Auditorio", "Lobby Edifico 3", "Lobby Edificio 1", "Piso FCT", "Piso FIC", "Piso FIE", "Piso FII", "Piso FIM", "Piso Fisc"})
-        Me.cbLugar.Location = New System.Drawing.Point(435, 124)
-        Me.cbLugar.Margin = New System.Windows.Forms.Padding(4)
-        Me.cbLugar.Name = "cbLugar"
-        Me.cbLugar.Size = New System.Drawing.Size(532, 28)
-        Me.cbLugar.TabIndex = 96
+        Me.cbLugar2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbLugar2.FormattingEnabled = True
+        Me.cbLugar2.Items.AddRange(New Object() {"Auditorio", "Lobby Edifico 3", "Lobby Edificio 1", "Piso FCT", "Piso FIC", "Piso FIE", "Piso FII", "Piso FIM", "Piso Fisc"})
+        Me.cbLugar2.Location = New System.Drawing.Point(399, 125)
+        Me.cbLugar2.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbLugar2.Name = "cbLugar2"
+        Me.cbLugar2.Size = New System.Drawing.Size(532, 28)
+        Me.cbLugar2.TabIndex = 96
         '
         'btn_Borrar
         '
@@ -424,7 +443,7 @@ Partial Class Form_SEquipo
         Me.btn_Borrar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Borrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Borrar.Location = New System.Drawing.Point(624, 997)
+        Me.btn_Borrar.Location = New System.Drawing.Point(607, 997)
         Me.btn_Borrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Borrar.Name = "btn_Borrar"
         Me.btn_Borrar.Size = New System.Drawing.Size(193, 60)
@@ -438,7 +457,7 @@ Partial Class Form_SEquipo
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(180, 995)
+        Me.btn_Regresar.Location = New System.Drawing.Point(163, 995)
         Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Regresar.Name = "btn_Regresar"
         Me.btn_Regresar.Size = New System.Drawing.Size(193, 60)
@@ -451,7 +470,7 @@ Partial Class Form_SEquipo
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(339, 139)
+        Me.Label4.Location = New System.Drawing.Point(322, 139)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(677, 25)
@@ -468,7 +487,7 @@ Partial Class Form_SEquipo
         Me.Panel6.Location = New System.Drawing.Point(0, 1120)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1453, 122)
+        Me.Panel6.Size = New System.Drawing.Size(1419, 122)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
@@ -488,7 +507,7 @@ Partial Class Form_SEquipo
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(426, 4)
+        Me.Label14.Location = New System.Drawing.Point(409, 4)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -503,7 +522,7 @@ Partial Class Form_SEquipo
         Me.btn_Continuar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Continuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Continuar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Continuar.Location = New System.Drawing.Point(1009, 1003)
+        Me.btn_Continuar.Location = New System.Drawing.Point(992, 1003)
         Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Continuar.Name = "btn_Continuar"
         Me.btn_Continuar.Size = New System.Drawing.Size(193, 60)
@@ -523,7 +542,7 @@ Partial Class Form_SEquipo
         Me.Panel1.Location = New System.Drawing.Point(4, 2)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1446, 122)
+        Me.Panel1.Size = New System.Drawing.Size(1412, 122)
         Me.Panel1.TabIndex = 59
         '
         'Label3
@@ -573,6 +592,48 @@ Partial Class Form_SEquipo
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Universidad Tecnológica de Panamá"
         '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(414, 34)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(19, 20)
+        Me.Label18.TabIndex = 103
+        Me.Label18.Text = "a"
+        '
+        'cbMinutos2
+        '
+        Me.cbMinutos2.AutoCompleteCustomSource.AddRange(New String() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"})
+        Me.cbMinutos2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbMinutos2.FormattingEnabled = True
+        Me.cbMinutos2.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"})
+        Me.cbMinutos2.Location = New System.Drawing.Point(651, 26)
+        Me.cbMinutos2.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbMinutos2.Name = "cbMinutos2"
+        Me.cbMinutos2.Size = New System.Drawing.Size(140, 28)
+        Me.cbMinutos2.TabIndex = 105
+        '
+        'cbHora2
+        '
+        Me.cbHora2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbHora2.FormattingEnabled = True
+        Me.cbHora2.Items.AddRange(New Object() {"7", "8", "9", "10", "11", "12", "1", "2", "3", "4", "5", "6", "7", "8"})
+        Me.cbHora2.Location = New System.Drawing.Point(462, 26)
+        Me.cbHora2.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbHora2.Name = "cbHora2"
+        Me.cbHora2.Size = New System.Drawing.Size(140, 28)
+        Me.cbHora2.TabIndex = 104
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label19.Location = New System.Drawing.Point(620, 29)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(16, 24)
+        Me.Label19.TabIndex = 106
+        Me.Label19.Text = ":"
+        '
         'Form_SEquipo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -588,12 +649,14 @@ Partial Class Form_SEquipo
         Me.Panel3.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -619,29 +682,34 @@ Partial Class Form_SEquipo
     Friend WithEvents Panel4 As Panel
     Friend WithEvents btn_Borrar As Button
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtNombreSolicitante As TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents cbMinutos As ComboBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents txtNomActividad As TextBox
-    Friend WithEvents cbHora As ComboBox
+    Friend WithEvents txtNomActividad2 As TextBox
     Friend WithEvents dtpFecha As DateTimePicker
     Friend WithEvents Label9 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents cbFacultad As ComboBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents cbLugar As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents MaskedTextBox2 As MaskedTextBox
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents cbLugar2 As ComboBox
+    Friend WithEvents cbUnidad As ComboBox
+    Friend WithEvents mstxtCelular As MaskedTextBox
+    Friend WithEvents mstxtTelefono As MaskedTextBox
+    Friend WithEvents txtCorreo As TextBox
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel5 As Panel
+    Friend WithEvents cbMinutos As ComboBox
+    Friend WithEvents cbHora As ComboBox
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents cbMinutos2 As ComboBox
+    Friend WithEvents cbHora2 As ComboBox
+    Friend WithEvents Label18 As Label
 End Class
