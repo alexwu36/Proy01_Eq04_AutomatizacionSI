@@ -47,6 +47,7 @@
         End If
 
         Capa_Datos.observacion2 = txtObservacion.Text
+        Capa_Datos.SolicitudEventos.InsertarEvento()
 
         Me.Hide()
         Form_SEvento3.Show()

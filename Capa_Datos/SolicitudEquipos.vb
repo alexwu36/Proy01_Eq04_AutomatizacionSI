@@ -1,5 +1,4 @@
-﻿Imports System.Data.SqlClient
-Public Module SolicitudEquipos
+﻿Public Module SolicitudEquipos
     Public nombreActividad As String
     Public fechaActividad, horaInicio, minutoInicio, minutoFinal, horaFinal, nomSolicitante, unidad, correo, telefono, celular As String
     Public fechaRetiro, nombreRetiro, nombreEntrega, fechaDevolucion, nombreDevuelve, nombreRecibe As String

@@ -1,5 +1,4 @@
-﻿Imports System.Data.SqlClient
-Public Class Form_Inventario
+﻿Public Class Form_Inventario
     Private Sub btn_Regresar_Click(sender As Object, e As EventArgs) Handles btn_Regresar.Click
         Me.Hide()
         PantallaPrincipal_UAdmin.Show()

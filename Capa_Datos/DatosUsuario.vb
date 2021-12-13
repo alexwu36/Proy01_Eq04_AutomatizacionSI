@@ -12,6 +12,7 @@ Public Module DatosUsuario
         Dapellido = ""
         Dusuario = ""
         Dtipo = 1
+        Did = 1
     End Sub
 
     Public Function ConseguirNombre(usuario As String) As String
