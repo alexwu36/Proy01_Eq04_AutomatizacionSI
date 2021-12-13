@@ -67,8 +67,14 @@
     End Sub
 
     Private Sub DGV_Solicitud_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_Solicitud.CellClick
+
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow = DGV_Solicitud.Rows(e.RowIndex)
+            If row.Cells(2).Value.ToString = "Aprobado" Then
+                txtEstado.BackColor = Color.Green
+            Else
+                txtEstado.BackColor = Color.Red
+            End If
             txtEstado.Text = row.Cells(2).Value.ToString
             txtNombre.Text = row.Cells(4).Value.ToString
             txtFecha.Text = row.Cells(5).Value.ToString
