@@ -79,19 +79,19 @@ Partial Class Form_SEvento
         Me.Panel2.BackColor = System.Drawing.Color.Purple
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Location = New System.Drawing.Point(-4, 27333)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel2.Location = New System.Drawing.Point(-4, 24380)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(874, 154)
+        Me.Panel2.Size = New System.Drawing.Size(697, 116)
         Me.Panel2.TabIndex = 8
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(183, 154)
+        Me.PictureBox2.Size = New System.Drawing.Size(160, 116)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
@@ -102,11 +102,11 @@ Partial Class Form_SEvento
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(-510, 0)
+        Me.Label7.Location = New System.Drawing.Point(-514, 0)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label7.Size = New System.Drawing.Size(916, 120)
+        Me.Label7.Size = New System.Drawing.Size(735, 96)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = resources.GetString("Label7.Text")
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -121,10 +121,10 @@ Partial Class Form_SEvento
         Me.Panel7.Controls.Add(Me.Label4)
         Me.Panel7.Controls.Add(Me.Panel1)
         Me.Panel7.Controls.Add(Me.Panel4)
-        Me.Panel7.Location = New System.Drawing.Point(-4, -3)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel7.Location = New System.Drawing.Point(-4, -2)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1550, 2090)
+        Me.Panel7.Size = New System.Drawing.Size(1288, 1568)
         Me.Panel7.TabIndex = 45
         '
         'btn_Regresar
@@ -133,10 +133,10 @@ Partial Class Form_SEvento
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(151, 1265)
-        Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btn_Regresar.Location = New System.Drawing.Point(98, 949)
+        Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Regresar.Name = "btn_Regresar"
-        Me.btn_Regresar.Size = New System.Drawing.Size(221, 80)
+        Me.btn_Regresar.Size = New System.Drawing.Size(193, 60)
         Me.btn_Regresar.TabIndex = 4
         Me.btn_Regresar.Text = "Regresar"
         Me.btn_Regresar.UseVisualStyleBackColor = False
@@ -148,19 +148,19 @@ Partial Class Form_SEvento
         Me.Panel6.BackColor = System.Drawing.Color.Purple
         Me.Panel6.Controls.Add(Me.PictureBox3)
         Me.Panel6.Controls.Add(Me.Label14)
-        Me.Panel6.Location = New System.Drawing.Point(0, 1469)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel6.Location = New System.Drawing.Point(0, 1102)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1573, 162)
+        Me.Panel6.Size = New System.Drawing.Size(1308, 122)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(183, 154)
+        Me.PictureBox3.Size = New System.Drawing.Size(160, 116)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 10
         Me.PictureBox3.TabStop = False
@@ -171,11 +171,11 @@ Partial Class Form_SEvento
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(340, 6)
+        Me.Label14.Location = New System.Drawing.Point(264, 4)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label14.Size = New System.Drawing.Size(916, 120)
+        Me.Label14.Size = New System.Drawing.Size(735, 96)
         Me.Label14.TabIndex = 0
         Me.Label14.Text = resources.GetString("Label14.Text")
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -186,10 +186,10 @@ Partial Class Form_SEvento
         Me.btn_Continuar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Continuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Continuar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Continuar.Location = New System.Drawing.Point(1247, 1264)
-        Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btn_Continuar.Location = New System.Drawing.Point(1057, 948)
+        Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Continuar.Name = "btn_Continuar"
-        Me.btn_Continuar.Size = New System.Drawing.Size(221, 80)
+        Me.btn_Continuar.Size = New System.Drawing.Size(193, 60)
         Me.btn_Continuar.TabIndex = 68
         Me.btn_Continuar.Text = "Continuar"
         Me.btn_Continuar.UseVisualStyleBackColor = False
@@ -199,10 +199,10 @@ Partial Class Form_SEvento
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(520, 245)
+        Me.Label4.Location = New System.Drawing.Point(421, 184)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(611, 31)
+        Me.Label4.Size = New System.Drawing.Size(477, 25)
         Me.Label4.TabIndex = 45
         Me.Label4.Text = "FORMULARIO DE SOLICITUD DE EVENTOS"
         '
@@ -215,10 +215,10 @@ Partial Class Form_SEvento
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(4, 3)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel1.Location = New System.Drawing.Point(4, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1565, 162)
+        Me.Panel1.Size = New System.Drawing.Size(1301, 122)
         Me.Panel1.TabIndex = 59
         '
         'Label3
@@ -226,10 +226,10 @@ Partial Class Form_SEvento
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(192, 95)
+        Me.Label3.Location = New System.Drawing.Point(168, 71)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(716, 29)
+        Me.Label3.Size = New System.Drawing.Size(577, 24)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = """Camino a la excelencia a través del mejoramiento continuo"""
         '
@@ -238,20 +238,20 @@ Partial Class Form_SEvento
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(192, 51)
+        Me.Label2.Location = New System.Drawing.Point(168, 38)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(602, 29)
+        Me.Label2.Size = New System.Drawing.Size(481, 24)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Departamento de Protocolo, Ceremonial y Eventos"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 3)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(183, 157)
+        Me.PictureBox1.Size = New System.Drawing.Size(160, 118)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
@@ -261,10 +261,10 @@ Partial Class Form_SEvento
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(191, 12)
+        Me.Label1.Location = New System.Drawing.Point(167, 9)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(489, 31)
+        Me.Label1.Size = New System.Drawing.Size(397, 25)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Universidad Tecnológica de Panamá"
         '
@@ -285,10 +285,10 @@ Partial Class Form_SEvento
         Me.Panel4.Controls.Add(Me.Label16)
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Panel4.Location = New System.Drawing.Point(151, 302)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel4.Location = New System.Drawing.Point(98, 226)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1317, 898)
+        Me.Panel4.Size = New System.Drawing.Size(1152, 674)
         Me.Panel4.TabIndex = 67
         '
         'GroupBox2
@@ -297,25 +297,29 @@ Partial Class Form_SEvento
         Me.GroupBox2.Controls.Add(Me.dtpHoraInicio)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox2.Location = New System.Drawing.Point(111, 373)
+        Me.GroupBox2.Location = New System.Drawing.Point(97, 280)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(621, 129)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(543, 97)
         Me.GroupBox2.TabIndex = 103
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Periodo Cubierto"
         '
         'dtpHoraFinal
         '
-        Me.dtpHoraFinal.Location = New System.Drawing.Point(340, 45)
+        Me.dtpHoraFinal.Location = New System.Drawing.Point(298, 34)
+        Me.dtpHoraFinal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtpHoraFinal.Name = "dtpHoraFinal"
-        Me.dtpHoraFinal.Size = New System.Drawing.Size(250, 30)
+        Me.dtpHoraFinal.Size = New System.Drawing.Size(219, 26)
         Me.dtpHoraFinal.TabIndex = 102
         '
         'dtpHoraInicio
         '
-        Me.dtpHoraInicio.Location = New System.Drawing.Point(53, 45)
+        Me.dtpHoraInicio.Location = New System.Drawing.Point(46, 34)
+        Me.dtpHoraInicio.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtpHoraInicio.Name = "dtpHoraInicio"
-        Me.dtpHoraInicio.Size = New System.Drawing.Size(250, 30)
+        Me.dtpHoraInicio.Size = New System.Drawing.Size(219, 26)
         Me.dtpHoraInicio.TabIndex = 101
         '
         'Label10
@@ -323,10 +327,10 @@ Partial Class Form_SEvento
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label10.Location = New System.Drawing.Point(310, 50)
+        Me.Label10.Location = New System.Drawing.Point(271, 38)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(23, 25)
+        Me.Label10.Size = New System.Drawing.Size(18, 20)
         Me.Label10.TabIndex = 86
         Me.Label10.Text = "a"
         '
@@ -340,9 +344,11 @@ Partial Class Form_SEvento
         Me.GroupBox1.Controls.Add(Me.rbFerias)
         Me.GroupBox1.Controls.Add(Me.rbConferencias)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox1.Location = New System.Drawing.Point(105, 552)
+        Me.GroupBox1.Location = New System.Drawing.Point(92, 414)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(882, 260)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(772, 195)
         Me.GroupBox1.TabIndex = 100
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tipo de Actividad"
@@ -350,9 +356,10 @@ Partial Class Form_SEvento
         'rbOtros
         '
         Me.rbOtros.AutoSize = True
-        Me.rbOtros.Location = New System.Drawing.Point(59, 201)
+        Me.rbOtros.Location = New System.Drawing.Point(52, 151)
+        Me.rbOtros.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rbOtros.Name = "rbOtros"
-        Me.rbOtros.Size = New System.Drawing.Size(81, 29)
+        Me.rbOtros.Size = New System.Drawing.Size(66, 24)
         Me.rbOtros.TabIndex = 106
         Me.rbOtros.TabStop = True
         Me.rbOtros.Text = "Otros"
@@ -361,9 +368,10 @@ Partial Class Form_SEvento
         'rbCongresos
         '
         Me.rbCongresos.AutoSize = True
-        Me.rbCongresos.Location = New System.Drawing.Point(518, 138)
+        Me.rbCongresos.Location = New System.Drawing.Point(453, 104)
+        Me.rbCongresos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rbCongresos.Name = "rbCongresos"
-        Me.rbCongresos.Size = New System.Drawing.Size(129, 29)
+        Me.rbCongresos.Size = New System.Drawing.Size(104, 24)
         Me.rbCongresos.TabIndex = 105
         Me.rbCongresos.TabStop = True
         Me.rbCongresos.Text = "Congresos"
@@ -372,9 +380,10 @@ Partial Class Form_SEvento
         'rbInauguraciones
         '
         Me.rbInauguraciones.AutoSize = True
-        Me.rbInauguraciones.Location = New System.Drawing.Point(316, 138)
+        Me.rbInauguraciones.Location = New System.Drawing.Point(276, 104)
+        Me.rbInauguraciones.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rbInauguraciones.Name = "rbInauguraciones"
-        Me.rbInauguraciones.Size = New System.Drawing.Size(167, 29)
+        Me.rbInauguraciones.Size = New System.Drawing.Size(137, 24)
         Me.rbInauguraciones.TabIndex = 104
         Me.rbInauguraciones.TabStop = True
         Me.rbInauguraciones.Text = "Inauguraciones"
@@ -383,9 +392,10 @@ Partial Class Form_SEvento
         'rbActos
         '
         Me.rbActos.AutoSize = True
-        Me.rbActos.Location = New System.Drawing.Point(59, 138)
+        Me.rbActos.Location = New System.Drawing.Point(52, 104)
+        Me.rbActos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rbActos.Name = "rbActos"
-        Me.rbActos.Size = New System.Drawing.Size(176, 29)
+        Me.rbActos.Size = New System.Drawing.Size(143, 24)
         Me.rbActos.TabIndex = 3
         Me.rbActos.TabStop = True
         Me.rbActos.Text = "Actos Culturales"
@@ -394,9 +404,10 @@ Partial Class Form_SEvento
         'rbSeminarios
         '
         Me.rbSeminarios.AutoSize = True
-        Me.rbSeminarios.Location = New System.Drawing.Point(518, 75)
+        Me.rbSeminarios.Location = New System.Drawing.Point(453, 56)
+        Me.rbSeminarios.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rbSeminarios.Name = "rbSeminarios"
-        Me.rbSeminarios.Size = New System.Drawing.Size(131, 29)
+        Me.rbSeminarios.Size = New System.Drawing.Size(106, 24)
         Me.rbSeminarios.TabIndex = 2
         Me.rbSeminarios.TabStop = True
         Me.rbSeminarios.Text = "Seminarios"
@@ -405,9 +416,10 @@ Partial Class Form_SEvento
         'rbFerias
         '
         Me.rbFerias.AutoSize = True
-        Me.rbFerias.Location = New System.Drawing.Point(316, 75)
+        Me.rbFerias.Location = New System.Drawing.Point(276, 56)
+        Me.rbFerias.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rbFerias.Name = "rbFerias"
-        Me.rbFerias.Size = New System.Drawing.Size(87, 29)
+        Me.rbFerias.Size = New System.Drawing.Size(71, 24)
         Me.rbFerias.TabIndex = 1
         Me.rbFerias.TabStop = True
         Me.rbFerias.Text = "Ferias"
@@ -416,9 +428,10 @@ Partial Class Form_SEvento
         'rbConferencias
         '
         Me.rbConferencias.AutoSize = True
-        Me.rbConferencias.Location = New System.Drawing.Point(59, 75)
+        Me.rbConferencias.Location = New System.Drawing.Point(52, 56)
+        Me.rbConferencias.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rbConferencias.Name = "rbConferencias"
-        Me.rbConferencias.Size = New System.Drawing.Size(149, 29)
+        Me.rbConferencias.Size = New System.Drawing.Size(121, 24)
         Me.rbConferencias.TabIndex = 0
         Me.rbConferencias.TabStop = True
         Me.rbConferencias.Text = "Conferencias"
@@ -429,10 +442,10 @@ Partial Class Form_SEvento
         Me.cbLugar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbLugar.FormattingEnabled = True
         Me.cbLugar.Items.AddRange(New Object() {"Auditorio", "Lobby Edificio 3", "Lobby Edificio 1", "Piso FCT", "Piso FIC", "Piso FIEE", "Piso FII", "Piso FIM", "Piso FIM"})
-        Me.cbLugar.Location = New System.Drawing.Point(511, 312)
-        Me.cbLugar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.cbLugar.Location = New System.Drawing.Point(447, 234)
+        Me.cbLugar.Margin = New System.Windows.Forms.Padding(4)
         Me.cbLugar.Name = "cbLugar"
-        Me.cbLugar.Size = New System.Drawing.Size(513, 33)
+        Me.cbLugar.Size = New System.Drawing.Size(449, 28)
         Me.cbLugar.TabIndex = 96
         '
         'cbFacultad
@@ -440,10 +453,10 @@ Partial Class Form_SEvento
         Me.cbFacultad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbFacultad.FormattingEnabled = True
         Me.cbFacultad.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civil (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería Mecánica (FIM)", "Facultad de Ingeniería en Sistemas Computacionales (FISC)"})
-        Me.cbFacultad.Location = New System.Drawing.Point(511, 232)
-        Me.cbFacultad.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.cbFacultad.Location = New System.Drawing.Point(447, 174)
+        Me.cbFacultad.Margin = New System.Windows.Forms.Padding(4)
         Me.cbFacultad.Name = "cbFacultad"
-        Me.cbFacultad.Size = New System.Drawing.Size(625, 33)
+        Me.cbFacultad.Size = New System.Drawing.Size(547, 28)
         Me.cbFacultad.TabIndex = 82
         '
         'Label5
@@ -454,19 +467,19 @@ Partial Class Form_SEvento
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(105, 183)
+        Me.Label5.Location = New System.Drawing.Point(92, 137)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(332, 25)
+        Me.Label5.Size = New System.Drawing.Size(274, 20)
         Me.Label5.TabIndex = 77
         Me.Label5.Text = "Nombre completo de la actividad:"
         '
         'txtNomActividad
         '
-        Me.txtNomActividad.Location = New System.Drawing.Point(511, 174)
-        Me.txtNomActividad.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtNomActividad.Location = New System.Drawing.Point(447, 130)
+        Me.txtNomActividad.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNomActividad.Name = "txtNomActividad"
-        Me.txtNomActividad.Size = New System.Drawing.Size(608, 30)
+        Me.txtNomActividad.Size = New System.Drawing.Size(532, 26)
         Me.txtNomActividad.TabIndex = 78
         '
         'Label6
@@ -477,10 +490,10 @@ Partial Class Form_SEvento
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(111, 245)
+        Me.Label6.Location = New System.Drawing.Point(97, 184)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(345, 25)
+        Me.Label6.Size = New System.Drawing.Size(286, 20)
         Me.Label6.TabIndex = 79
         Me.Label6.Text = "Facultad o unidad que lo organiza:"
         '
@@ -491,10 +504,10 @@ Partial Class Form_SEvento
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label11.Location = New System.Drawing.Point(111, 315)
+        Me.Label11.Location = New System.Drawing.Point(97, 236)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(258, 25)
+        Me.Label11.Size = New System.Drawing.Size(213, 20)
         Me.Label11.TabIndex = 87
         Me.Label11.Text = "Lugar donde se realizará:"
         '
@@ -505,10 +518,10 @@ Partial Class Form_SEvento
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label18.Location = New System.Drawing.Point(53, 108)
+        Me.Label18.Location = New System.Drawing.Point(46, 81)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(1103, 25)
+        Me.Label18.Size = New System.Drawing.Size(917, 20)
         Me.Label18.TabIndex = 76
         Me.Label18.Text = "Por este medio se presenta solicitud formal de los servicios detallados para el d" &
     "esarrollo de la siguiente actividad:"
@@ -520,10 +533,10 @@ Partial Class Form_SEvento
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label17.Location = New System.Drawing.Point(59, 55)
+        Me.Label17.Location = New System.Drawing.Point(52, 41)
         Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(362, 24)
+        Me.Label17.Size = New System.Drawing.Size(295, 18)
         Me.Label17.TabIndex = 75
         Me.Label17.Text = "Director de Comunicación Estratégica"
         '
@@ -534,22 +547,22 @@ Partial Class Form_SEvento
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
         Me.Label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label16.Location = New System.Drawing.Point(53, 22)
+        Me.Label16.Location = New System.Drawing.Point(46, 16)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(229, 29)
+        Me.Label16.Size = New System.Drawing.Size(182, 24)
         Me.Label16.TabIndex = 74
         Me.Label16.Text = "Licdo. Danilo Toro"
         '
         'Form_SEvento
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1904, 794)
+        Me.ClientSize = New System.Drawing.Size(1666, 596)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel2)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form_SEvento"
         Me.Text = "Form_SEvento"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
