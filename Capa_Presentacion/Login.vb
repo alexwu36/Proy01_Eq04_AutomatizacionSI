@@ -4,19 +4,14 @@
     ''' el variable nop sirve para verificar la cantidad de intentos login
     ''' </summary>
 
-    Private Sub btn_Registrarse_Click(sender As Object, e As EventArgs) Handles btn_Registrarse.Click
+    Private Sub llRegistro_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llRegistro.LinkClicked
         Me.Hide()
         frmRegistro.Show()
     End Sub
 
-    Private Sub btn_Olvidar_Contraseña_Click(sender As Object, e As EventArgs) Handles btn_Olvidar_Contraseña.Click
+    Private Sub llRecuperar_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llRecuperar.LinkClicked
         Me.Hide()
         RecuperarContraseña.Show()
-    End Sub
-
-    Private Sub txtRegistrate_Click(sender As Object, e As EventArgs)
-        Me.Hide()
-        frmRegistro.Show()
     End Sub
 
     Private Sub btn_Iniciar_Sesion_Click(sender As Object, e As EventArgs) Handles btn_Iniciar_Sesion.Click
@@ -99,5 +94,4 @@
             txtPassword.ForeColor = Color.Silver
         End If
     End Sub
-
 End Class

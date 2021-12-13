@@ -36,14 +36,14 @@ Partial Class Login
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btn_Iniciar_Sesion = New System.Windows.Forms.Button()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.btn_Olvidar_Contraseña = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.btn_Registrarse = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.llRegistro = New System.Windows.Forms.LinkLabel()
+        Me.llRecuperar = New System.Windows.Forms.LinkLabel()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -222,48 +222,18 @@ Partial Class Login
         Me.CheckBox1.Text = "Recordar Usuario"
         Me.CheckBox1.UseVisualStyleBackColor = False
         '
-        'btn_Olvidar_Contraseña
-        '
-        Me.btn_Olvidar_Contraseña.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btn_Olvidar_Contraseña.BackColor = System.Drawing.Color.DarkMagenta
-        Me.btn_Olvidar_Contraseña.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_Olvidar_Contraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_Olvidar_Contraseña.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Olvidar_Contraseña.Location = New System.Drawing.Point(575, 723)
-        Me.btn_Olvidar_Contraseña.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btn_Olvidar_Contraseña.Name = "btn_Olvidar_Contraseña"
-        Me.btn_Olvidar_Contraseña.Size = New System.Drawing.Size(265, 54)
-        Me.btn_Olvidar_Contraseña.TabIndex = 9
-        Me.btn_Olvidar_Contraseña.Text = "¿Olvidaste tu contraseña?"
-        Me.btn_Olvidar_Contraseña.UseVisualStyleBackColor = False
-        '
         'Label8
         '
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(641, 625)
+        Me.Label8.Location = New System.Drawing.Point(568, 617)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(178, 20)
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "¿Aún no tienes cuenta?"
-        '
-        'btn_Registrarse
-        '
-        Me.btn_Registrarse.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btn_Registrarse.BackColor = System.Drawing.Color.DarkMagenta
-        Me.btn_Registrarse.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_Registrarse.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_Registrarse.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Registrarse.Location = New System.Drawing.Point(623, 648)
-        Me.btn_Registrarse.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.btn_Registrarse.Name = "btn_Registrarse"
-        Me.btn_Registrarse.Size = New System.Drawing.Size(196, 54)
-        Me.btn_Registrarse.TabIndex = 11
-        Me.btn_Registrarse.Text = "Registrate Aquí"
-        Me.btn_Registrarse.UseVisualStyleBackColor = False
         '
         'PictureBox4
         '
@@ -330,17 +300,39 @@ Partial Class Login
         Me.Label14.Text = resources.GetString("Label14.Text")
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'llRegistro
+        '
+        Me.llRegistro.AutoSize = True
+        Me.llRegistro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.llRegistro.Location = New System.Drawing.Point(1035, 617)
+        Me.llRegistro.Name = "llRegistro"
+        Me.llRegistro.Size = New System.Drawing.Size(117, 20)
+        Me.llRegistro.TabIndex = 126
+        Me.llRegistro.TabStop = True
+        Me.llRegistro.Text = "Regístrate aquí"
+        '
+        'llRecuperar
+        '
+        Me.llRecuperar.AutoSize = True
+        Me.llRecuperar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.llRecuperar.Location = New System.Drawing.Point(905, 668)
+        Me.llRecuperar.Name = "llRecuperar"
+        Me.llRecuperar.Size = New System.Drawing.Size(194, 20)
+        Me.llRecuperar.TabIndex = 127
+        Me.llRecuperar.TabStop = True
+        Me.llRecuperar.Text = "¿Olvidaste tu contraseña?"
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1370, 942)
+        Me.Controls.Add(Me.llRecuperar)
+        Me.Controls.Add(Me.llRegistro)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.btn_Registrarse)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.btn_Olvidar_Contraseña)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.btn_Iniciar_Sesion)
         Me.Controls.Add(Me.txtPassword)
@@ -379,14 +371,14 @@ Partial Class Login
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btn_Iniciar_Sesion As Button
     Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents btn_Olvidar_Contraseña As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents btn_Registrarse As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Panel5 As Panel
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label14 As Label
+    Friend WithEvents llRegistro As LinkLabel
+    Friend WithEvents llRecuperar As LinkLabel
 End Class

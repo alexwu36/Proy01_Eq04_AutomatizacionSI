@@ -10,6 +10,8 @@
         telefono = mtxtTelefono.Text
         celular = mtxtCelular.Text
 
+        Capa_Datos.Registro.NuevoUsuario(nombre, apellido, email, password, celular, telefono)
+
         Me.Hide()
         Login.Show()
     End Sub

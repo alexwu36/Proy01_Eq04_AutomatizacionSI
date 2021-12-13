@@ -47,10 +47,15 @@ Partial Class frmRegistro
         Me.mtxtTelefono = New System.Windows.Forms.MaskedTextBox()
         Me.mtxtCelular = New System.Windows.Forms.MaskedTextBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -122,7 +127,7 @@ Partial Class frmRegistro
         Me.Panel2.BackColor = System.Drawing.Color.Purple
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Location = New System.Drawing.Point(3, 879)
+        Me.Panel2.Location = New System.Drawing.Point(3, 988)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1736, 116)
@@ -238,7 +243,7 @@ Partial Class frmRegistro
         Me.btn_Crear_Cuenta.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Crear_Cuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Crear_Cuenta.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Crear_Cuenta.Location = New System.Drawing.Point(856, 703)
+        Me.btn_Crear_Cuenta.Location = New System.Drawing.Point(778, 676)
         Me.btn_Crear_Cuenta.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Crear_Cuenta.Name = "btn_Crear_Cuenta"
         Me.btn_Crear_Cuenta.Size = New System.Drawing.Size(196, 54)
@@ -289,7 +294,7 @@ Partial Class frmRegistro
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.Location = New System.Drawing.Point(834, 761)
+        Me.Label11.Location = New System.Drawing.Point(735, 753)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(147, 20)
@@ -332,18 +337,58 @@ Partial Class frmRegistro
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LinkLabel1.Location = New System.Drawing.Point(988, 760)
+        Me.LinkLabel1.Location = New System.Drawing.Point(1082, 753)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(99, 20)
         Me.LinkLabel1.TabIndex = 22
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Inicia Sesión"
         '
+        'Panel5
+        '
+        Me.Panel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel5.BackColor = System.Drawing.Color.Purple
+        Me.Panel5.Controls.Add(Me.PictureBox5)
+        Me.Panel5.Controls.Add(Me.Label14)
+        Me.Panel5.Location = New System.Drawing.Point(3, 827)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(1681, 116)
+        Me.Panel5.TabIndex = 126
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(160, 116)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 10
+        Me.PictureBox5.TabStop = False
+        '
+        'Label14
+        '
+        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label14.Location = New System.Drawing.Point(478, 11)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label14.Size = New System.Drawing.Size(735, 96)
+        Me.Label14.TabIndex = 0
+        Me.Label14.Text = resources.GetString("Label14.Text")
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'frmRegistro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1684, 834)
+        Me.ClientSize = New System.Drawing.Size(1684, 943)
+        Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.mtxtCelular)
         Me.Controls.Add(Me.mtxtTelefono)
@@ -372,6 +417,9 @@ Partial Class frmRegistro
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -401,4 +449,7 @@ Partial Class frmRegistro
     Friend WithEvents mtxtTelefono As MaskedTextBox
     Friend WithEvents mtxtCelular As MaskedTextBox
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label14 As Label
 End Class

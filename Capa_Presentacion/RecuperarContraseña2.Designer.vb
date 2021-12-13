@@ -155,7 +155,7 @@ Partial Class frmRecuperarContraseña2
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(522, 146)
+        Me.Label4.Location = New System.Drawing.Point(575, 152)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(275, 29)
@@ -256,7 +256,7 @@ Partial Class frmRecuperarContraseña2
         Me.pnIngreso.Controls.Add(Me.Label7)
         Me.pnIngreso.Controls.Add(Me.txtContrasenaNuevaRep)
         Me.pnIngreso.Controls.Add(Me.txtContrasenaNueva)
-        Me.pnIngreso.Location = New System.Drawing.Point(409, 453)
+        Me.pnIngreso.Location = New System.Drawing.Point(493, 431)
         Me.pnIngreso.Name = "pnIngreso"
         Me.pnIngreso.Size = New System.Drawing.Size(474, 254)
         Me.pnIngreso.TabIndex = 137
@@ -264,7 +264,7 @@ Partial Class frmRecuperarContraseña2
         '
         'txtCorreoUser
         '
-        Me.txtCorreoUser.Location = New System.Drawing.Point(465, 218)
+        Me.txtCorreoUser.Location = New System.Drawing.Point(540, 225)
         Me.txtCorreoUser.Name = "txtCorreoUser"
         Me.txtCorreoUser.ReadOnly = True
         Me.txtCorreoUser.Size = New System.Drawing.Size(332, 23)

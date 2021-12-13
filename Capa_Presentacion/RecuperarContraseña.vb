@@ -18,4 +18,5 @@
         Me.Hide()
         frmRegistro.Show()
     End Sub
+
 End Class
