@@ -6,7 +6,7 @@
 #Notas de Cambios en la BD
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 12-13-21
--Alex 
+<pre>Alex 
 
 1) AÑADI COLUMNA ESTADO Y COMENTARIOS PARA TABLA SOLICITUD:
 ALTER TABLE automatizacion.solicitud
