@@ -192,6 +192,7 @@ Partial Class Login
         Me.txtPassword.Size = New System.Drawing.Size(307, 22)
         Me.txtPassword.TabIndex = 6
         Me.txtPassword.Text = "Contraseña"
+        Me.txtPassword.UseSystemPasswordChar = True
         '
         'btn_Iniciar_Sesion
         '
