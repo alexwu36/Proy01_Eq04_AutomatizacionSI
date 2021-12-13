@@ -35,7 +35,7 @@ Partial Class RecuperarContraseña
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtCorreoE = New System.Windows.Forms.TextBox()
         Me.btn_Enviar = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
@@ -192,21 +192,21 @@ Partial Class RecuperarContraseña
         Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(630, 391)
+        Me.Label6.Location = New System.Drawing.Point(587, 390)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(57, 20)
+        Me.Label6.Size = New System.Drawing.Size(142, 20)
         Me.Label6.TabIndex = 7
-        Me.Label6.Text = "Correo"
+        Me.Label6.Text = "Correo electrónico:"
         '
-        'TextBox1
+        'txtCorreoE
         '
-        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Location = New System.Drawing.Point(737, 391)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(289, 23)
-        Me.TextBox1.TabIndex = 8
+        Me.txtCorreoE.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.txtCorreoE.Location = New System.Drawing.Point(737, 391)
+        Me.txtCorreoE.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.txtCorreoE.Name = "txtCorreoE"
+        Me.txtCorreoE.Size = New System.Drawing.Size(289, 23)
+        Me.txtCorreoE.TabIndex = 8
         '
         'btn_Enviar
         '
@@ -227,7 +227,7 @@ Partial Class RecuperarContraseña
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(737, 584)
+        Me.Label8.Location = New System.Drawing.Point(783, 584)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(170, 20)
         Me.Label8.TabIndex = 10
@@ -238,7 +238,7 @@ Partial Class RecuperarContraseña
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LinkLabel1.Location = New System.Drawing.Point(913, 584)
+        Me.LinkLabel1.Location = New System.Drawing.Point(959, 584)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(120, 20)
         Me.LinkLabel1.TabIndex = 11
@@ -253,7 +253,7 @@ Partial Class RecuperarContraseña
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.btn_Enviar)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtCorreoE)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label5)
@@ -261,7 +261,7 @@ Partial Class RecuperarContraseña
         Me.Controls.Add(Me.Panel1)
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "RecuperarContraseña"
-        Me.Text = "RecuperarContraseña"
+        Me.Text = "Recuperar Contraseña"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -285,7 +285,7 @@ Partial Class RecuperarContraseña
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtCorreoE As TextBox
     Friend WithEvents btn_Enviar As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
