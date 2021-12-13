@@ -35,6 +35,7 @@ Partial Class Form_Lista_de_Solicitudes
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.txtSolicitante = New System.Windows.Forms.TextBox()
         Me.txtFacultad = New System.Windows.Forms.TextBox()
         Me.txtLugar = New System.Windows.Forms.TextBox()
@@ -54,6 +55,7 @@ Partial Class Form_Lista_de_Solicitudes
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtComentarios = New System.Windows.Forms.TextBox()
         Me.DGV_Solicitud = New System.Windows.Forms.DataGridView()
+        Me.txtEstado = New System.Windows.Forms.TextBox()
         Me.Panel3.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -209,6 +211,8 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.txtEstado)
+        Me.Panel2.Controls.Add(Me.Label13)
         Me.Panel2.Controls.Add(Me.txtSolicitante)
         Me.Panel2.Controls.Add(Me.txtFacultad)
         Me.Panel2.Controls.Add(Me.txtLugar)
@@ -233,6 +237,16 @@ Partial Class Form_Lista_de_Solicitudes
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1433, 738)
         Me.Panel2.TabIndex = 126
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(846, 181)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(43, 15)
+        Me.Label13.TabIndex = 20
+        Me.Label13.Text = "Estado"
         '
         'txtSolicitante
         '
@@ -358,9 +372,9 @@ Partial Class Form_Lista_de_Solicitudes
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label6.Location = New System.Drawing.Point(846, 256)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(101, 15)
+        Me.Label6.Size = New System.Drawing.Size(39, 15)
         Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Fecha del Evento"
+        Me.Label6.Text = "Fecha"
         '
         'lblNombre
         '
@@ -384,7 +398,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(860, 36)
+        Me.Label5.Location = New System.Drawing.Point(846, 10)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(215, 25)
         Me.Label5.TabIndex = 3
@@ -392,7 +406,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         'txtComentarios
         '
-        Me.txtComentarios.Location = New System.Drawing.Point(860, 74)
+        Me.txtComentarios.Location = New System.Drawing.Point(846, 48)
         Me.txtComentarios.Multiline = True
         Me.txtComentarios.Name = "txtComentarios"
         Me.txtComentarios.Size = New System.Drawing.Size(381, 111)
@@ -408,8 +422,17 @@ Partial Class Form_Lista_de_Solicitudes
         Me.DGV_Solicitud.Name = "DGV_Solicitud"
         Me.DGV_Solicitud.ReadOnly = True
         Me.DGV_Solicitud.RowTemplate.Height = 25
-        Me.DGV_Solicitud.Size = New System.Drawing.Size(778, 478)
+        Me.DGV_Solicitud.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.DGV_Solicitud.Size = New System.Drawing.Size(775, 248)
         Me.DGV_Solicitud.TabIndex = 0
+        '
+        'txtEstado
+        '
+        Me.txtEstado.Location = New System.Drawing.Point(968, 173)
+        Me.txtEstado.Name = "txtEstado"
+        Me.txtEstado.ReadOnly = True
+        Me.txtEstado.Size = New System.Drawing.Size(157, 23)
+        Me.txtEstado.TabIndex = 21
         '
         'Form_Lista_de_Solicitudes
         '
@@ -467,4 +490,6 @@ Partial Class Form_Lista_de_Solicitudes
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents txtEstado As TextBox
 End Class
