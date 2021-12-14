@@ -80,16 +80,16 @@ Partial Class Form_SEvento
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Location = New System.Drawing.Point(-5, 32767)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(5)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(776, 155)
+        Me.Panel2.Size = New System.Drawing.Size(734, 155)
         Me.Panel2.TabIndex = 8
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(5)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(183, 155)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -102,7 +102,7 @@ Partial Class Form_SEvento
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(-608, 0)
+        Me.Label7.Location = New System.Drawing.Point(-650, 0)
         Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -122,9 +122,9 @@ Partial Class Form_SEvento
         Me.Panel7.Controls.Add(Me.Panel1)
         Me.Panel7.Controls.Add(Me.Panel4)
         Me.Panel7.Location = New System.Drawing.Point(-5, -3)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(5)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1451, 2091)
+        Me.Panel7.Size = New System.Drawing.Size(1409, 2091)
         Me.Panel7.TabIndex = 45
         '
         'btn_Regresar
@@ -133,8 +133,8 @@ Partial Class Form_SEvento
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(101, 1265)
-        Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.btn_Regresar.Location = New System.Drawing.Point(80, 1265)
+        Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(5)
         Me.btn_Regresar.Name = "btn_Regresar"
         Me.btn_Regresar.Size = New System.Drawing.Size(221, 80)
         Me.btn_Regresar.TabIndex = 4
@@ -149,16 +149,16 @@ Partial Class Form_SEvento
         Me.Panel6.Controls.Add(Me.PictureBox3)
         Me.Panel6.Controls.Add(Me.Label14)
         Me.Panel6.Location = New System.Drawing.Point(0, 1469)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(5)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1474, 163)
+        Me.Panel6.Size = New System.Drawing.Size(1432, 163)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(5)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(183, 155)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -171,7 +171,7 @@ Partial Class Form_SEvento
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(292, 5)
+        Me.Label14.Location = New System.Drawing.Point(271, 5)
         Me.Label14.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -186,8 +186,8 @@ Partial Class Form_SEvento
         Me.btn_Continuar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Continuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Continuar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Continuar.Location = New System.Drawing.Point(1197, 1264)
-        Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.btn_Continuar.Location = New System.Drawing.Point(1176, 1264)
+        Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(5)
         Me.btn_Continuar.Name = "btn_Continuar"
         Me.btn_Continuar.Size = New System.Drawing.Size(221, 80)
         Me.btn_Continuar.TabIndex = 68
@@ -199,7 +199,7 @@ Partial Class Form_SEvento
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(470, 245)
+        Me.Label4.Location = New System.Drawing.Point(449, 245)
         Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(611, 31)
@@ -216,9 +216,9 @@ Partial Class Form_SEvento
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(5, 3)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1466, 163)
+        Me.Panel1.Size = New System.Drawing.Size(1424, 163)
         Me.Panel1.TabIndex = 59
         '
         'Label3
@@ -249,7 +249,7 @@ Partial Class Form_SEvento
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 3)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(5)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(183, 157)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -285,8 +285,8 @@ Partial Class Form_SEvento
         Me.Panel4.Controls.Add(Me.Label16)
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Panel4.Location = New System.Drawing.Point(101, 301)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Panel4.Location = New System.Drawing.Point(80, 301)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(5)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1317, 899)
         Me.Panel4.TabIndex = 67
@@ -430,7 +430,7 @@ Partial Class Form_SEvento
         Me.cbLugar.FormattingEnabled = True
         Me.cbLugar.Items.AddRange(New Object() {"Auditorio", "Lobby Edificio 3", "Lobby Edificio 1", "Piso FCT", "Piso FIC", "Piso FIEE", "Piso FII", "Piso FIM", "Piso FIM"})
         Me.cbLugar.Location = New System.Drawing.Point(511, 312)
-        Me.cbLugar.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.cbLugar.Margin = New System.Windows.Forms.Padding(5)
         Me.cbLugar.Name = "cbLugar"
         Me.cbLugar.Size = New System.Drawing.Size(513, 33)
         Me.cbLugar.TabIndex = 96
@@ -441,7 +441,7 @@ Partial Class Form_SEvento
         Me.cbFacultad.FormattingEnabled = True
         Me.cbFacultad.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civil (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería Mecánica (FIM)", "Facultad de Ingeniería en Sistemas Computacionales (FISC)"})
         Me.cbFacultad.Location = New System.Drawing.Point(511, 232)
-        Me.cbFacultad.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.cbFacultad.Margin = New System.Windows.Forms.Padding(5)
         Me.cbFacultad.Name = "cbFacultad"
         Me.cbFacultad.Size = New System.Drawing.Size(625, 33)
         Me.cbFacultad.TabIndex = 82
@@ -464,7 +464,7 @@ Partial Class Form_SEvento
         'txtNomActividad
         '
         Me.txtNomActividad.Location = New System.Drawing.Point(511, 173)
-        Me.txtNomActividad.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txtNomActividad.Margin = New System.Windows.Forms.Padding(5)
         Me.txtNomActividad.Name = "txtNomActividad"
         Me.txtNomActividad.Size = New System.Drawing.Size(607, 30)
         Me.txtNomActividad.TabIndex = 78
@@ -549,7 +549,7 @@ Partial Class Form_SEvento
         Me.ClientSize = New System.Drawing.Size(1904, 795)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel2)
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "Form_SEvento"
         Me.Text = "Form_SEvento"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

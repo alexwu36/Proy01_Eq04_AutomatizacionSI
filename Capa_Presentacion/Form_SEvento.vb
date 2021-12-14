@@ -17,8 +17,8 @@
     Private Sub btn_Continuar_Click(sender As Object, e As EventArgs) Handles btn_Continuar.Click
 
         Capa_Datos.nombreEvento = txtNomActividad.Text
-        Capa_Datos.idFacultad2 = cbFacultad.SelectedIndex
-        Capa_Datos.idLugar2 = cbLugar.SelectedIndex
+        Capa_Datos.idFacultad2 = cbFacultad.SelectedIndex + 1
+        Capa_Datos.idLugar2 = cbLugar.SelectedIndex + 1
 
         Capa_Datos.fechaEvento = dtpHoraInicio.Value
         Capa_Datos.horaInicio2 = dtpHoraInicio.Value
