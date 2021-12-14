@@ -60,9 +60,9 @@
                 Capa_Datos.funcionSQL.RECHAZAR_COMENT(id, comentarios)
                 comentarios = "Comentarios para el solicitante..."
 
-                    txtComentarios.Text = comentarios
-                End If
+                txtComentarios.Text = comentarios
             End If
+        End If
         Me.BindDataGrid()
     End Sub
 

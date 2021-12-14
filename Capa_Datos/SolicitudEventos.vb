@@ -12,7 +12,7 @@ Public Module SolicitudEventos
         observacion2 = ""
         idLugar = 0
         idFacultad = 0
-        idActividad = 0
+        idActividad2 = 0
         idUsuario = 0
     End Sub
 

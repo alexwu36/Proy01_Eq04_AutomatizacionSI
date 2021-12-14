@@ -12,17 +12,18 @@
 
         'Información del Día de Retiro
         Capa_Datos.fechaRetiro = dtpFechaRetiro.Value
-        Capa_Datos.nombreRetiro = txtNomRetiro.Text
-        Capa_Datos.nombreEntrega = txtNomEntrega.Text
 
         'Información del Día de Devolución
 
         Capa_Datos.fechaDevolucion = dtpFechaDevolucion.Value
-        Capa_Datos.nombreDevuelve = txtNomDvuelve.Text
-        Capa_Datos.nombreRecibe = txtNomRecibe.Text
+
+        Capa_Datos.SolicitudEquipos.InsertarEquipo()
 
         Me.Hide()
-        PantallaPrincipal_UGeneral.Show()
+        Form_SEquipo2.Show()
     End Sub
 
+    Private Sub Form_SEquipo3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
