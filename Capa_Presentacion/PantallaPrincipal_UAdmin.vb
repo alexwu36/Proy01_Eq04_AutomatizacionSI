@@ -13,4 +13,9 @@
         Me.Hide()
         Form_Lista_de_Solicitudes.Show()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Form_Lista_de_Solicitudes_Orden.Show()
+    End Sub
 End Class

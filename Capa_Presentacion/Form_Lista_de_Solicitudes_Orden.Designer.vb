@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form_Lista_de_Solicitudes
+Partial Class Form_Lista_de_Solicitudes_Orden
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Form_Lista_de_Solicitudes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Lista_de_Solicitudes))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Lista_de_Solicitudes_Orden))
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -35,6 +35,8 @@ Partial Class Form_Lista_de_Solicitudes
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtDevolucion = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.txtEstado = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.txtSolicitante = New System.Windows.Forms.TextBox()
@@ -43,12 +45,8 @@ Partial Class Form_Lista_de_Solicitudes
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtObservacion = New System.Windows.Forms.TextBox()
-        Me.txtHoraFinal = New System.Windows.Forms.TextBox()
         Me.txtHora = New System.Windows.Forms.TextBox()
         Me.txtFecha = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
@@ -56,8 +54,6 @@ Partial Class Form_Lista_de_Solicitudes
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtComentarios = New System.Windows.Forms.TextBox()
         Me.DGV_Solicitud = New System.Windows.Forms.DataGridView()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.txtActividad = New System.Windows.Forms.TextBox()
         Me.Panel3.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -213,7 +209,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.txtActividad)
+        Me.Panel2.Controls.Add(Me.txtDevolucion)
         Me.Panel2.Controls.Add(Me.Label15)
         Me.Panel2.Controls.Add(Me.txtEstado)
         Me.Panel2.Controls.Add(Me.Label13)
@@ -223,12 +219,8 @@ Partial Class Form_Lista_de_Solicitudes
         Me.Panel2.Controls.Add(Me.Label12)
         Me.Panel2.Controls.Add(Me.Label11)
         Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.txtObservacion)
-        Me.Panel2.Controls.Add(Me.txtHoraFinal)
         Me.Panel2.Controls.Add(Me.txtHora)
         Me.Panel2.Controls.Add(Me.txtFecha)
-        Me.Panel2.Controls.Add(Me.Label9)
-        Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.lblNombre)
@@ -241,6 +233,24 @@ Partial Class Form_Lista_de_Solicitudes
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1433, 738)
         Me.Panel2.TabIndex = 126
+        '
+        'txtDevolucion
+        '
+        Me.txtDevolucion.Location = New System.Drawing.Point(968, 315)
+        Me.txtDevolucion.Name = "txtDevolucion"
+        Me.txtDevolucion.ReadOnly = True
+        Me.txtDevolucion.Size = New System.Drawing.Size(157, 23)
+        Me.txtDevolucion.TabIndex = 23
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label15.Location = New System.Drawing.Point(846, 318)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(122, 15)
+        Me.Label15.TabIndex = 22
+        Me.Label15.Text = "Fecha de Devolucion"
         '
         'txtEstado
         '
@@ -270,7 +280,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         'txtFacultad
         '
-        Me.txtFacultad.Location = New System.Drawing.Point(968, 354)
+        Me.txtFacultad.Location = New System.Drawing.Point(969, 393)
         Me.txtFacultad.Name = "txtFacultad"
         Me.txtFacultad.ReadOnly = True
         Me.txtFacultad.Size = New System.Drawing.Size(157, 23)
@@ -278,7 +288,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         'txtLugar
         '
-        Me.txtLugar.Location = New System.Drawing.Point(968, 314)
+        Me.txtLugar.Location = New System.Drawing.Point(969, 353)
         Me.txtLugar.Name = "txtLugar"
         Me.txtLugar.ReadOnly = True
         Me.txtLugar.Size = New System.Drawing.Size(157, 23)
@@ -298,7 +308,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.Location = New System.Drawing.Point(846, 354)
+        Me.Label11.Location = New System.Drawing.Point(847, 393)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(53, 15)
         Me.Label11.TabIndex = 15
@@ -308,29 +318,11 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.Location = New System.Drawing.Point(846, 317)
+        Me.Label10.Location = New System.Drawing.Point(847, 356)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(38, 15)
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "Lugar"
-        '
-        'txtObservacion
-        '
-        Me.txtObservacion.Location = New System.Drawing.Point(968, 471)
-        Me.txtObservacion.Multiline = True
-        Me.txtObservacion.Name = "txtObservacion"
-        Me.txtObservacion.ReadOnly = True
-        Me.txtObservacion.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtObservacion.Size = New System.Drawing.Size(277, 55)
-        Me.txtObservacion.TabIndex = 13
-        '
-        'txtHoraFinal
-        '
-        Me.txtHoraFinal.Location = New System.Drawing.Point(1113, 274)
-        Me.txtHoraFinal.Name = "txtHoraFinal"
-        Me.txtHoraFinal.ReadOnly = True
-        Me.txtHoraFinal.Size = New System.Drawing.Size(76, 23)
-        Me.txtHoraFinal.TabIndex = 12
         '
         'txtHora
         '
@@ -348,35 +340,15 @@ Partial Class Form_Lista_de_Solicitudes
         Me.txtFecha.Size = New System.Drawing.Size(157, 23)
         Me.txtFecha.TabIndex = 10
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.Location = New System.Drawing.Point(846, 471)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(76, 15)
-        Me.Label9.TabIndex = 9
-        Me.Label9.Text = "Observación"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(1046, 277)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(61, 15)
-        Me.Label8.TabIndex = 8
-        Me.Label8.Text = "Hasta las: "
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label7.Location = New System.Drawing.Point(846, 277)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(65, 15)
+        Me.Label7.Size = New System.Drawing.Size(37, 15)
         Me.Label7.TabIndex = 7
-        Me.Label7.Text = "Desde las: "
+        Me.Label7.Text = "Hora:"
         '
         'Label6
         '
@@ -438,32 +410,14 @@ Partial Class Form_Lista_de_Solicitudes
         Me.DGV_Solicitud.Size = New System.Drawing.Size(775, 248)
         Me.DGV_Solicitud.TabIndex = 0
         '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label15.Location = New System.Drawing.Point(846, 396)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(59, 15)
-        Me.Label15.TabIndex = 22
-        Me.Label15.Text = "Actividad"
-        '
-        'txtActividad
-        '
-        Me.txtActividad.Location = New System.Drawing.Point(968, 393)
-        Me.txtActividad.Name = "txtActividad"
-        Me.txtActividad.ReadOnly = True
-        Me.txtActividad.Size = New System.Drawing.Size(157, 23)
-        Me.txtActividad.TabIndex = 23
-        '
-        'Form_Lista_de_Solicitudes
+        'Form_Lista_de_Solicitudes_Orden
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.Panel3)
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Name = "Form_Lista_de_Solicitudes"
+        Me.Name = "Form_Lista_de_Solicitudes_Orden"
         Me.Text = "Form_Lista_de_Solicitudes"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel3.ResumeLayout(False)
@@ -496,12 +450,8 @@ Partial Class Form_Lista_de_Solicitudes
     Friend WithEvents Label5 As Label
     Friend WithEvents txtComentarios As TextBox
     Friend WithEvents DGV_Solicitud As DataGridView
-    Friend WithEvents txtObservacion As TextBox
-    Friend WithEvents txtHoraFinal As TextBox
     Friend WithEvents txtHora As TextBox
     Friend WithEvents txtFecha As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents lblNombre As Label
@@ -514,6 +464,6 @@ Partial Class Form_Lista_de_Solicitudes
     Friend WithEvents Label10 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents txtEstado As TextBox
-    Friend WithEvents txtActividad As TextBox
+    Friend WithEvents txtDevolucion As TextBox
     Friend WithEvents Label15 As Label
 End Class

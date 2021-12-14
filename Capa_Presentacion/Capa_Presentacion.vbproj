@@ -36,9 +36,6 @@
     <Compile Update="Form_Inventario.Designer.vb">
       <DependentUpon>Form_Inventario.vb</DependentUpon>
     </Compile>
-    <Compile Update="Form_Lista_de_Solicitudes.Designer.vb">
-      <DependentUpon>Form_Lista_de_Solicitudes.vb</DependentUpon>
-    </Compile>
     <Compile Update="Form_SEquipo2.Designer.vb">
       <DependentUpon>Form_SEquipo2.vb</DependentUpon>
     </Compile>
@@ -71,9 +68,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Update="PantallaPrincipal_UAdmin.Designer.vb">
-      <DependentUpon>PantallaPrincipal_UAdmin.vb</DependentUpon>
     </Compile>
     <Compile Update="PantallaPrincipal_UGeneral.Designer.vb">
       <DependentUpon>PantallaPrincipal_UGeneral.vb</DependentUpon>

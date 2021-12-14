@@ -37,12 +37,12 @@
 
 
             If (tipo = 2) Then
-                MessageBox.Show("Bienvenido al Sistema, su tipo de usuario es= " & tipo, "Sistema")
+                MessageBox.Show("Bienvenido al Sistema")
                 Me.Hide()
                 PantallaPrincipal_UAdmin.Show()
                 nop = 0
             ElseIf (tipo = 1) Then
-                MessageBox.Show("Bienvenido al Sistema, su tipo de usuario es= " & tipo, "Sistema")
+                MessageBox.Show("Bienvenido al Sistema, Administrador")
                 Me.Hide()
                 PantallaPrincipal_UGeneral.Show()
                 nop = 0
