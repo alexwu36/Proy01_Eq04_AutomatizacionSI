@@ -24,6 +24,7 @@ Partial Class PantallaPrincipal_UGeneral
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PantallaPrincipal_UGeneral))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lbBienvenida = New System.Windows.Forms.Label()
         Me.btn_Salir = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -55,27 +56,41 @@ Partial Class PantallaPrincipal_UGeneral
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.Purple
+        Me.Panel1.Controls.Add(Me.lbBienvenida)
         Me.Panel1.Controls.Add(Me.btn_Salir)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(2, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1390, 105)
+        Me.Panel1.Size = New System.Drawing.Size(1622, 121)
         Me.Panel1.TabIndex = 4
+        '
+        'lbBienvenida
+        '
+        Me.lbBienvenida.AutoSize = True
+        Me.lbBienvenida.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbBienvenida.ForeColor = System.Drawing.Color.White
+        Me.lbBienvenida.Location = New System.Drawing.Point(1182, 41)
+        Me.lbBienvenida.Name = "lbBienvenida"
+        Me.lbBienvenida.Size = New System.Drawing.Size(72, 24)
+        Me.lbBienvenida.TabIndex = 31
+        Me.lbBienvenida.Text = "Label5"
         '
         'btn_Salir
         '
         Me.btn_Salir.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.btn_Salir.BackColor = System.Drawing.Color.White
         Me.btn_Salir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_Salir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Salir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Salir.ForeColor = System.Drawing.Color.Black
-        Me.btn_Salir.Location = New System.Drawing.Point(1176, 23)
+        Me.btn_Salir.Location = New System.Drawing.Point(1372, 27)
+        Me.btn_Salir.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Salir.Name = "btn_Salir"
         Me.btn_Salir.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.btn_Salir.Size = New System.Drawing.Size(168, 47)
+        Me.btn_Salir.Size = New System.Drawing.Size(196, 54)
         Me.btn_Salir.TabIndex = 8
         Me.btn_Salir.Text = "Salir"
         Me.btn_Salir.UseVisualStyleBackColor = False
@@ -83,9 +98,10 @@ Partial Class PantallaPrincipal_UGeneral
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(144, 62)
+        Me.Label3.Location = New System.Drawing.Point(168, 72)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(577, 24)
         Me.Label3.TabIndex = 2
@@ -94,9 +110,10 @@ Partial Class PantallaPrincipal_UGeneral
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(144, 33)
+        Me.Label2.Location = New System.Drawing.Point(168, 38)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(481, 24)
         Me.Label2.TabIndex = 3
@@ -104,10 +121,11 @@ Partial Class PantallaPrincipal_UGeneral
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.logo
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(0, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(137, 102)
+        Me.PictureBox1.Size = New System.Drawing.Size(160, 118)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
@@ -115,9 +133,10 @@ Partial Class PantallaPrincipal_UGeneral
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(143, 8)
+        Me.Label1.Location = New System.Drawing.Point(167, 9)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(397, 25)
         Me.Label1.TabIndex = 2
@@ -130,17 +149,19 @@ Partial Class PantallaPrincipal_UGeneral
         Me.Panel2.BackColor = System.Drawing.Color.Purple
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Location = New System.Drawing.Point(2, 724)
+        Me.Panel2.Location = New System.Drawing.Point(2, 835)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1390, 100)
+        Me.Panel2.Size = New System.Drawing.Size(1622, 115)
         Me.Panel2.TabIndex = 7
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.logo_footer
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(137, 100)
+        Me.PictureBox2.Size = New System.Drawing.Size(160, 115)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
@@ -149,12 +170,13 @@ Partial Class PantallaPrincipal_UGeneral
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(335, 0)
+        Me.Label7.Location = New System.Drawing.Point(391, 0)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label7.Size = New System.Drawing.Size(736, 96)
+        Me.Label7.Size = New System.Drawing.Size(735, 96)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = resources.GetString("Label7.Text")
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -162,8 +184,9 @@ Partial Class PantallaPrincipal_UGeneral
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(144, 128)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(168, 148)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(225, 31)
         Me.Label4.TabIndex = 8
@@ -173,10 +196,11 @@ Partial Class PantallaPrincipal_UGeneral
         '
         Me.btn_Form_SEvento.BackColor = System.Drawing.Color.LightGray
         Me.btn_Form_SEvento.Cursor = System.Windows.Forms.Cursors.Default
-        Me.btn_Form_SEvento.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Form_SEvento.Location = New System.Drawing.Point(194, 221)
+        Me.btn_Form_SEvento.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_Form_SEvento.Location = New System.Drawing.Point(226, 255)
+        Me.btn_Form_SEvento.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Form_SEvento.Name = "btn_Form_SEvento"
-        Me.btn_Form_SEvento.Size = New System.Drawing.Size(515, 113)
+        Me.btn_Form_SEvento.Size = New System.Drawing.Size(601, 130)
         Me.btn_Form_SEvento.TabIndex = 9
         Me.btn_Form_SEvento.Text = "Formulario de Solicitud de Eventos"
         Me.btn_Form_SEvento.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -185,10 +209,11 @@ Partial Class PantallaPrincipal_UGeneral
         'btn_FormSEquipo
         '
         Me.btn_FormSEquipo.BackColor = System.Drawing.Color.LightGray
-        Me.btn_FormSEquipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_FormSEquipo.Location = New System.Drawing.Point(194, 393)
+        Me.btn_FormSEquipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_FormSEquipo.Location = New System.Drawing.Point(226, 453)
+        Me.btn_FormSEquipo.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_FormSEquipo.Name = "btn_FormSEquipo"
-        Me.btn_FormSEquipo.Size = New System.Drawing.Size(515, 113)
+        Me.btn_FormSEquipo.Size = New System.Drawing.Size(601, 130)
         Me.btn_FormSEquipo.TabIndex = 10
         Me.btn_FormSEquipo.Text = "Formulario de Solicitud de Equipos"
         Me.btn_FormSEquipo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -197,10 +222,11 @@ Partial Class PantallaPrincipal_UGeneral
         'btn_Estado_Solicitud
         '
         Me.btn_Estado_Solicitud.BackColor = System.Drawing.Color.LightGray
-        Me.btn_Estado_Solicitud.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Estado_Solicitud.Location = New System.Drawing.Point(194, 567)
+        Me.btn_Estado_Solicitud.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_Estado_Solicitud.Location = New System.Drawing.Point(226, 654)
+        Me.btn_Estado_Solicitud.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Estado_Solicitud.Name = "btn_Estado_Solicitud"
-        Me.btn_Estado_Solicitud.Size = New System.Drawing.Size(515, 113)
+        Me.btn_Estado_Solicitud.Size = New System.Drawing.Size(601, 130)
         Me.btn_Estado_Solicitud.TabIndex = 17
         Me.btn_Estado_Solicitud.Text = "Estado de la Solicitud"
         Me.btn_Estado_Solicitud.UseVisualStyleBackColor = False
@@ -226,7 +252,8 @@ Partial Class PantallaPrincipal_UGeneral
         Me.UI_Calendario1.DayWeekForeColor = System.Drawing.Color.BlueViolet
         Me.UI_Calendario1.ElipceSize = 5
         Me.UI_Calendario1.HourFont = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.Location = New System.Drawing.Point(829, 128)
+        Me.UI_Calendario1.Location = New System.Drawing.Point(967, 148)
+        Me.UI_Calendario1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.UI_Calendario1.MonthFont = New System.Drawing.Font("Arial Rounded MT Bold", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
         Me.UI_Calendario1.MonthForeColor = System.Drawing.Color.BlueViolet
         Me.UI_Calendario1.MoveCalendar = True
@@ -237,7 +264,7 @@ Partial Class PantallaPrincipal_UGeneral
         Me.UI_Calendario1.PanelDayBackColor = System.Drawing.Color.White
         Me.UI_Calendario1.PanelLowerBackColor = System.Drawing.Color.White
         Me.UI_Calendario1.SemanaFont = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.UI_Calendario1.Size = New System.Drawing.Size(454, 575)
+        Me.UI_Calendario1.Size = New System.Drawing.Size(530, 663)
         Me.UI_Calendario1.TabIndex = 21
         Me.UI_Calendario1.Text = "UI_Calendario1"
         Me.UI_Calendario1.TimeForeColor = System.Drawing.Color.BlueViolet
@@ -254,10 +281,11 @@ Partial Class PantallaPrincipal_UGeneral
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.LightGray
-        Me.PictureBox5.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.reloj
-        Me.PictureBox5.Location = New System.Drawing.Point(212, 580)
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(247, 669)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(106, 85)
+        Me.PictureBox5.Size = New System.Drawing.Size(124, 98)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 20
         Me.PictureBox5.TabStop = False
@@ -265,10 +293,11 @@ Partial Class PantallaPrincipal_UGeneral
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.LightGray
-        Me.PictureBox4.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.formulario1
-        Me.PictureBox4.Location = New System.Drawing.Point(212, 405)
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(247, 467)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(106, 87)
+        Me.PictureBox4.Size = New System.Drawing.Size(124, 100)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 19
         Me.PictureBox4.TabStop = False
@@ -276,19 +305,20 @@ Partial Class PantallaPrincipal_UGeneral
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.LightGray
-        Me.PictureBox3.Image = Global.Proy01_Eq04_AutomatizacionSI.My.Resources.Resources.caja1
-        Me.PictureBox3.Location = New System.Drawing.Point(212, 233)
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(247, 269)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(106, 87)
+        Me.PictureBox3.Size = New System.Drawing.Size(124, 100)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 29
         Me.PictureBox3.TabStop = False
         '
         'PantallaPrincipal_UGeneral
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1392, 824)
+        Me.ClientSize = New System.Drawing.Size(1624, 951)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.UI_Calendario1)
         Me.Controls.Add(Me.PictureBox5)
@@ -299,6 +329,7 @@ Partial Class PantallaPrincipal_UGeneral
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "PantallaPrincipal_UGeneral"
         Me.Text = "PantallaPrincipal_UGeneral"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -334,4 +365,5 @@ Partial Class PantallaPrincipal_UGeneral
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents UI_Calendario1 As Calendario.UI_Calendario
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents lbBienvenida As Label
 End Class

@@ -18,4 +18,8 @@
         Me.Hide()
         Form_EstadoSolicitud.Show()
     End Sub
+
+    Private Sub PantallaPrincipal_UGeneral_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lbBienvenida.Text = "Bienvenid@, " & Capa_Datos.UsuarioActivo.firstName & " " & Capa_Datos.UsuarioActivo.lastName
+    End Sub
 End Class

@@ -16,33 +16,13 @@
 
     Private Sub btn_Iniciar_Sesion_Click(sender As Object, e As EventArgs) Handles btn_Iniciar_Sesion.Click
         Dim tipo As Integer
-        Dim nombre As String
-        Dim apellido As String
-        Dim usuario As String
-        Dim id As Integer
-
-
-        If (Capa_Datos.ExisteUsuario.ExisteUsuario(txtCorreo.Text, txtPassword.Text, nop)) Then
-            tipo = Capa_Datos.ExisteUsuario.TipoUsuario(txtCorreo.Text)
-            id = Capa_Datos.DatosUsuario.ConseguirId(txtCorreo.Text)
-            nombre = Capa_Datos.DatosUsuario.ConseguirNombre(txtCorreo.Text)
-            apellido = Capa_Datos.DatosUsuario.ConseguirApellido(txtCorreo.Text)
-
-            Capa_Datos.Dnombre = nombre
-            Capa_Datos.Dtipo = tipo
-            Capa_Datos.Dapellido = apellido
-            Capa_Datos.Dusuario = txtCorreo.Text
-            Capa_Datos.Did = id
-
-
-
+        If (Capa_Datos.ExisteUsuario.Login(txtCorreo.Text, txtPassword.Text, nop)) Then
+            tipo = Capa_Datos.UsuarioActivo.type
             If (tipo = 2) Then
-                MessageBox.Show("Bienvenido al Sistema")
                 Me.Hide()
                 PantallaPrincipal_UAdmin.Show()
                 nop = 0
             ElseIf (tipo = 1) Then
-                MessageBox.Show("Bienvenido al Sistema, Administrador")
                 Me.Hide()
                 PantallaPrincipal_UGeneral.Show()
                 nop = 0

@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class ExisteUsuario
-    Public Shared Function ExisteUsuario(usuario As String, password As String, nop As Integer) As Boolean
+    Public Shared Function Login(usuario As String, password As String, nop As Integer) As Boolean
         Dim oConexion As New SqlConnection(My.Settings.Conexion)
         Dim oDataAdapter As SqlDataAdapter
         Dim oDataSet As New DataSet
@@ -13,7 +13,7 @@ Public Class ExisteUsuario
             oDataAdapter = New SqlDataAdapter(sSql, oConexion)
             oDataSet.Clear()
             oDataAdapter.Fill(oDataSet, "usuarios")
-            If (oDataSet.Tables("usuarios").Rows.Count() = 0) Then
+            If oDataSet.Tables("usuarios").Rows.Count() = 0 Then
                 If nop = 2 Then
                     MessageBox.Show("Numero de Intentos Alcanzados. No puede ingresar al sistema", "Sistema")
                 Else
@@ -22,7 +22,12 @@ Public Class ExisteUsuario
                 End If
                 sw = False
             Else
-                MessageBox.Show("Bienvenido al Sistema", "Sistema")
+                UsuarioActivo.idUser = oDataSet.Tables("usuarios")(0)(0)
+                UsuarioActivo.firstName = oDataSet.Tables("usuarios")(0)(1)
+                UsuarioActivo.lastName = oDataSet.Tables("usuarios")(0)(2)
+                UsuarioActivo.email = oDataSet.Tables("usuarios")(0)(3)
+                UsuarioActivo.password = oDataSet.Tables("usuarios")(0)(4)
+                UsuarioActivo.type = oDataSet.Tables("usuarios")(0)(5)
                 sw = True
             End If
 
@@ -31,24 +36,6 @@ Public Class ExisteUsuario
         End Try
 
         Return (sw)
-
     End Function
-
-    Public Shared Function TipoUsuario(usuario As String) As Integer
-        Using CN As New SqlConnection(My.Settings.Conexion)
-            CN.Open()
-            Using CMD As New SqlCommand("SELECT TipoUsuario FROM automatizacion.usuario WHERE email= '" & usuario & "'", CN)
-                CMD.CommandType = CommandType.Text
-                Dim valor As Int32 = Convert.ToInt32(CMD.ExecuteScalar())
-                CN.Close()
-
-                Return valor
-            End Using
-        End Using
-
-    End Function
-
-
-
 End Class
 
