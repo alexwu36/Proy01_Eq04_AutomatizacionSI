@@ -38,12 +38,15 @@ Partial Class PantallaPrincipal_UAdmin
         Me.btn_Inventario = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.UI_Calendario1 = New Calendario.UI_Calendario()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -180,7 +183,7 @@ Partial Class PantallaPrincipal_UAdmin
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.LightGray
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(237, 504)
+        Me.PictureBox3.Location = New System.Drawing.Point(237, 438)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(124, 104)
@@ -192,7 +195,7 @@ Partial Class PantallaPrincipal_UAdmin
         '
         Me.btn_Solicitud_Eventos.BackColor = System.Drawing.Color.LightGray
         Me.btn_Solicitud_Eventos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_Solicitud_Eventos.Location = New System.Drawing.Point(218, 489)
+        Me.btn_Solicitud_Eventos.Location = New System.Drawing.Point(218, 423)
         Me.btn_Solicitud_Eventos.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.btn_Solicitud_Eventos.Name = "btn_Solicitud_Eventos"
         Me.btn_Solicitud_Eventos.Size = New System.Drawing.Size(606, 130)
@@ -273,12 +276,39 @@ Partial Class PantallaPrincipal_UAdmin
         Me.UI_Calendario1.YearFont = New System.Drawing.Font("Arial Rounded MT Bold", 35.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
         Me.UI_Calendario1.YearForeColor = System.Drawing.Color.BlueViolet
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.LightGray
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(237, 610)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(124, 104)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 31
+        Me.PictureBox5.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.LightGray
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(218, 595)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(606, 130)
+        Me.Button1.TabIndex = 30
+        Me.Button1.Text = "Lista de Solicitudes de Equipos"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'PantallaPrincipal_UAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.UI_Calendario1)
@@ -299,6 +329,7 @@ Partial Class PantallaPrincipal_UAdmin
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -319,4 +350,6 @@ Partial Class PantallaPrincipal_UAdmin
     Friend WithEvents btn_Inventario As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents UI_Calendario1 As Calendario.UI_Calendario
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Button1 As Button
 End Class
