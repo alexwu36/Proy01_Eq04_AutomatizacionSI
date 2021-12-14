@@ -24,6 +24,6 @@
     End Sub
 
     Private Sub Form_SEquipo3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        txtNomRetiro.Text = Capa_Datos.UsuarioActivo.firstName
     End Sub
 End Class

@@ -87,10 +87,10 @@ Partial Class Form_SEquipo
         Me.Panel3.Controls.Add(Me.Panel6)
         Me.Panel3.Controls.Add(Me.btn_Continuar)
         Me.Panel3.Controls.Add(Me.Panel1)
-        Me.Panel3.Location = New System.Drawing.Point(0, -3)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(5)
+        Me.Panel3.Location = New System.Drawing.Point(0, -2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1327, 1659)
+        Me.Panel3.Size = New System.Drawing.Size(1348, 1244)
         Me.Panel3.TabIndex = 46
         '
         'Panel7
@@ -98,10 +98,9 @@ Partial Class Form_SEquipo
         Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel7.BackColor = System.Drawing.Color.DimGray
         Me.Panel7.Controls.Add(Me.Label11)
-        Me.Panel7.Location = New System.Drawing.Point(164, 763)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel7.Location = New System.Drawing.Point(238, 572)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1169, 64)
+        Me.Panel7.Size = New System.Drawing.Size(1023, 48)
         Me.Panel7.TabIndex = 125
         '
         'Label11
@@ -111,10 +110,10 @@ Partial Class Form_SEquipo
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label11.Location = New System.Drawing.Point(18, 15)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label11.Location = New System.Drawing.Point(16, 11)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(733, 29)
+        Me.Label11.Size = New System.Drawing.Size(586, 24)
         Me.Label11.TabIndex = 113
         Me.Label11.Text = "INFORMACIÓN DE LA PERSONA QUE SOLICITA EL EQUIPO"
         '
@@ -132,30 +131,28 @@ Partial Class Form_SEquipo
         Me.Panel2.Controls.Add(Me.Label17)
         Me.Panel2.Controls.Add(Me.Label13)
         Me.Panel2.Controls.Add(Me.Label12)
-        Me.Panel2.Location = New System.Drawing.Point(164, 763)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(5)
+        Me.Panel2.Location = New System.Drawing.Point(238, 572)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1169, 468)
+        Me.Panel2.Size = New System.Drawing.Size(1023, 351)
         Me.Panel2.TabIndex = 71
         '
         'mstxtCelular
         '
         Me.mstxtCelular.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.mstxtCelular.Location = New System.Drawing.Point(371, 363)
-        Me.mstxtCelular.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.mstxtCelular.Location = New System.Drawing.Point(325, 272)
         Me.mstxtCelular.Mask = "0000-0000"
         Me.mstxtCelular.Name = "mstxtCelular"
-        Me.mstxtCelular.Size = New System.Drawing.Size(495, 34)
+        Me.mstxtCelular.Size = New System.Drawing.Size(434, 29)
         Me.mstxtCelular.TabIndex = 124
         '
         'mstxtTelefono
         '
         Me.mstxtTelefono.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.mstxtTelefono.Location = New System.Drawing.Point(371, 228)
-        Me.mstxtTelefono.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.mstxtTelefono.Location = New System.Drawing.Point(325, 171)
         Me.mstxtTelefono.Mask = "000-0000"
         Me.mstxtTelefono.Name = "mstxtTelefono"
-        Me.mstxtTelefono.Size = New System.Drawing.Size(495, 34)
+        Me.mstxtTelefono.Size = New System.Drawing.Size(434, 29)
         Me.mstxtTelefono.TabIndex = 123
         '
         'cbUnidad
@@ -164,28 +161,29 @@ Partial Class Form_SEquipo
         Me.cbUnidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cbUnidad.FormattingEnabled = True
         Me.cbUnidad.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civíl (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería  Mecánica (FIM)", "Facultad de Ingeniería Sistemas Computacionales (FISC)"})
-        Me.cbUnidad.Location = New System.Drawing.Point(371, 159)
-        Me.cbUnidad.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cbUnidad.Location = New System.Drawing.Point(325, 119)
         Me.cbUnidad.Name = "cbUnidad"
-        Me.cbUnidad.Size = New System.Drawing.Size(495, 33)
+        Me.cbUnidad.Size = New System.Drawing.Size(434, 28)
         Me.cbUnidad.TabIndex = 102
         '
         'txtCorreo
         '
         Me.txtCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtCorreo.Location = New System.Drawing.Point(371, 291)
-        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(5)
+        Me.txtCorreo.Location = New System.Drawing.Point(325, 218)
+        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(495, 30)
+        Me.txtCorreo.ReadOnly = True
+        Me.txtCorreo.Size = New System.Drawing.Size(434, 26)
         Me.txtCorreo.TabIndex = 121
         '
         'txtNombreSolicitante
         '
         Me.txtNombreSolicitante.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtNombreSolicitante.Location = New System.Drawing.Point(371, 97)
-        Me.txtNombreSolicitante.Margin = New System.Windows.Forms.Padding(5)
+        Me.txtNombreSolicitante.Location = New System.Drawing.Point(325, 73)
+        Me.txtNombreSolicitante.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNombreSolicitante.Name = "txtNombreSolicitante"
-        Me.txtNombreSolicitante.Size = New System.Drawing.Size(495, 30)
+        Me.txtNombreSolicitante.ReadOnly = True
+        Me.txtNombreSolicitante.Size = New System.Drawing.Size(434, 26)
         Me.txtNombreSolicitante.TabIndex = 119
         '
         'Label16
@@ -193,10 +191,10 @@ Partial Class Form_SEquipo
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label16.Location = New System.Drawing.Point(103, 363)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label16.Location = New System.Drawing.Point(90, 272)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(88, 25)
+        Me.Label16.Size = New System.Drawing.Size(70, 20)
         Me.Label16.TabIndex = 118
         Me.Label16.Text = "Celular:"
         '
@@ -205,10 +203,10 @@ Partial Class Form_SEquipo
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label15.Location = New System.Drawing.Point(103, 295)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label15.Location = New System.Drawing.Point(90, 221)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(198, 25)
+        Me.Label15.Size = New System.Drawing.Size(163, 20)
         Me.Label15.TabIndex = 117
         Me.Label15.Text = "Correo Electrónico:"
         '
@@ -217,10 +215,10 @@ Partial Class Form_SEquipo
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label17.Location = New System.Drawing.Point(103, 228)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label17.Location = New System.Drawing.Point(90, 171)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(104, 25)
+        Me.Label17.Size = New System.Drawing.Size(84, 20)
         Me.Label17.TabIndex = 116
         Me.Label17.Text = "Teléfono:"
         '
@@ -229,10 +227,10 @@ Partial Class Form_SEquipo
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label13.Location = New System.Drawing.Point(103, 163)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label13.Location = New System.Drawing.Point(90, 122)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(219, 25)
+        Me.Label13.Size = New System.Drawing.Size(181, 20)
         Me.Label13.TabIndex = 115
         Me.Label13.Text = "Unidad donde laborá:"
         '
@@ -241,10 +239,10 @@ Partial Class Form_SEquipo
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label12.Location = New System.Drawing.Point(103, 101)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label12.Location = New System.Drawing.Point(90, 76)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(236, 25)
+        Me.Label12.Size = New System.Drawing.Size(195, 20)
         Me.Label12.TabIndex = 114
         Me.Label12.Text = "Nombre del Solicitante:"
         '
@@ -263,10 +261,10 @@ Partial Class Form_SEquipo
         Me.Panel4.Controls.Add(Me.Label8)
         Me.Panel4.Controls.Add(Me.cbLugar2)
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Panel4.Location = New System.Drawing.Point(165, 245)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(5)
+        Me.Panel4.Location = New System.Drawing.Point(238, 184)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1168, 463)
+        Me.Panel4.Size = New System.Drawing.Size(1022, 347)
         Me.Panel4.TabIndex = 67
         '
         'GroupBox1
@@ -274,21 +272,19 @@ Partial Class Form_SEquipo
         Me.GroupBox1.Controls.Add(Me.dtpHoraAct)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox1.Location = New System.Drawing.Point(97, 359)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Location = New System.Drawing.Point(85, 269)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox1.Size = New System.Drawing.Size(967, 83)
+        Me.GroupBox1.Size = New System.Drawing.Size(846, 62)
         Me.GroupBox1.TabIndex = 103
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Periódo de la Actividad"
         '
         'dtpHoraAct
         '
-        Me.dtpHoraAct.Location = New System.Drawing.Point(227, 32)
-        Me.dtpHoraAct.Margin = New System.Windows.Forms.Padding(5)
+        Me.dtpHoraAct.Location = New System.Drawing.Point(199, 24)
+        Me.dtpHoraAct.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpHoraAct.Name = "dtpHoraAct"
-        Me.dtpHoraAct.Size = New System.Drawing.Size(607, 30)
+        Me.dtpHoraAct.Size = New System.Drawing.Size(532, 26)
         Me.dtpHoraAct.TabIndex = 104
         '
         'Panel5
@@ -297,9 +293,8 @@ Partial Class Form_SEquipo
         Me.Panel5.BackColor = System.Drawing.Color.DimGray
         Me.Panel5.Controls.Add(Me.Label5)
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1169, 60)
+        Me.Panel5.Size = New System.Drawing.Size(1023, 45)
         Me.Panel5.TabIndex = 102
         '
         'Label5
@@ -310,10 +305,10 @@ Partial Class Form_SEquipo
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(17, 13)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label5.Location = New System.Drawing.Point(15, 10)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(886, 29)
+        Me.Label5.Size = New System.Drawing.Size(714, 24)
         Me.Label5.TabIndex = 90
         Me.Label5.Text = "INFORMACIÓN DE LA ACTIVIDAD EN LA CUAL SE UTILIZARÁ EL EQUIPO"
         '
@@ -325,27 +320,27 @@ Partial Class Form_SEquipo
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(97, 109)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label6.Location = New System.Drawing.Point(85, 82)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(242, 25)
+        Me.Label6.Size = New System.Drawing.Size(198, 20)
         Me.Label6.TabIndex = 92
         Me.Label6.Text = "Nombre de la Actividad:"
         '
         'txtNomActividad2
         '
-        Me.txtNomActividad2.Location = New System.Drawing.Point(456, 101)
-        Me.txtNomActividad2.Margin = New System.Windows.Forms.Padding(5)
+        Me.txtNomActividad2.Location = New System.Drawing.Point(399, 76)
+        Me.txtNomActividad2.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNomActividad2.Name = "txtNomActividad2"
-        Me.txtNomActividad2.Size = New System.Drawing.Size(607, 30)
+        Me.txtNomActividad2.Size = New System.Drawing.Size(532, 26)
         Me.txtNomActividad2.TabIndex = 91
         '
         'dtpFecha
         '
-        Me.dtpFecha.Location = New System.Drawing.Point(456, 236)
-        Me.dtpFecha.Margin = New System.Windows.Forms.Padding(5)
+        Me.dtpFecha.Location = New System.Drawing.Point(399, 177)
+        Me.dtpFecha.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpFecha.Name = "dtpFecha"
-        Me.dtpFecha.Size = New System.Drawing.Size(607, 30)
+        Me.dtpFecha.Size = New System.Drawing.Size(532, 26)
         Me.dtpFecha.TabIndex = 93
         '
         'Label9
@@ -353,10 +348,10 @@ Partial Class Form_SEquipo
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label9.Location = New System.Drawing.Point(97, 311)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label9.Location = New System.Drawing.Point(85, 233)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(246, 25)
+        Me.Label9.Size = New System.Drawing.Size(202, 20)
         Me.Label9.TabIndex = 98
         Me.Label9.Text = "Unidad que lo Organiza:"
         '
@@ -365,10 +360,10 @@ Partial Class Form_SEquipo
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(97, 179)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label7.Location = New System.Drawing.Point(85, 134)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(289, 25)
+        Me.Label7.Size = New System.Drawing.Size(239, 20)
         Me.Label7.TabIndex = 94
         Me.Label7.Text = "Lugar donde se desarrollará:"
         '
@@ -377,10 +372,10 @@ Partial Class Form_SEquipo
         Me.cbFacultad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbFacultad.FormattingEnabled = True
         Me.cbFacultad.Items.AddRange(New Object() {"Facultad de Ciencias y Tecnología (FCT)", "Facultad de Ingeniería Civíl (FIC)", "Facultad de Ingeniería Eléctrica (FIE)", "Facultad de Ingeniería Industrial (FII)", "Facultad de Ingeniería  Mecánica (FIM)", "Facultad de Ingeniería Sistemas Computacionales (FISC)"})
-        Me.cbFacultad.Location = New System.Drawing.Point(456, 300)
-        Me.cbFacultad.Margin = New System.Windows.Forms.Padding(5)
+        Me.cbFacultad.Location = New System.Drawing.Point(399, 225)
+        Me.cbFacultad.Margin = New System.Windows.Forms.Padding(4)
         Me.cbFacultad.Name = "cbFacultad"
-        Me.cbFacultad.Size = New System.Drawing.Size(607, 33)
+        Me.cbFacultad.Size = New System.Drawing.Size(532, 28)
         Me.cbFacultad.TabIndex = 97
         '
         'Label8
@@ -388,10 +383,10 @@ Partial Class Form_SEquipo
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label8.Location = New System.Drawing.Point(97, 245)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label8.Location = New System.Drawing.Point(85, 184)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(227, 25)
+        Me.Label8.Size = New System.Drawing.Size(186, 20)
         Me.Label8.TabIndex = 95
         Me.Label8.Text = "Fecha de la Actividad:"
         '
@@ -400,10 +395,10 @@ Partial Class Form_SEquipo
         Me.cbLugar2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbLugar2.FormattingEnabled = True
         Me.cbLugar2.Items.AddRange(New Object() {"Auditorio", "Lobby Edifico 3", "Lobby Edificio 1", "Piso FCT", "Piso FIC", "Piso FIE", "Piso FII", "Piso FIM", "Piso Fisc"})
-        Me.cbLugar2.Location = New System.Drawing.Point(456, 167)
-        Me.cbLugar2.Margin = New System.Windows.Forms.Padding(5)
+        Me.cbLugar2.Location = New System.Drawing.Point(399, 125)
+        Me.cbLugar2.Margin = New System.Windows.Forms.Padding(4)
         Me.cbLugar2.Name = "cbLugar2"
-        Me.cbLugar2.Size = New System.Drawing.Size(607, 33)
+        Me.cbLugar2.Size = New System.Drawing.Size(532, 28)
         Me.cbLugar2.TabIndex = 96
         '
         'btn_Borrar
@@ -412,10 +407,10 @@ Partial Class Form_SEquipo
         Me.btn_Borrar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Borrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Borrar.Location = New System.Drawing.Point(673, 1329)
-        Me.btn_Borrar.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn_Borrar.Location = New System.Drawing.Point(683, 997)
+        Me.btn_Borrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Borrar.Name = "btn_Borrar"
-        Me.btn_Borrar.Size = New System.Drawing.Size(221, 80)
+        Me.btn_Borrar.Size = New System.Drawing.Size(193, 60)
         Me.btn_Borrar.TabIndex = 70
         Me.btn_Borrar.Text = "Borrar"
         Me.btn_Borrar.UseVisualStyleBackColor = False
@@ -426,10 +421,10 @@ Partial Class Form_SEquipo
         Me.btn_Regresar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Regresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Regresar.Location = New System.Drawing.Point(165, 1327)
-        Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn_Regresar.Location = New System.Drawing.Point(238, 995)
+        Me.btn_Regresar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Regresar.Name = "btn_Regresar"
-        Me.btn_Regresar.Size = New System.Drawing.Size(221, 80)
+        Me.btn_Regresar.Size = New System.Drawing.Size(193, 60)
         Me.btn_Regresar.TabIndex = 4
         Me.btn_Regresar.Text = "Regresar"
         Me.btn_Regresar.UseVisualStyleBackColor = False
@@ -439,10 +434,10 @@ Partial Class Form_SEquipo
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(347, 185)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label4.Location = New System.Drawing.Point(398, 139)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(862, 31)
+        Me.Label4.Size = New System.Drawing.Size(677, 25)
         Me.Label4.TabIndex = 45
         Me.Label4.Text = "FORMULARIO PARA LA SOLICITUD Y PRÉSTAMO DE EQUIPO"
         '
@@ -453,19 +448,19 @@ Partial Class Form_SEquipo
         Me.Panel6.BackColor = System.Drawing.Color.Purple
         Me.Panel6.Controls.Add(Me.PictureBox3)
         Me.Panel6.Controls.Add(Me.Label14)
-        Me.Panel6.Location = New System.Drawing.Point(0, 1493)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(5)
+        Me.Panel6.Location = New System.Drawing.Point(0, 1120)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1580, 163)
+        Me.Panel6.Size = New System.Drawing.Size(1569, 122)
         Me.Panel6.TabIndex = 69
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(5)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(183, 155)
+        Me.PictureBox3.Size = New System.Drawing.Size(160, 116)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 10
         Me.PictureBox3.TabStop = False
@@ -476,11 +471,11 @@ Partial Class Form_SEquipo
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.Location = New System.Drawing.Point(446, 5)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label14.Location = New System.Drawing.Point(483, 4)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label14.Size = New System.Drawing.Size(916, 120)
+        Me.Label14.Size = New System.Drawing.Size(735, 96)
         Me.Label14.TabIndex = 0
         Me.Label14.Text = resources.GetString("Label14.Text")
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -491,10 +486,10 @@ Partial Class Form_SEquipo
         Me.btn_Continuar.BackColor = System.Drawing.Color.DarkMagenta
         Me.btn_Continuar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btn_Continuar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btn_Continuar.Location = New System.Drawing.Point(1113, 1337)
-        Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn_Continuar.Location = New System.Drawing.Point(1068, 1003)
+        Me.btn_Continuar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Continuar.Name = "btn_Continuar"
-        Me.btn_Continuar.Size = New System.Drawing.Size(221, 80)
+        Me.btn_Continuar.Size = New System.Drawing.Size(193, 60)
         Me.btn_Continuar.TabIndex = 68
         Me.btn_Continuar.Text = "Continuar"
         Me.btn_Continuar.UseVisualStyleBackColor = False
@@ -508,10 +503,10 @@ Partial Class Form_SEquipo
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(5, 3)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(5)
+        Me.Panel1.Location = New System.Drawing.Point(4, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1572, 163)
+        Me.Panel1.Size = New System.Drawing.Size(1563, 122)
         Me.Panel1.TabIndex = 59
         '
         'Label3
@@ -519,10 +514,10 @@ Partial Class Form_SEquipo
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(192, 95)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label3.Location = New System.Drawing.Point(168, 71)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(716, 29)
+        Me.Label3.Size = New System.Drawing.Size(577, 24)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = """Camino a la excelencia a través del mejoramiento continuo"""
         '
@@ -531,20 +526,20 @@ Partial Class Form_SEquipo
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(192, 51)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label2.Location = New System.Drawing.Point(168, 38)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(602, 29)
+        Me.Label2.Size = New System.Drawing.Size(481, 24)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Departamento de Protocolo, Ceremonial y Eventos"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 3)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(5)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(183, 157)
+        Me.PictureBox1.Size = New System.Drawing.Size(160, 118)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
@@ -554,21 +549,21 @@ Partial Class Form_SEquipo
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(191, 12)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label1.Location = New System.Drawing.Point(167, 9)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(489, 31)
+        Me.Label1.Size = New System.Drawing.Size(397, 25)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Universidad Tecnológica de Panamá"
         '
         'Form_SEquipo
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1558, 1055)
+        Me.ClientSize = New System.Drawing.Size(1363, 791)
         Me.Controls.Add(Me.Panel3)
-        Me.Margin = New System.Windows.Forms.Padding(5)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form_SEquipo"
         Me.Text = "Form_SEquipo"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

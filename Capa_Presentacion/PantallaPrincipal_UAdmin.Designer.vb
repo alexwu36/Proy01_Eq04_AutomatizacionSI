@@ -40,6 +40,7 @@ Partial Class PantallaPrincipal_UAdmin
         Me.UI_Calendario1 = New Calendario.UI_Calendario()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.lbBienvenida = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -54,6 +55,7 @@ Partial Class PantallaPrincipal_UAdmin
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.Purple
+        Me.Panel1.Controls.Add(Me.lbBienvenida)
         Me.Panel1.Controls.Add(Me.btn_Volver)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -301,6 +303,17 @@ Partial Class PantallaPrincipal_UAdmin
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'lbBienvenida
+        '
+        Me.lbBienvenida.AutoSize = True
+        Me.lbBienvenida.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbBienvenida.ForeColor = System.Drawing.Color.White
+        Me.lbBienvenida.Location = New System.Drawing.Point(1146, 41)
+        Me.lbBienvenida.Name = "lbBienvenida"
+        Me.lbBienvenida.Size = New System.Drawing.Size(72, 24)
+        Me.lbBienvenida.TabIndex = 32
+        Me.lbBienvenida.Text = "Label5"
+        '
         'PantallaPrincipal_UAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -352,4 +365,5 @@ Partial Class PantallaPrincipal_UAdmin
     Friend WithEvents UI_Calendario1 As Calendario.UI_Calendario
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents lbBienvenida As Label
 End Class

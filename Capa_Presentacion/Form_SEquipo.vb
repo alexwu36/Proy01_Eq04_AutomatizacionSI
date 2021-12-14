@@ -21,6 +21,7 @@
     End Sub
 
     Private Sub Form_SEquipo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        txtNombreSolicitante.Text = Capa_Datos.UsuarioActivo.firstName
+        txtCorreo.Text = Capa_Datos.UsuarioActivo.email
     End Sub
 End Class
