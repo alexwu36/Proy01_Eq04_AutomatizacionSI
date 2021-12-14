@@ -35,6 +35,7 @@ Partial Class Form_Lista_de_Solicitudes
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtEstado = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.txtSolicitante = New System.Windows.Forms.TextBox()
         Me.txtFacultad = New System.Windows.Forms.TextBox()
@@ -55,7 +56,8 @@ Partial Class Form_Lista_de_Solicitudes
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtComentarios = New System.Windows.Forms.TextBox()
         Me.DGV_Solicitud = New System.Windows.Forms.DataGridView()
-        Me.txtEstado = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txtActividad = New System.Windows.Forms.TextBox()
         Me.Panel3.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -211,6 +213,8 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(122, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.txtActividad)
+        Me.Panel2.Controls.Add(Me.Label15)
         Me.Panel2.Controls.Add(Me.txtEstado)
         Me.Panel2.Controls.Add(Me.Label13)
         Me.Panel2.Controls.Add(Me.txtSolicitante)
@@ -238,11 +242,19 @@ Partial Class Form_Lista_de_Solicitudes
         Me.Panel2.Size = New System.Drawing.Size(1433, 738)
         Me.Panel2.TabIndex = 126
         '
+        'txtEstado
+        '
+        Me.txtEstado.Location = New System.Drawing.Point(968, 156)
+        Me.txtEstado.Name = "txtEstado"
+        Me.txtEstado.ReadOnly = True
+        Me.txtEstado.Size = New System.Drawing.Size(157, 23)
+        Me.txtEstado.TabIndex = 21
+        '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(846, 181)
+        Me.Label13.Location = New System.Drawing.Point(846, 164)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(43, 15)
         Me.Label13.TabIndex = 20
@@ -250,33 +262,33 @@ Partial Class Form_Lista_de_Solicitudes
         '
         'txtSolicitante
         '
-        Me.txtSolicitante.Location = New System.Drawing.Point(968, 405)
+        Me.txtSolicitante.Location = New System.Drawing.Point(968, 430)
         Me.txtSolicitante.Name = "txtSolicitante"
         Me.txtSolicitante.ReadOnly = True
-        Me.txtSolicitante.Size = New System.Drawing.Size(102, 23)
+        Me.txtSolicitante.Size = New System.Drawing.Size(157, 23)
         Me.txtSolicitante.TabIndex = 19
         '
         'txtFacultad
         '
-        Me.txtFacultad.Location = New System.Drawing.Point(968, 371)
+        Me.txtFacultad.Location = New System.Drawing.Point(968, 354)
         Me.txtFacultad.Name = "txtFacultad"
         Me.txtFacultad.ReadOnly = True
-        Me.txtFacultad.Size = New System.Drawing.Size(102, 23)
+        Me.txtFacultad.Size = New System.Drawing.Size(157, 23)
         Me.txtFacultad.TabIndex = 18
         '
         'txtLugar
         '
-        Me.txtLugar.Location = New System.Drawing.Point(968, 331)
+        Me.txtLugar.Location = New System.Drawing.Point(968, 314)
         Me.txtLugar.Name = "txtLugar"
         Me.txtLugar.ReadOnly = True
-        Me.txtLugar.Size = New System.Drawing.Size(102, 23)
+        Me.txtLugar.Size = New System.Drawing.Size(157, 23)
         Me.txtLugar.TabIndex = 17
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.Location = New System.Drawing.Point(846, 405)
+        Me.Label12.Location = New System.Drawing.Point(846, 430)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(66, 15)
         Me.Label12.TabIndex = 16
@@ -286,7 +298,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.Location = New System.Drawing.Point(846, 371)
+        Me.Label11.Location = New System.Drawing.Point(846, 354)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(53, 15)
         Me.Label11.TabIndex = 15
@@ -296,7 +308,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.Location = New System.Drawing.Point(846, 334)
+        Me.Label10.Location = New System.Drawing.Point(846, 317)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(38, 15)
         Me.Label10.TabIndex = 14
@@ -304,33 +316,33 @@ Partial Class Form_Lista_de_Solicitudes
         '
         'txtObservacion
         '
-        Me.txtObservacion.Location = New System.Drawing.Point(968, 443)
+        Me.txtObservacion.Location = New System.Drawing.Point(968, 471)
         Me.txtObservacion.Multiline = True
         Me.txtObservacion.Name = "txtObservacion"
         Me.txtObservacion.ReadOnly = True
         Me.txtObservacion.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtObservacion.Size = New System.Drawing.Size(277, 83)
+        Me.txtObservacion.Size = New System.Drawing.Size(277, 55)
         Me.txtObservacion.TabIndex = 13
         '
         'txtHoraFinal
         '
-        Me.txtHoraFinal.Location = New System.Drawing.Point(1143, 291)
+        Me.txtHoraFinal.Location = New System.Drawing.Point(1113, 274)
         Me.txtHoraFinal.Name = "txtHoraFinal"
         Me.txtHoraFinal.ReadOnly = True
-        Me.txtHoraFinal.Size = New System.Drawing.Size(102, 23)
+        Me.txtHoraFinal.Size = New System.Drawing.Size(76, 23)
         Me.txtHoraFinal.TabIndex = 12
         '
         'txtHora
         '
-        Me.txtHora.Location = New System.Drawing.Point(968, 291)
+        Me.txtHora.Location = New System.Drawing.Point(968, 274)
         Me.txtHora.Name = "txtHora"
         Me.txtHora.ReadOnly = True
-        Me.txtHora.Size = New System.Drawing.Size(102, 23)
+        Me.txtHora.Size = New System.Drawing.Size(72, 23)
         Me.txtHora.TabIndex = 11
         '
         'txtFecha
         '
-        Me.txtFecha.Location = New System.Drawing.Point(968, 253)
+        Me.txtFecha.Location = New System.Drawing.Point(968, 236)
         Me.txtFecha.Name = "txtFecha"
         Me.txtFecha.ReadOnly = True
         Me.txtFecha.Size = New System.Drawing.Size(157, 23)
@@ -340,7 +352,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.Location = New System.Drawing.Point(846, 443)
+        Me.Label9.Location = New System.Drawing.Point(846, 471)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(76, 15)
         Me.Label9.TabIndex = 9
@@ -350,7 +362,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(1076, 294)
+        Me.Label8.Location = New System.Drawing.Point(1046, 277)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(61, 15)
         Me.Label8.TabIndex = 8
@@ -360,7 +372,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(846, 294)
+        Me.Label7.Location = New System.Drawing.Point(846, 277)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(65, 15)
         Me.Label7.TabIndex = 7
@@ -370,7 +382,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(846, 256)
+        Me.Label6.Location = New System.Drawing.Point(846, 239)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 15)
         Me.Label6.TabIndex = 6
@@ -380,7 +392,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblNombre.Location = New System.Drawing.Point(846, 218)
+        Me.lblNombre.Location = New System.Drawing.Point(846, 201)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(115, 15)
         Me.lblNombre.TabIndex = 5
@@ -388,7 +400,7 @@ Partial Class Form_Lista_de_Solicitudes
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(968, 210)
+        Me.txtNombre.Location = New System.Drawing.Point(968, 193)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.ReadOnly = True
         Me.txtNombre.Size = New System.Drawing.Size(157, 23)
@@ -409,7 +421,7 @@ Partial Class Form_Lista_de_Solicitudes
         Me.txtComentarios.Location = New System.Drawing.Point(846, 48)
         Me.txtComentarios.Multiline = True
         Me.txtComentarios.Name = "txtComentarios"
-        Me.txtComentarios.Size = New System.Drawing.Size(381, 111)
+        Me.txtComentarios.Size = New System.Drawing.Size(381, 88)
         Me.txtComentarios.TabIndex = 1
         Me.txtComentarios.Text = "Comentarios para el solicitante..."
         '
@@ -426,13 +438,23 @@ Partial Class Form_Lista_de_Solicitudes
         Me.DGV_Solicitud.Size = New System.Drawing.Size(775, 248)
         Me.DGV_Solicitud.TabIndex = 0
         '
-        'txtEstado
+        'Label15
         '
-        Me.txtEstado.Location = New System.Drawing.Point(968, 173)
-        Me.txtEstado.Name = "txtEstado"
-        Me.txtEstado.ReadOnly = True
-        Me.txtEstado.Size = New System.Drawing.Size(157, 23)
-        Me.txtEstado.TabIndex = 21
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label15.Location = New System.Drawing.Point(846, 396)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(59, 15)
+        Me.Label15.TabIndex = 22
+        Me.Label15.Text = "Actividad"
+        '
+        'txtActividad
+        '
+        Me.txtActividad.Location = New System.Drawing.Point(968, 393)
+        Me.txtActividad.Name = "txtActividad"
+        Me.txtActividad.ReadOnly = True
+        Me.txtActividad.Size = New System.Drawing.Size(157, 23)
+        Me.txtActividad.TabIndex = 23
         '
         'Form_Lista_de_Solicitudes
         '
@@ -492,4 +514,6 @@ Partial Class Form_Lista_de_Solicitudes
     Friend WithEvents Label10 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents txtEstado As TextBox
+    Friend WithEvents txtActividad As TextBox
+    Friend WithEvents Label15 As Label
 End Class

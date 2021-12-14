@@ -72,7 +72,7 @@
             Dim row As DataGridViewRow = DGV_Solicitud.Rows(e.RowIndex)
             If row.Cells(2).Value.ToString = "Aprobado" Then
                 txtEstado.BackColor = Color.Green
-            Else
+            ElseIf row.Cells(2).Value.ToString = "Rechazado" Then
                 txtEstado.BackColor = Color.Red
             End If
             txtEstado.Text = row.Cells(2).Value.ToString
@@ -84,6 +84,7 @@
             txtLugar.Text = row.Cells(9).Value.ToString
             txtFacultad.Text = row.Cells(10).Value.ToString
             txtSolicitante.Text = row.Cells(11).Value.ToString
+            txtActividad.Text = row.Cells(12).Value.ToString
 
         End If
     End Sub
